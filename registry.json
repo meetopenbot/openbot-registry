@@ -2,20 +2,20 @@
   "version": 1,
   "agents": [
     {
-      "id": "research-assistant",
-      "name": "Research Assistant",
-      "description": "Search + summarize with citations",
-      "source": { "type": "github", "value": "meetopenbot/agent-research-assistant" },
-      "tags": ["official", "research"]
+      "id": "agent-browser",
+      "name": "Browser Agent",
+      "description": "A highly intelligent browser agent capable of sophisticated web interactions and data retrieval.",
+      "source": { "type": "github", "value": "meetopenbot/agent-browser" },
+      "tags": ["official", "browser"]
     }
   ],
   "plugins": [
     {
-      "id": "notion",
-      "name": "Notion",
-      "description": "Read/write Notion pages",
-      "source": { "type": "github", "value": "meetopenbot/plugin-notion" },
-      "tags": ["official", "productivity"]
+      "id": "plugin-browser-tools",
+      "name": "Browser Tools",
+      "description": "Browse the web and interact with pages using Stagehand",
+      "source": { "type": "github", "value": "meetopenbot/plugin-browser-tools" },
+      "tags": ["official", "browser"]
     }
   ]
 }
