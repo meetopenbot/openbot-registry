@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "agents": [
+    {
+      "id": "research-assistant",
+      "name": "Research Assistant",
+      "description": "Search + summarize with citations",
+      "source": { "type": "github", "value": "meetopenbot/agent-research-assistant" },
+      "tags": ["official", "research"]
+    }
+  ],
+  "plugins": [
+    {
+      "id": "notion",
+      "name": "Notion",
+      "description": "Read/write Notion pages",
+      "source": { "type": "github", "value": "meetopenbot/plugin-notion" },
+      "tags": ["official", "productivity"]
+    }
+  ]
+}
