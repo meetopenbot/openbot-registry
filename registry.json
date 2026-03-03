@@ -7,7 +7,7 @@
       "description": "A highly intelligent browser agent capable of sophisticated web interactions and data retrieval.",
       "source": { "type": "github", "value": "meetopenbot/agent-browser" },
       "tags": ["official", "browser"],
-      "image" "https://raw.githubusercontent.com/meetopenbot/plugin-browser-tools/main/assets/avatar.png"
+      "image": "https://raw.githubusercontent.com/meetopenbot/plugin-browser-tools/main/assets/avatar.png"
     }
   ],
   "plugins": [
@@ -17,7 +17,7 @@
       "description": "Browse the web and interact with pages using Stagehand",
       "source": { "type": "github", "value": "meetopenbot/plugin-browser-tools" },
       "tags": ["official", "browser"],
-      "image" "https://raw.githubusercontent.com/meetopenbot/plugin-browser-tools/main/assets/avatar.png"
+      "image": "https://raw.githubusercontent.com/meetopenbot/plugin-browser-tools/main/assets/avatar.png"
     }
   ]
 }
