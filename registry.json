@@ -22,7 +22,7 @@
     {
       "id": "plugin-codex",
       "name": "Codex",
-      "description": "Code with Codex",
+      "description": "Codex integration tools for OpenBot",
       "source": { "type": "github", "value": "meetopenbot/plugin-codex" },
       "tags": ["official", "browser"],
       "image": "https://raw.githubusercontent.com/meetopenbot/plugin-codex/main/assets/avatar.png"
