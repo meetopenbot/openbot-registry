@@ -8,6 +8,14 @@
       "source": { "type": "github", "value": "meetopenbot/agent-browser" },
       "tags": ["official", "browser"],
       "image": "https://raw.githubusercontent.com/meetopenbot/plugin-browser-tools/main/assets/avatar.png"
+    },
+    {
+      "id": "agent-codex",
+      "name": "Codex Agent",
+      "description": "Codex integration tools for OpenBot.",
+      "source": { "type": "github", "value": "meetopenbot/agent-codex" },
+      "tags": ["official", "coding"],
+      "image": "https://raw.githubusercontent.com/meetopenbot/agent-codex/main/assets/avatar.png"
     }
   ],
   "plugins": [
