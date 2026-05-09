@@ -2,38 +2,23 @@
   "version": 1,
   "agents": [
     {
-      "id": "agent-browser",
-      "name": "Browser Agent",
-      "description": "A highly intelligent browser agent capable of sophisticated web interactions and data retrieval.",
-      "source": { "type": "github", "value": "meetopenbot/agent-browser" },
-      "tags": ["official", "browser"],
-      "image": "https://raw.githubusercontent.com/meetopenbot/plugin-browser-tools/main/assets/avatar.png"
+      "id": "researcher",
+      "name": "Researcher",
+      "description": "Web research and synthesis.",
+      "instructions": "You are a research assistant. Use available tools to find information.",
+      "plugins": [
+        { "id": "ai-sdk", "config": { "model": "openai/gpt-4o" } },
+        { "id": "mcp" },
+        { "id": "shell" }
+      ]
     },
     {
-      "id": "agent-codex",
-      "name": "Codex Agent",
-      "description": "Codex integration tools for OpenBot.",
-      "source": { "type": "github", "value": "meetopenbot/agent-codex" },
-      "tags": ["official", "coding"],
-      "image": "https://raw.githubusercontent.com/meetopenbot/agent-codex/main/assets/avatar.png"
-    }
-  ],
-  "plugins": [
-    {
-      "id": "plugin-browser-tools",
-      "name": "Browser Tools",
-      "description": "Browse the web and interact with pages using Stagehand",
-      "source": { "type": "github", "value": "meetopenbot/plugin-browser-tools" },
-      "tags": ["official", "browser"],
-      "image": "https://raw.githubusercontent.com/meetopenbot/plugin-browser-tools/main/assets/avatar.png"
-    },
-    {
-      "id": "plugin-codex",
-      "name": "Codex",
-      "description": "Codex integration tools for OpenBot",
-      "source": { "type": "github", "value": "meetopenbot/plugin-codex" },
-      "tags": ["official", "browser"],
-      "image": "https://raw.githubusercontent.com/meetopenbot/plugin-codex/main/assets/avatar.png"
+      "id": "coder",
+      "name": "Coder",
+      "description": "Software engineering help.",
+      "instructions": "You are an expert software engineer. Help the user with coding tasks.",
+      "image": "https://example.com/coder-icon.png",
+      "plugins": [{ "id": "claude-code" }]
     }
   ]
 }
