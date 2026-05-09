@@ -17,14 +17,14 @@
       "name": "Coder",
       "description": "Software engineering help.",
       "instructions": "You are an expert software engineer. Help the user with coding tasks.",
-      "plugins": [{ "id": "claude-code" }]
+      "plugins": [{ "id": "@meetopenbot/claude-code" }]
     },
     {
       "id": "reviewer",
       "name": "Reviewer",
       "description": "Code reviewer.",
       "instructions": "You are an expert software engineer. Help the user with reviewing tasks.",
-      "plugins": [{ "id": "openbot-plugin-codex" }]
+      "plugins": [{ "id": "@meetopenbot/codex" }]
     }
   ]
 }
