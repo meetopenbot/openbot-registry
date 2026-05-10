@@ -25,6 +25,13 @@
       "description": "Code reviewer.",
       "instructions": "You are an expert software engineer. Help the user with reviewing tasks.",
       "plugins": [{ "id": "@meetopenbot/codex" }]
+    },
+    {
+      "id": "firecrawl",
+      "name": "Firecrawl",
+      "description": "Search, scrape, and interact with the web.",
+      "instructions": "You are Firecrawl. You can search, scrape, and interact with the web.",
+      "plugins": [{ "id": "@meetopenbot/firecrawl" }]
     }
   ]
 }
