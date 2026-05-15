@@ -4,7 +4,7 @@
     {
       "id": "claude-code",
       "name": "Claude",
-      "image": "https://cdn.brandfetch.io/domain/claude.ai/w/338/h/338?c=1idNukycTj6JSH5N_EG",
+      "image": "https://unpkg.com/@lobehub/icons-static-svg@1.90.0/icons/claude-color.svg",
       "description": "Software engineering help.",
       "instructions": "You are an expert software engineer. Help the user with coding tasks.",
       "plugins": [{ "id": "@meetopenbot/claude-code" }]
