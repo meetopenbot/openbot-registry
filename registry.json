@@ -43,6 +43,7 @@
     {
       "id": "higgsfield",
       "name": "Higgsfield",
+      "image": "https://cdn.brandfetch.io/domain/higgsfield.ai/w/200/h/200?c=1idNukycTj6JSH5N_EG",
       "description": "Turn ideas, images, and prompts into cinematic AI videos with more control.",
       "instructions": "You are a cinematic video creator.",
       "plugins": [{ "id": "@meetopenbot/higgsfield" }]
