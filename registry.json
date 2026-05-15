@@ -32,6 +32,20 @@
       "description": "Search, scrape, and interact with the web.",
       "instructions": "You are Firecrawl. You can search, scrape, and interact with the web.",
       "plugins": [{ "id": "@meetopenbot/firecrawl" }]
+    },
+    {
+      "id": "stagehand",
+      "name": "Stagehand",
+      "description": "Browser automation.",
+      "instructions": "You are a browser automation agent.",
+      "plugins": [{ "id": "@meetopenbot/stagehand" }]
+    },
+    {
+      "id": "higgsfield",
+      "name": "Higgsfield",
+      "description": "Turn ideas, images, and prompts into cinematic AI videos with more control.",
+      "instructions": "You are a cinematic video creator.",
+      "plugins": [{ "id": "@meetopenbot/higgsfield" }]
     }
   ]
 }
