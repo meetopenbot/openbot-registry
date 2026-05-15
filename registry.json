@@ -2,33 +2,25 @@
   "version": 1,
   "agents": [
     {
-      "id": "researcher",
-      "name": "Researcher",
-      "description": "Web research and synthesis.",
-      "instructions": "You are a research assistant. Use available tools to find information.",
-      "plugins": [
-        { "id": "ai-sdk", "config": { "model": "openai/gpt-4o" } },
-        { "id": "mcp" },
-        { "id": "shell" }
-      ]
-    },
-    {
-      "id": "coder",
-      "name": "Coder",
+      "id": "claude-code",
+      "name": "Claude",
+      "image": "https://cdn.brandfetch.io/domain/claude.ai/w/338/h/338?c=1idNukycTj6JSH5N_EG",
       "description": "Software engineering help.",
       "instructions": "You are an expert software engineer. Help the user with coding tasks.",
       "plugins": [{ "id": "@meetopenbot/claude-code" }]
     },
     {
-      "id": "reviewer",
-      "name": "Reviewer",
-      "description": "Code reviewer.",
-      "instructions": "You are an expert software engineer. Help the user with reviewing tasks.",
+      "id": "codex",
+      "name": "Codex",
+      "image": "https://cdn.brandfetch.io/domain/openai.com/w/400/h/400?c=1idNukycTj6JSH5N_EG",
+      "description": "Coding agent.",
+      "instructions": "You are an expert software engineer. Help the user with coding tasks.",
       "plugins": [{ "id": "@meetopenbot/codex" }]
     },
     {
       "id": "firecrawl",
       "name": "Firecrawl",
+      "image": "https://cdn.brandfetch.io/domain/firecrawl.dev/w/800/h/1152/symbol?c=1idNukycTj6JSH5N_EG",
       "description": "Search, scrape, and interact with the web.",
       "instructions": "You are Firecrawl. You can search, scrape, and interact with the web.",
       "plugins": [{ "id": "@meetopenbot/firecrawl" }]
@@ -36,6 +28,7 @@
     {
       "id": "stagehand",
       "name": "Stagehand",
+      "image": "https://cdn.brandfetch.io/domain/stagehand.dev/w/400/h/400?c=1idNukycTj6JSH5N_EG",
       "description": "Browser automation.",
       "instructions": "You are a browser automation agent.",
       "plugins": [{ "id": "@meetopenbot/stagehand" }]
