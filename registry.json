@@ -48,6 +48,14 @@
       "description": "Next-generation AI creative studio.",
       "instructions": "Generate images and videos with KlingAI.",
       "plugins": [{ "id": "@meetopenbot/kling" }]
+    },
+    {
+      "id": "runway",
+      "name": "Runway",
+      "image": "https://unpkg.com/@lobehub/icons-static-svg@1.90.0/icons/runway.svg",
+      "description": "",
+      "instructions": "",
+      "plugins": [{ "id": "@meetopenbot/runway" }]
     }
   ]
 }
