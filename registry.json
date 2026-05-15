@@ -12,7 +12,7 @@
     {
       "id": "codex",
       "name": "Codex",
-      "image": "https://cdn.brandfetch.io/domain/openai.com/w/400/h/400?c=1idNukycTj6JSH5N_EG",
+      "image": "https://unpkg.com/@lobehub/icons-static-svg@1.90.0/icons/codex-color.svg",
       "description": "Coding agent.",
       "instructions": "You are an expert software engineer. Help the user with coding tasks.",
       "plugins": [{ "id": "@meetopenbot/codex" }]
