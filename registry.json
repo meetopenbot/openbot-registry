@@ -40,6 +40,14 @@
       "description": "Turn ideas, images, and prompts into cinematic AI videos with more control.",
       "instructions": "You are a cinematic video creator.",
       "plugins": [{ "id": "@meetopenbot/higgsfield" }]
+    },
+    {
+      "id": "kling",
+      "name": "Kling",
+      "image": "https://unpkg.com/@lobehub/icons-static-svg@1.90.0/icons/kling-color.svg",
+      "description": "Next-generation AI creative studio.",
+      "instructions": "Generate images and videos with KlingAI.",
+      "plugins": [{ "id": "@meetopenbot/kling" }]
     }
   ]
 }
