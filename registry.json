@@ -52,7 +52,7 @@
     {
       "id": "runway",
       "name": "Runway",
-      "image": "https://unpkg.com/@lobehub/icons-static-svg@1.90.0/icons/runway.svg",
+      "image": "https://cdn.brandfetch.io/domain/runwayml.com/w/400/h/400?c=1idNukycTj6JSH5N_EG",
       "description": "",
       "instructions": "",
       "plugins": [{ "id": "@meetopenbot/runway" }]
