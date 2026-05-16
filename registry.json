@@ -56,6 +56,14 @@
       "description": "",
       "instructions": "",
       "plugins": [{ "id": "@meetopenbot/runway" }]
+    },
+    {
+      "id": "fal",
+      "name": "Fal",
+      "image": "https://unpkg.com/@lobehub/icons-static-svg@1.90.0/icons/fal-color.svg",
+      "description": "",
+      "instructions": "",
+      "plugins": [{ "id": "@meetopenbot/fal" }]
     }
   ]
 }
