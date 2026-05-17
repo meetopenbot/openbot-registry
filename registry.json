@@ -72,6 +72,14 @@
       "description": "",
       "instructions": "",
       "plugins": [{ "id": "@meetopenbot/stripe" }]
+    },
+    {
+      "id": "shopify",
+      "name": "Shopify",
+      "image": "https://cdn.brandfetch.io/domain/shopify.com/w/800/h/899/symbol?c=1idNukycTj6JSH5N_EG",
+      "description": "",
+      "instructions": "",
+      "plugins": [{ "id": "@meetopenbot/ai-sdk" }, { "id": "@meetopenbot/shopify" }]
     }
   ]
 }
