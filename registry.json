@@ -96,6 +96,14 @@
       "description": "",
       "instructions": "",
       "plugins": [{ "id": "@meetopenbot/stitch" }]
+    },
+    {
+      "id": "jules",
+      "name": "Jules",
+      "image": "https://cdn.brandfetch.io/domain/jules.google/fallback/lettermark/w/820/h/820/logo?c=1idNukycTj6JSH5N_EG",
+      "description": "",
+      "instructions": "",
+      "plugins": [{ "id": "@meetopenbot/jules" }]
     }
   ]
 }
