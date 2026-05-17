@@ -80,6 +80,14 @@
       "description": "",
       "instructions": "",
       "plugins": [{ "id": "@meetopenbot/ai-sdk" }, { "id": "@meetopenbot/shopify" }]
+    },
+    {
+      "id": "opentable",
+      "name": "OpenTable",
+      "image": "https://cdn.brandfetch.io/domain/opentable.com/fallback/404/w/200/h/200?c=1idNukycTj6JSH5N_EG",
+      "description": "",
+      "instructions": "",
+      "plugins": [{ "id": "@meetopenbot/opentable" }]
     }
   ]
 }
