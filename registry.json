@@ -104,6 +104,14 @@
       "description": "",
       "instructions": "",
       "plugins": [{ "id": "@meetopenbot/jules" }]
+    },
+    {
+      "id": "notion",
+      "name": "Notion",
+      "image": "https://cdn.brandfetch.io/domain/makenotion.com/w/400/h/400?c=1idNukycTj6JSH5N_EG",
+      "description": "",
+      "instructions": "",
+      "plugins": [{ "id": "@meetopenbot/notion" }]
     }
   ]
 }
