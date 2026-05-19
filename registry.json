@@ -112,6 +112,14 @@
       "description": "",
       "instructions": "",
       "plugins": [{ "id": "@meetopenbot/notion" }]
+    },
+    {
+      "id": "resend",
+      "name": "Resend",
+      "image": "https://cdn.brandfetch.io/domain/resend.com/w/200/h/200?c=1idNukycTj6JSH5N_EG",
+      "description": "",
+      "instructions": "",
+      "plugins": [{ "id": "@meetopenbot/resend" }]
     }
   ]
 }
