@@ -122,14 +122,6 @@
       "plugins": [{ "id": "@meetopenbot/resend" }]
     },
     {
-      "id": "resend",
-      "name": "Resend",
-      "image": "https://cdn.brandfetch.io/domain/resend.com/w/200/h/200?c=1idNukycTj6JSH5N_EG",
-      "description": "",
-      "instructions": "",
-      "plugins": [{ "id": "@meetopenbot/resend" }]
-    },
-    {
       "id": "spotify",
       "name": "Spotify",
       "image": "https://cdn.brandfetch.io/domain/spotify.com/w/800/h/800/symbol?c=1idNukycTj6JSH5N_EG",
