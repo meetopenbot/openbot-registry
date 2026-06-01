@@ -129,5 +129,15 @@
       "instructions": "",
       "plugins": [{ "id": "@meetopenbot/spotify" }]
     }
+  ],
+  "channels": [
+    {
+      "id": "landing-page",
+      "name": "Landing page development",
+      "description": "Develop landing page",
+      "spec": "",
+      "initialState": {},
+      "participants": ["@meetopenbot/claude-code"]
+    }
   ]
 }
