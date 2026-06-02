@@ -137,7 +137,7 @@
       "description": "Develop landing page",
       "spec": "",
       "initialState": {},
-      "participants": ["@meetopenbot/claude-code"]
+      "participants": ["claude-code"]
     }
   ]
 }
