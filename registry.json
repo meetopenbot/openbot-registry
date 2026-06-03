@@ -132,12 +132,21 @@
   ],
   "channels": [
     {
-      "id": "landing-page",
-      "name": "Landing page development",
-      "description": "Develop landing page",
+      "id": "website",
+      "name": "Create Website",
+      "description": "Create website",
       "spec": "",
       "initialState": {},
-      "participants": ["claude-code"]
+      "participants": ["stitch", "vercel", "claude-code"],
+      "starterPrompts": [
+        {
+          "name": "Landing Page",
+          "prompts": [
+            { "label": "SaaS", "prompt": "Create a SaaS landing page..." },
+            { "label": "Portfolio", "prompt": "Create a portfolio landing page..." }
+          ]
+        }
+      ]
     },
     {
       "id": "slides",
