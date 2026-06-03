@@ -138,9 +138,7 @@
       "spec": "",
       "initialState": {},
       "participants": ["claude-code"]
-    }
-  ],
-  "channels": [
+    },
     {
       "id": "slides",
       "name": "Create Slides",
