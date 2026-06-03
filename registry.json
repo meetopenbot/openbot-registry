@@ -139,22 +139,21 @@
       "initialState": {},
       "participants": ["stitch", "vercel", "claude-code"],
       "starterPrompts": [
-        {
-          "name": "Landing Page",
-          "prompts": [
-            { "label": "SaaS", "prompt": "Create a SaaS landing page..." },
-            { "label": "Portfolio", "prompt": "Create a portfolio landing page..." }
-          ]
-        }
+        { "label": "SaaS", "prompt": "Create a SaaS landing page..." },
+        { "label": "Portfolio", "prompt": "Create a portfolio landing page..." }
       ]
     },
     {
       "id": "slides",
       "name": "Create Slides",
-      "description": "Create Slides",
+      "description": "Create slides",
       "spec": "",
       "initialState": {},
-      "participants": ["claude-code"]
+      "participants": ["claude-code", "stitch"],
+      "starterPrompts": [
+        { "label": "Pitch Deck", "prompt": "Create a SaaS landing page..." },
+        { "label": "Presentation", "prompt": "Create a portfolio landing page..." }
+      ]
     }
   ]
 }
