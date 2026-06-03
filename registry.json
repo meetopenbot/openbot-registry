@@ -133,7 +133,7 @@
   "channels": [
     {
       "id": "website",
-      "name": "Create Website",
+      "name": "Build Website",
       "description": "Create website",
       "spec": "",
       "initialState": {},
@@ -145,7 +145,7 @@
     },
     {
       "id": "slides",
-      "name": "Create Slides",
+      "name": "Build Slides",
       "description": "Create slides",
       "spec": "",
       "initialState": {},
