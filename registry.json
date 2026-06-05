@@ -136,6 +136,14 @@
       "description": "",
       "instructions": "",
       "plugins": [{ "id": "@meetopenbot/vercel" }]
+    },
+    {
+      "id": "github",
+      "name": "Github",
+      "image": "https://unpkg.com/@lobehub/icons-static-svg@1.90.0/icons/github.svg",
+      "description": "",
+      "instructions": "",
+      "plugins": [{ "id": "@meetopenbot/github" }]
     }
   ],
   "channels": [
@@ -145,7 +153,7 @@
       "description": "Create website",
       "spec": "Goal: Design, build, and deploy a professional portfolio website.",
       "initialState": {},
-      "participants": ["stitch", "vercel", "claude-code"],
+      "participants": ["stitch", "vercel", "claude-code", "github"],
       "starterPrompts": [
         { "label": "SaaS", "prompt": "Create a SaaS landing page..." },
         { "label": "Portfolio", "prompt": "Create a Portfolio website..." }
