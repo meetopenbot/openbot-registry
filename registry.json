@@ -143,7 +143,7 @@
       "id": "website",
       "name": "Build Website",
       "description": "Create website",
-      "spec": "Goal: Design, build, and deploy a professional portfolio website.\n\nParticipants:\n- claude-code: Lead Developer. Handles technical architecture and implementation (Next.js/React) using its native toolset.\n- stitch: UX/UI & Coordinator. Defines the visual identity, layout, and project flow.\n- vercel: DevOps. Manages deployment, infrastructure, and production readiness.\n\nWorkflow: stitch designs, claude-code builds, and vercel deploys. Use delegation to hand off tasks between roles.",
+      "spec": "Goal: Design, build, and deploy a professional portfolio website.",
       "initialState": {},
       "participants": ["stitch", "vercel", "claude-code"],
       "starterPrompts": [
