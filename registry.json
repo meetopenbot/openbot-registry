@@ -151,7 +151,7 @@
       "id": "website",
       "name": "Build Website",
       "description": "Create website",
-      "spec": "Goal: Design, build, and deploy a professional portfolio website.",
+      "spec": "Goal: Design, build, and deploy a professional, minimalist website.\n\n## Channel specific guidelines\n- Design UI screens via Stitch agent. Stitch returns HTML download URLs when generating or accessing existing screens. When delegating to Stitch, provide the user's name so it will be more personalized.\n- When designing UI screens, create only a single landing page with minimalist styling.\n- Build those screens via Claude Code (the HTML URLs can be provided to Claude so it can download and follow the design exactly).\n- GitHub agent can create a new repository.\n- OpenBot or Claude can execute git commands via a bash tool.\n- Vercel can deploy the website by providing the GitHub repository URL once the repository is created and the code is pushed.",
       "initialState": {},
       "participants": ["stitch", "vercel", "claude-code", "github"],
       "starterPrompts": [
