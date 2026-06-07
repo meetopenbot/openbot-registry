@@ -152,6 +152,14 @@
       "description": "",
       "instructions": "",
       "plugins": [{ "id": "@meetopenbot/remotion" }]
+    },
+    {
+      "id": "gamma-slides",
+      "name": "Gamma Slides",
+      "image": "https://cdn.brandfetch.io/idAmHoFYTU/theme/dark/logo.svg?c=1bxid64Mup7aczewSAYMX&t=1749614424533",
+      "description": "",
+      "instructions": "",
+      "plugins": [{ "id": "@meetopenbot/gamma-slides" }]
     }
   ],
   "channels": [
@@ -176,7 +184,8 @@
       "participants": ["claude-code", "stitch"],
       "starterPrompts": [
         { "label": "Pitch Deck", "prompt": "Create a SaaS landing page..." },
-        { "label": "Presentation", "prompt": "Create a portfolio landing page..." }
+        { "label": "Presentation", "prompt": "Create a portfolio landing page..." },
+        { "label": "Gamma Slides", "prompt": "Create a pitch deck via Gamma..." }
       ]
     },
     {
