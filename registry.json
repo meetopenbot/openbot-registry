@@ -144,6 +144,14 @@
       "description": "",
       "instructions": "",
       "plugins": [{ "id": "@meetopenbot/github" }]
+    },
+    {
+      "id": "remotion",
+      "name": "Remotion",
+      "image": "https://images.seeklogo.com/logo-png/59/1/remotion-video-logo-png_seeklogo-598106.png",
+      "description": "",
+      "instructions": "",
+      "plugins": [{ "id": "@meetopenbot/remotion" }]
     }
   ],
   "channels": [
@@ -169,6 +177,17 @@
       "starterPrompts": [
         { "label": "Pitch Deck", "prompt": "Create a SaaS landing page..." },
         { "label": "Presentation", "prompt": "Create a portfolio landing page..." }
+      ]
+    },
+    {
+      "id": "video",
+      "name": "Generate Video",
+      "description": "Create videos",
+      "spec": "",
+      "initialState": {},
+      "participants": ["remotion"],
+      "starterPrompts": [
+        { "label": "Product Demo", "prompt": "Create a product demo video..." }
       ]
     }
   ]
