@@ -181,7 +181,7 @@
       "description": "Create slides",
       "spec": "",
       "initialState": {},
-      "participants": ["claude-code", "stitch"],
+      "participants": ["claude-code", "stitch", "gamma-slides"],
       "starterPrompts": [
         { "label": "Pitch Deck", "prompt": "Create a SaaS landing page..." },
         { "label": "Presentation", "prompt": "Create a portfolio landing page..." },
