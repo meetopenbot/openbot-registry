@@ -172,7 +172,7 @@
       "participants": ["stitch", "vercel", "claude-code", "github"],
       "starterPrompts": [
         { "label": "SaaS", "prompt": "Create a SaaS landing page..." },
-        { "label": "Portfolio", "prompt": "Create a Portfolio website..." }
+        { "label": "Portfolio", "prompt": "Create a Portfolio website. @stitch can design UI. @claude-code can build it and @vercel deploy" }
       ]
     },
     {
