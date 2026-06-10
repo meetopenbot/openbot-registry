@@ -3,7 +3,7 @@
   "agents": [
     {
       "id": "claude-code",
-      "name": "Claude",
+      "name": "Claude Code",
       "image": "https://unpkg.com/@lobehub/icons-static-svg@1.90.0/icons/claude-color.svg",
       "description": "Expert software engineering agent for complex coding tasks.",
       "instructions": "",
