@@ -168,12 +168,12 @@
       "id": "video",
       "name": "Generate Video",
       "description": "Create videos",
-      "spec": "",
+      "spec": "Goal: Create a video based on the user's request.\n\n## Channel specific guidelines\n- Firecrawl can fetch and extract content from URLs when the user provides source material.\n- Remotion creates and renders the final video.\n- Follow the user's instructions for video type, duration, and style.",
       "initialState": {},
       "participants": ["firecrawl", "remotion"],
       "starterPrompts": [
-        { "label": "Product Demo", "prompt": "Create a product demo video. @firecrawl agent can scapre the url and @remotion agent can be used to create and render the video" },
-        { "label": "New Feature Introduction", "prompt": "Create a new feature introduction video. @firecrawl agent can scapre the url (if needed for blog post or other webpage data extraction) and @remotion agent can be used to create and render the video" }
+        { "label": "Product Demo", "prompt": "Create a product demo video that walks through the product's key flows and UI. @firecrawl can scrape a product URL for messaging, branding, and visuals. @remotion can create and render the video." },
+        { "label": "New Feature Introduction", "prompt": "Create a short video announcing a new feature. @firecrawl can scrape a blog post, changelog, or product page for feature details and copy. @remotion can create and render the video." }
       ]
     }
   ]
