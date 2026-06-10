@@ -50,22 +50,6 @@
       "plugins": [{ "id": "@meetopenbot/kling" }]
     },
     {
-      "id": "runway",
-      "name": "Runway",
-      "image": "https://cdn.brandfetch.io/domain/runwayml.com/w/400/h/400?c=1idNukycTj6JSH5N_EG",
-      "description": "",
-      "instructions": "",
-      "plugins": [{ "id": "@meetopenbot/runway" }]
-    },
-    {
-      "id": "fal",
-      "name": "Fal",
-      "image": "https://unpkg.com/@lobehub/icons-static-svg@1.90.0/icons/fal-color.svg",
-      "description": "",
-      "instructions": "",
-      "plugins": [{ "id": "@meetopenbot/fal" }]
-    },
-    {
       "id": "stripe",
       "name": "Stripe",
       "image": "https://cdn.brandfetch.io/domain/stripe.com/w/480/h/480?c=1idNukycTj6JSH5N_EG",
@@ -80,14 +64,6 @@
       "description": "",
       "instructions": "",
       "plugins": [{ "id": "@meetopenbot/ai-sdk" }, { "id": "@meetopenbot/shopify" }]
-    },
-    {
-      "id": "opentable",
-      "name": "OpenTable",
-      "image": "https://cdn.brandfetch.io/domain/opentable.com/fallback/404/w/200/h/200?c=1idNukycTj6JSH5N_EG",
-      "description": "",
-      "instructions": "",
-      "plugins": [{ "id": "@meetopenbot/opentable" }]
     },
     {
       "id": "stitch",
