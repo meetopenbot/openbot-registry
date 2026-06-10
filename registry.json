@@ -26,6 +26,14 @@
       "plugins": [{ "id": "@meetopenbot/firecrawl" }]
     },
     {
+      "id": "figma",
+      "name": "Figma",
+      "image": "https://unpkg.com/@lobehub/icons-static-svg@1.90.0/icons/figma-color.svg",
+      "description": "Inspect Figma files, extract design data, render assets, and manage comments.",
+      "instructions": "",
+      "plugins": [{ "id": "@meetopenbot/figma" }]
+    },
+    {
       "id": "stagehand",
       "name": "Stagehand",
       "image": "https://cdn.brandfetch.io/domain/stagehand.dev/w/400/h/400?c=1idNukycTj6JSH5N_EG",
