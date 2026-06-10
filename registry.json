@@ -5,55 +5,55 @@
       "id": "claude-code",
       "name": "Claude",
       "image": "https://unpkg.com/@lobehub/icons-static-svg@1.90.0/icons/claude-color.svg",
-      "description": "Software engineering help.",
-      "instructions": "You are an expert software engineer. Help the user with coding tasks.",
+      "description": "Expert software engineering agent for complex coding tasks.",
+      "instructions": "",
       "plugins": [{ "id": "@meetopenbot/claude-code" }]
     },
     {
       "id": "codex",
       "name": "Codex",
       "image": "https://unpkg.com/@lobehub/icons-static-svg@1.90.0/icons/codex-color.svg",
-      "description": "Coding agent.",
-      "instructions": "You are an expert software engineer. Help the user with coding tasks.",
+      "description": "AI-powered coding assistant for rapid development and debugging.",
+      "instructions": "",
       "plugins": [{ "id": "@meetopenbot/codex" }]
     },
     {
       "id": "firecrawl",
       "name": "Firecrawl",
       "image": "https://cdn.brandfetch.io/domain/firecrawl.dev/w/800/h/1152/symbol?c=1idNukycTj6JSH5N_EG",
-      "description": "Search, scrape, and interact with the web.",
-      "instructions": "You are Firecrawl. You can search, scrape, and interact with the web.",
+      "description": "Advanced web search, scraping, and interaction capabilities.",
+      "instructions": "",
       "plugins": [{ "id": "@meetopenbot/firecrawl" }]
     },
     {
       "id": "stagehand",
       "name": "Stagehand",
       "image": "https://cdn.brandfetch.io/domain/stagehand.dev/w/400/h/400?c=1idNukycTj6JSH5N_EG",
-      "description": "Browser automation.",
-      "instructions": "You are a browser automation agent.",
+      "description": "Powerful browser automation for web-based workflows.",
+      "instructions": "",
       "plugins": [{ "id": "@meetopenbot/stagehand" }]
     },
     {
       "id": "higgsfield",
       "name": "Higgsfield",
       "image": "https://cdn.brandfetch.io/domain/higgsfield.ai/w/200/h/200?c=1idNukycTj6JSH5N_EG",
-      "description": "Turn ideas, images, and prompts into cinematic AI videos with more control.",
-      "instructions": "You are a cinematic video creator.",
+      "description": "Cinematic AI video generation from text, images, and prompts.",
+      "instructions": "",
       "plugins": [{ "id": "@meetopenbot/higgsfield" }]
     },
     {
       "id": "kling",
       "name": "Kling",
       "image": "https://unpkg.com/@lobehub/icons-static-svg@1.90.0/icons/kling-color.svg",
-      "description": "Next-generation AI creative studio.",
-      "instructions": "Generate images and videos with KlingAI.",
+      "description": "Next-generation AI creative studio for high-quality images and videos.",
+      "instructions": "",
       "plugins": [{ "id": "@meetopenbot/kling" }]
     },
     {
       "id": "stripe",
       "name": "Stripe",
       "image": "https://cdn.brandfetch.io/domain/stripe.com/w/480/h/480?c=1idNukycTj6JSH5N_EG",
-      "description": "",
+      "description": "Payment processing and financial infrastructure management.",
       "instructions": "",
       "plugins": [{ "id": "@meetopenbot/stripe" }]
     },
@@ -61,7 +61,7 @@
       "id": "shopify",
       "name": "Shopify",
       "image": "https://cdn.brandfetch.io/domain/shopify.com/w/800/h/899/symbol?c=1idNukycTj6JSH5N_EG",
-      "description": "",
+      "description": "E-commerce platform management and store automation.",
       "instructions": "",
       "plugins": [{ "id": "@meetopenbot/ai-sdk" }, { "id": "@meetopenbot/shopify" }]
     },
@@ -69,7 +69,7 @@
       "id": "stitch",
       "name": "Stitch",
       "image": "https://media2.dev.to/dynamic/image/width=1080,height=1080,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fzhshikvds4e6nn22fngm.png",
-      "description": "",
+      "description": "UI/UX design and screen generation for web applications.",
       "instructions": "",
       "plugins": [{ "id": "@meetopenbot/stitch" }]
     },
@@ -77,7 +77,7 @@
       "id": "jules",
       "name": "Jules",
       "image": "https://cdn.brandfetch.io/domain/jules.google/fallback/lettermark/w/820/h/820/logo?c=1idNukycTj6JSH5N_EG",
-      "description": "",
+      "description": "Google's AI-powered coding assistant for enterprise development.",
       "instructions": "",
       "plugins": [{ "id": "@meetopenbot/jules" }]
     },
@@ -85,7 +85,7 @@
       "id": "notion",
       "name": "Notion",
       "image": "https://cdn.brandfetch.io/domain/makenotion.com/w/400/h/400?c=1idNukycTj6JSH5N_EG",
-      "description": "",
+      "description": "Workspace management, page creation, and database automation.",
       "instructions": "",
       "plugins": [{ "id": "@meetopenbot/notion" }]
     },
@@ -93,7 +93,7 @@
       "id": "resend",
       "name": "Resend",
       "image": "https://cdn.brandfetch.io/domain/resend.com/w/200/h/200?c=1idNukycTj6JSH5N_EG",
-      "description": "",
+      "description": "Transactional email delivery and management.",
       "instructions": "",
       "plugins": [{ "id": "@meetopenbot/resend" }]
     },
@@ -101,7 +101,7 @@
       "id": "spotify",
       "name": "Spotify",
       "image": "https://cdn.brandfetch.io/domain/spotify.com/w/800/h/800/symbol?c=1idNukycTj6JSH5N_EG",
-      "description": "",
+      "description": "Music discovery, playlist management, and playback control.",
       "instructions": "",
       "plugins": [{ "id": "@meetopenbot/spotify" }]
     },
@@ -109,7 +109,7 @@
       "id": "vercel",
       "name": "Vercel",
       "image": "https://cdn.brandfetch.io/idDpCfN4VD/w/400/h/400/theme/dark/icon.png?c=1bxid64Mup7aczewSAYMX&t=1759982772575",
-      "description": "",
+      "description": "Cloud platform for frontend deployment and hosting.",
       "instructions": "",
       "plugins": [{ "id": "@meetopenbot/vercel" }]
     },
@@ -117,7 +117,7 @@
       "id": "github",
       "name": "Github",
       "image": "https://unpkg.com/@lobehub/icons-static-svg@1.90.0/icons/github.svg",
-      "description": "",
+      "description": "Version control, repository management, and collaboration.",
       "instructions": "",
       "plugins": [{ "id": "@meetopenbot/github" }]
     },
@@ -125,7 +125,7 @@
       "id": "remotion",
       "name": "Remotion",
       "image": "https://images.seeklogo.com/logo-png/59/1/remotion-video-logo-png_seeklogo-598106.png",
-      "description": "",
+      "description": "Programmatic video creation and rendering using React.",
       "instructions": "",
       "plugins": [{ "id": "@meetopenbot/remotion" }]
     },
@@ -133,7 +133,7 @@
       "id": "gamma-slides",
       "name": "Gamma Slides",
       "image": "https://cdn.brandfetch.io/idAmHoFYTU/theme/dark/logo.svg?c=1bxid64Mup7aczewSAYMX&t=1749614424533",
-      "description": "",
+      "description": "AI-powered presentation and slide deck generation.",
       "instructions": "",
       "plugins": [{ "id": "@meetopenbot/gamma-slides" }]
     }
@@ -143,25 +143,26 @@
       "id": "website",
       "name": "Build Website",
       "description": "Create website",
-      "spec": "Goal: Design, build, and deploy a professional, minimalist website.\n\n## Channel specific guidelines\n- Design UI screens via Stitch agent. Stitch returns HTML download URLs when generating or accessing existing screens. When delegating to Stitch, provide the user's name so it will be more personalized.\n- When designing UI screens, create only a single landing page with minimalist styling.\n- Build those screens via Claude Code (the HTML URLs can be provided to Claude so it can download and follow the design exactly).\n- GitHub agent can create a new repository.\n- OpenBot or Claude can execute git commands via a bash tool.\n- Vercel can deploy the website by providing the GitHub repository URL once the repository is created and the code is pushed.",
+      "spec": "Goal: Design, build, and deploy professional websites.\n\n## Channel specific guidelines\n- Stitch designs UI screens and provides HTML templates.\n- Claude Code implements the website logic and integrates designs.\n- GitHub manages the source code repository.\n- Vercel handles the deployment and hosting of the final website.",
       "initialState": {},
       "participants": ["stitch", "vercel", "claude-code", "github"],
       "starterPrompts": [
-        { "label": "SaaS", "prompt": "Create a SaaS landing page..." },
-        { "label": "Portfolio", "prompt": "Create a Portfolio website. @stitch can design UI. @claude-code can build it and @vercel deploy" }
+        { "label": "SaaS Landing Page", "prompt": "Create a modern SaaS landing page for a new AI productivity tool. @stitch can design the UI, @claude-code can implement the React code, and @vercel can deploy the site." },
+        { "label": "Personal Portfolio", "prompt": "Build a professional personal portfolio website. @stitch can create a minimalist design, @claude-code can build the site with a blog section, and @github can host the repository." },
+        { "label": "Corporate Website", "prompt": "Design and deploy a multi-page corporate website. @stitch can handle the branding and layouts, @claude-code can build the components, and @vercel can manage the production deployment." }
       ]
     },
     {
       "id": "slides",
       "name": "Build Slides",
       "description": "Create slides",
-      "spec": "",
+      "spec": "Goal: Create engaging presentations and slide decks.\n\n## Channel specific guidelines\n- Gamma Slides generates complete presentations from prompts or outlines.\n- Stitch can be used to design custom visual assets or layouts for slides.\n- Claude Code assists in content structuring and narrative development.",
       "initialState": {},
       "participants": ["claude-code", "stitch", "gamma-slides"],
       "starterPrompts": [
-        { "label": "Pitch Deck", "prompt": "Create a SaaS landing page..." },
-        { "label": "Presentation", "prompt": "Create a portfolio landing page..." },
-        { "label": "Gamma Slides", "prompt": "Create a pitch deck via Gamma..." }
+        { "label": "Pitch Deck", "prompt": "Generate a 10-slide startup pitch deck for a new green energy venture. @gamma-slides can create the initial deck and @claude-code can refine the messaging." },
+        { "label": "Technical Presentation", "prompt": "Create a technical presentation about distributed systems. @claude-code can draft the content and @gamma-slides can generate the visual slides." },
+        { "label": "Conference Keynote", "prompt": "Design a unique set of presentation slides for a keynote speech. @stitch can design the visual theme and @gamma-slides can apply it to the content." }
       ]
     },
     {
