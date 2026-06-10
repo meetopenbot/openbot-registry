@@ -172,7 +172,8 @@
       "initialState": {},
       "participants": ["firecrawl", "remotion"],
       "starterPrompts": [
-        { "label": "Product Demo", "prompt": "Create a product demo video..." }
+        { "label": "Product Demo", "prompt": "Create a product demo video. @firecrawl agent can scapre the url and @remotion agent can be used to create and render the video" },
+        { "label": "New Feature Introduction", "prompt": "Create a new feature introduction video. @firecrawl agent can scapre the url (if needed for blog post or other webpage data extraction) and @remotion agent can be used to create and render the video" }
       ]
     }
   ]
