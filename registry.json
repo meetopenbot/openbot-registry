@@ -194,7 +194,7 @@
       "description": "Create videos",
       "spec": "",
       "initialState": {},
-      "participants": ["remotion"],
+      "participants": ["firecrawl", "remotion"],
       "starterPrompts": [
         { "label": "Product Demo", "prompt": "Create a product demo video..." }
       ]
