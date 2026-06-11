@@ -90,6 +90,14 @@
       "plugins": [{ "id": "@meetopenbot/jules" }]
     },
     {
+      "id": "antigravity",
+      "name": "Antigravity",
+      "image": "https://unpkg.com/@lobehub/icons-static-svg@1.90.0/icons/antigravity-color.svg",
+      "description": "Google's agentic development platform for autonomous coding, testing, and deployment.",
+      "instructions": "",
+      "plugins": [{ "id": "@meetopenbot/antigravity" }]
+    },
+    {
       "id": "notion",
       "name": "Notion",
       "image": "https://cdn.brandfetch.io/domain/makenotion.com/w/400/h/400?c=1idNukycTj6JSH5N_EG",
