@@ -164,13 +164,13 @@
       "id": "slides",
       "name": "Build Slides",
       "description": "Create slides",
-      "spec": "Goal: Create engaging presentation slide decks as HTML, exportable to PDF.\n\n## Channel specific guidelines\n- Stitch designs slide layouts, visual theme, typography, and imagery for each slide.\n- Claude Code builds a single self-contained HTML deck from Stitch's designs using Tailwind CSS via CDN (no build step or npm dependencies).\n- Each slide is a full-viewport section with print styles so the deck can be saved as PDF from the browser (landscape, one slide per page).\n- Claude Code structures narrative, slide copy, and speaker notes where requested.\n- Deliverable: one HTML file (optionally with inline assets or linked images from Stitch).",
+      "spec": "Goal: Create engaging presentation slide decks as HTML from source URLs, exportable to PDF.\n\n## Channel specific guidelines\n- Firecrawl fetches and extracts content from URLs when the user provides source material (messaging, branding, copy, and visuals).\n- Claude Code builds a single self-contained HTML deck using Tailwind CSS via CDN (no build step or npm dependencies), styled to match the scraped brand where possible.\n- Each slide is a full-viewport section with print styles so the deck can be saved as PDF from the browser (landscape, one slide per page).\n- Claude Code structures narrative, slide copy, and speaker notes from the extracted content.\n- Deliverable: one HTML file (optionally with linked images from the source URLs).",
       "initialState": {},
-      "participants": ["stitch", "claude-code"],
+      "participants": ["firecrawl", "claude-code"],
       "starterPrompts": [
-        { "label": "Pitch Deck", "prompt": "Create a 10-slide startup pitch deck for a new green energy venture. @stitch can design the slide theme and layouts, and @claude-code can build a single HTML file with Tailwind CDN and print-to-PDF styles." },
-        { "label": "Technical Presentation", "prompt": "Create a technical presentation about distributed systems. @claude-code can draft the outline and slide copy, @stitch can design the layouts, and @claude-code can build the HTML deck." },
-        { "label": "Conference Keynote", "prompt": "Design a unique set of presentation slides for a keynote speech. @stitch can design the visual theme and hero slides, and @claude-code can assemble the full HTML deck with Tailwind CDN." }
+        { "label": "Pitch Deck", "prompt": "Create a 10-slide pitch deck from a product or company URL. @firecrawl can scrape the site for messaging, branding, and visuals. @claude-code can build a single HTML file with Tailwind CDN and print-to-PDF styles." },
+        { "label": "Technical Presentation", "prompt": "Create a technical presentation from a docs or blog post URL. @firecrawl can extract the key content and structure. @claude-code can build the HTML slide deck." },
+        { "label": "Product Overview", "prompt": "Create a product overview slide deck from a landing page URL. @firecrawl can scrape product details, features, and branding. @claude-code can assemble the full HTML deck with Tailwind CDN." }
       ]
     },
     {
