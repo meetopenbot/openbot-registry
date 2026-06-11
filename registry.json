@@ -156,7 +156,7 @@
     {
       "id": "motion",
       "name": "Motion",
-      "image": "https://motion.so/favicon-48x48.png",
+      "image": "https://motion.so/favicon.svg",
       "description": "Frontier AI for motion design, launch videos, and animated content.",
       "instructions": "",
       "plugins": [{ "id": "@meetopenbot/motion" }]
