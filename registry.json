@@ -144,6 +144,14 @@
       "description": "AI-powered presentation and slide deck generation.",
       "instructions": "",
       "plugins": [{ "id": "@meetopenbot/gamma-slides" }]
+    },
+    {
+      "id": "origami",
+      "name": "Origami",
+      "image": "https://cdn.brandfetch.io/domain/origami.chat/w/400/h/400?c=1idNukycTj6JSH5N_EG",
+      "description": "Real-time lead prospecting and verified contact discovery across the web.",
+      "instructions": "",
+      "plugins": [{ "id": "@meetopenbot/origami" }]
     }
   ],
   "channels": [
