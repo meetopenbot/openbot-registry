@@ -18,6 +18,14 @@
       "plugins": [{ "id": "@meetopenbot/codex" }]
     },
     {
+      "id": "cursor",
+      "name": "Cursor",
+      "image": "https://unpkg.com/@lobehub/icons-static-svg@1.90.0/icons/cursor.svg",
+      "description": "AI-first code editor agent optimized for fast, context-aware development.",
+      "instructions": "",
+      "plugins": [{ "id": "@meetopenbot/cursor" }]
+    },
+    {
       "id": "firecrawl",
       "name": "Firecrawl",
       "image": "https://cdn.brandfetch.io/domain/firecrawl.dev/w/800/h/1152/symbol?c=1idNukycTj6JSH5N_EG",
