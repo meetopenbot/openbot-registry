@@ -141,7 +141,7 @@
       "id": "github",
       "name": "Github",
       "image": "https://unpkg.com/@lobehub/icons-static-svg@1.90.0/icons/github.svg",
-      "description": "Version control, repository management, and collaboration.",
+      "description": "Manage repositories, branches, commits, pull requests, and issues on GitHub.",
       "instructions": "",
       "plugins": [{ "id": "@meetopenbot/github" }]
     },
@@ -215,6 +215,20 @@
       "starterPrompts": [
         { "label": "Product Demo", "prompt": "Create a product demo video that walks through the product's key flows and UI. @firecrawl can scrape a product URL for messaging, branding, and visuals. @remotion can create and render the video." },
         { "label": "New Feature Introduction", "prompt": "Create a short video announcing a new feature. @firecrawl can scrape a blog post, changelog, or product page for feature details and copy. @remotion can create and render the video." }
+      ]
+    },
+    {
+      "id": "astro-seo-blog",
+      "name": "Astro CMS & SEO Website",
+      "description": "Build, manage, and optimize an Astro-based website or blog with Markdown or CMS content and SEO guidelines.",
+      "spec": "Goal: Build, manage, and optimize a high-performance Astro website using Markdown or headless CMS (Notion) for content, and keep it optimized for search engines (SEO).\n\n## Channel specific guidelines\n- Claude Code scaffolds the Astro project, manages Markdown content, implements SEO-optimized React/Astro components, and configures sitemaps, robots.txt, and structured JSON-LD schema data.\n- Notion serves as the content repository and headless CMS, enabling non-technical users to edit content and sync updates seamlessly.\n- Firecrawl crawls live pages to perform SEO audits, identify crawl issues, analyze keyword performance, and research competitor structures.\n- GitHub hosts the code and content, and executes automated deployment or content-sync pipelines.\n- Vercel deploys and hosts the fast, static or SSR-rendered Astro site globally.",
+      "initialState": {},
+      "participants": ["claude-code", "github", "notion", "vercel", "firecrawl"],
+      "starterPrompts": [
+        { "label": "Scaffold Astro Blog", "prompt": "Scaffold a modern, SEO-optimized Astro blog using Tailwind CSS. @claude-code can build the project structure with sitemaps and robots.txt configured, set up the repository on @github, and deploy it to @vercel." },
+        { "label": "Notion CMS Sync", "prompt": "Connect our Astro website to a Notion database to use it as a headless CMS. @claude-code can write a build script or GitHub Action to fetch database entries, convert them to markdown, and commit them to @github, syncing with @notion." },
+        { "label": "SEO Audit & Schema", "prompt": "Audit the live Astro blog for SEO performance and implement schema markup. @firecrawl can crawl the live site to check for SEO issues, and @claude-code can add metadata, structured schema markup, and deploy via @vercel." },
+        { "label": "Keyword-Driven Content", "prompt": "Create an SEO-optimized blog post on Astro best practices. @firecrawl can research high-intent SEO keywords, and @claude-code can write the article in Markdown with proper SEO headings and tags, then commit to @github for auto-deployment via @vercel." }
       ]
     }
   ]
