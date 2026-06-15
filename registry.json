@@ -7,7 +7,11 @@
       "image": "https://unpkg.com/@lobehub/icons-static-svg@1.90.0/icons/claude-color.svg",
       "description": "Expert software engineering agent for complex coding tasks.",
       "instructions": "",
-      "plugins": [{ "id": "@meetopenbot/claude-code" }]
+      "plugins": [
+        {
+          "id": "@meetopenbot/claude-code"
+        }
+      ]
     },
     {
       "id": "codex",
@@ -15,7 +19,11 @@
       "image": "https://unpkg.com/@lobehub/icons-static-svg@1.90.0/icons/codex-color.svg",
       "description": "AI-powered coding assistant for rapid development and debugging.",
       "instructions": "",
-      "plugins": [{ "id": "@meetopenbot/codex" }]
+      "plugins": [
+        {
+          "id": "@meetopenbot/codex"
+        }
+      ]
     },
     {
       "id": "cursor",
@@ -23,7 +31,11 @@
       "image": "https://unpkg.com/@lobehub/icons-static-svg@1.90.0/icons/cursor.svg",
       "description": "AI-first code editor agent optimized for fast, context-aware development.",
       "instructions": "",
-      "plugins": [{ "id": "@meetopenbot/cursor" }]
+      "plugins": [
+        {
+          "id": "@meetopenbot/cursor"
+        }
+      ]
     },
     {
       "id": "firecrawl",
@@ -31,7 +43,11 @@
       "image": "https://cdn.brandfetch.io/domain/firecrawl.dev/w/800/h/1152/symbol?c=1idNukycTj6JSH5N_EG",
       "description": "Advanced web search, scraping, and interaction capabilities.",
       "instructions": "",
-      "plugins": [{ "id": "@meetopenbot/firecrawl" }]
+      "plugins": [
+        {
+          "id": "@meetopenbot/firecrawl"
+        }
+      ]
     },
     {
       "id": "figma",
@@ -39,7 +55,11 @@
       "image": "https://unpkg.com/@lobehub/icons-static-svg@1.90.0/icons/figma-color.svg",
       "description": "Inspect Figma files, extract design data, render assets, and manage comments.",
       "instructions": "",
-      "plugins": [{ "id": "@meetopenbot/figma" }]
+      "plugins": [
+        {
+          "id": "@meetopenbot/figma"
+        }
+      ]
     },
     {
       "id": "stagehand",
@@ -47,7 +67,11 @@
       "image": "https://cdn.brandfetch.io/domain/stagehand.dev/w/400/h/400?c=1idNukycTj6JSH5N_EG",
       "description": "Powerful browser automation for web-based workflows.",
       "instructions": "",
-      "plugins": [{ "id": "@meetopenbot/stagehand" }]
+      "plugins": [
+        {
+          "id": "@meetopenbot/stagehand"
+        }
+      ]
     },
     {
       "id": "higgsfield",
@@ -55,7 +79,11 @@
       "image": "https://cdn.brandfetch.io/domain/higgsfield.ai/w/200/h/200?c=1idNukycTj6JSH5N_EG",
       "description": "Cinematic AI video generation from text, images, and prompts.",
       "instructions": "",
-      "plugins": [{ "id": "@meetopenbot/higgsfield" }]
+      "plugins": [
+        {
+          "id": "@meetopenbot/higgsfield"
+        }
+      ]
     },
     {
       "id": "kling",
@@ -63,7 +91,11 @@
       "image": "https://unpkg.com/@lobehub/icons-static-svg@1.90.0/icons/kling-color.svg",
       "description": "Next-generation AI creative studio for high-quality images and videos.",
       "instructions": "",
-      "plugins": [{ "id": "@meetopenbot/kling" }]
+      "plugins": [
+        {
+          "id": "@meetopenbot/kling"
+        }
+      ]
     },
     {
       "id": "stripe",
@@ -71,7 +103,11 @@
       "image": "https://cdn.brandfetch.io/domain/stripe.com/w/480/h/480?c=1idNukycTj6JSH5N_EG",
       "description": "Payment processing and financial infrastructure management.",
       "instructions": "",
-      "plugins": [{ "id": "@meetopenbot/stripe" }]
+      "plugins": [
+        {
+          "id": "@meetopenbot/stripe"
+        }
+      ]
     },
     {
       "id": "shopify",
@@ -79,7 +115,14 @@
       "image": "https://cdn.brandfetch.io/domain/shopify.com/w/800/h/899/symbol?c=1idNukycTj6JSH5N_EG",
       "description": "E-commerce platform management and store automation.",
       "instructions": "",
-      "plugins": [{ "id": "@meetopenbot/ai-sdk" }, { "id": "@meetopenbot/shopify" }]
+      "plugins": [
+        {
+          "id": "@meetopenbot/ai-sdk"
+        },
+        {
+          "id": "@meetopenbot/shopify"
+        }
+      ]
     },
     {
       "id": "stitch",
@@ -87,7 +130,11 @@
       "image": "https://media2.dev.to/dynamic/image/width=1080,height=1080,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fzhshikvds4e6nn22fngm.png",
       "description": "UI/UX design and screen generation for web applications.",
       "instructions": "",
-      "plugins": [{ "id": "@meetopenbot/stitch" }]
+      "plugins": [
+        {
+          "id": "@meetopenbot/stitch"
+        }
+      ]
     },
     {
       "id": "jules",
@@ -95,7 +142,11 @@
       "image": "https://cdn.brandfetch.io/domain/jules.google/fallback/lettermark/w/820/h/820/logo?c=1idNukycTj6JSH5N_EG",
       "description": "Google's AI-powered coding assistant for enterprise development.",
       "instructions": "",
-      "plugins": [{ "id": "@meetopenbot/jules" }]
+      "plugins": [
+        {
+          "id": "@meetopenbot/jules"
+        }
+      ]
     },
     {
       "id": "pi",
@@ -103,7 +154,11 @@
       "image": "https://pi.dev/favicon.svg",
       "description": "Minimal, extensible coding agent harness for terminal workflows.",
       "instructions": "",
-      "plugins": [{ "id": "@meetopenbot/pi" }]
+      "plugins": [
+        {
+          "id": "@meetopenbot/pi"
+        }
+      ]
     },
     {
       "id": "notion",
@@ -111,7 +166,11 @@
       "image": "https://cdn.brandfetch.io/domain/makenotion.com/w/400/h/400?c=1idNukycTj6JSH5N_EG",
       "description": "Workspace management, page creation, and database automation.",
       "instructions": "",
-      "plugins": [{ "id": "@meetopenbot/notion" }]
+      "plugins": [
+        {
+          "id": "@meetopenbot/notion"
+        }
+      ]
     },
     {
       "id": "resend",
@@ -119,7 +178,11 @@
       "image": "https://cdn.brandfetch.io/domain/resend.com/w/200/h/200?c=1idNukycTj6JSH5N_EG",
       "description": "Transactional email delivery and management.",
       "instructions": "",
-      "plugins": [{ "id": "@meetopenbot/resend" }]
+      "plugins": [
+        {
+          "id": "@meetopenbot/resend"
+        }
+      ]
     },
     {
       "id": "spotify",
@@ -127,7 +190,11 @@
       "image": "https://cdn.brandfetch.io/domain/spotify.com/w/800/h/800/symbol?c=1idNukycTj6JSH5N_EG",
       "description": "Music discovery, playlist management, and playback control.",
       "instructions": "",
-      "plugins": [{ "id": "@meetopenbot/spotify" }]
+      "plugins": [
+        {
+          "id": "@meetopenbot/spotify"
+        }
+      ]
     },
     {
       "id": "vercel",
@@ -135,7 +202,11 @@
       "image": "https://cdn.brandfetch.io/idDpCfN4VD/w/400/h/400/theme/dark/icon.png?c=1bxid64Mup7aczewSAYMX&t=1759982772575",
       "description": "Cloud platform for frontend deployment and hosting.",
       "instructions": "",
-      "plugins": [{ "id": "@meetopenbot/vercel" }]
+      "plugins": [
+        {
+          "id": "@meetopenbot/vercel"
+        }
+      ]
     },
     {
       "id": "github",
@@ -143,7 +214,11 @@
       "image": "https://unpkg.com/@lobehub/icons-static-svg@1.90.0/icons/github.svg",
       "description": "Manage repositories, branches, commits, pull requests, and issues on GitHub.",
       "instructions": "",
-      "plugins": [{ "id": "@meetopenbot/github" }]
+      "plugins": [
+        {
+          "id": "@meetopenbot/github"
+        }
+      ]
     },
     {
       "id": "remotion",
@@ -151,7 +226,11 @@
       "image": "https://images.seeklogo.com/logo-png/59/1/remotion-video-logo-png_seeklogo-598106.png",
       "description": "Programmatic video creation and rendering using React.",
       "instructions": "",
-      "plugins": [{ "id": "@meetopenbot/remotion" }]
+      "plugins": [
+        {
+          "id": "@meetopenbot/remotion"
+        }
+      ]
     },
     {
       "id": "gamma-slides",
@@ -159,7 +238,11 @@
       "image": "https://cdn.brandfetch.io/idAmHoFYTU/theme/dark/logo.svg?c=1bxid64Mup7aczewSAYMX&t=1749614424533",
       "description": "AI-powered presentation and slide deck generation.",
       "instructions": "",
-      "plugins": [{ "id": "@meetopenbot/gamma-slides" }]
+      "plugins": [
+        {
+          "id": "@meetopenbot/gamma-slides"
+        }
+      ]
     },
     {
       "id": "origami",
@@ -167,7 +250,11 @@
       "image": "https://cdn.brandfetch.io/domain/origami.chat/w/400/h/400?c=1idNukycTj6JSH5N_EG",
       "description": "Real-time lead prospecting and verified contact discovery across the web.",
       "instructions": "",
-      "plugins": [{ "id": "@meetopenbot/origami" }]
+      "plugins": [
+        {
+          "id": "@meetopenbot/origami"
+        }
+      ]
     },
     {
       "id": "motion",
@@ -175,7 +262,11 @@
       "image": "https://motion.so/favicon.svg",
       "description": "Frontier AI for motion design, launch videos, and animated content.",
       "instructions": "",
-      "plugins": [{ "id": "@meetopenbot/motion" }]
+      "plugins": [
+        {
+          "id": "@meetopenbot/motion"
+        }
+      ]
     }
   ],
   "channels": [
@@ -185,11 +276,25 @@
       "description": "Create website",
       "spec": "Goal: Design, build, and deploy professional websites.\n\n## Channel specific guidelines\n- Stitch designs UI screens and provides HTML templates.\n- Claude Code implements the website logic and integrates designs.\n- GitHub manages the source code repository.\n- Vercel handles the deployment and hosting of the final website.",
       "initialState": {},
-      "participants": ["stitch", "vercel", "claude-code", "github"],
+      "participants": [
+        "stitch",
+        "vercel",
+        "claude-code",
+        "github"
+      ],
       "starterPrompts": [
-        { "label": "SaaS Landing Page", "prompt": "Create a modern SaaS landing page for a new AI productivity tool. @stitch can design the UI, @claude-code can implement the React code, and @vercel can deploy the site." },
-        { "label": "Personal Portfolio", "prompt": "Build a professional personal portfolio website. @stitch can create a minimalist design, @claude-code can build the site with a blog section, and @github can host the repository." },
-        { "label": "Corporate Website", "prompt": "Design and deploy a multi-page corporate website. @stitch can handle the branding and layouts, @claude-code can build the components, and @vercel can manage the production deployment." }
+        {
+          "label": "SaaS Landing Page",
+          "prompt": "Create a modern SaaS landing page for a new AI productivity tool. @stitch can design the UI, @claude-code can implement the React code, and @vercel can deploy the site."
+        },
+        {
+          "label": "Personal Portfolio",
+          "prompt": "Build a professional personal portfolio website. @stitch can create a minimalist design, @claude-code can build the site with a blog section, and @github can host the repository."
+        },
+        {
+          "label": "Corporate Website",
+          "prompt": "Design and deploy a multi-page corporate website. @stitch can handle the branding and layouts, @claude-code can build the components, and @vercel can manage the production deployment."
+        }
       ]
     },
     {
@@ -198,11 +303,23 @@
       "description": "Create slides",
       "spec": "Goal: Create engaging presentation slide decks as HTML from source URLs, exportable to PDF.\n\n## Channel specific guidelines\n- Firecrawl fetches and extracts content from URLs when the user provides source material (messaging, branding, copy, and visuals).\n- Claude Code builds a single self-contained HTML deck using Tailwind CSS via CDN (no build step or npm dependencies), styled to match the scraped brand where possible.\n- Claude Code structures narrative, slide copy, and speaker notes from the extracted content.\n- Deliverable: one HTML file (optionally with linked images from the source URLs).\n\n## PDF and print requirements (coding agent)\nThe deck must be designed so the user can open it in a browser and save a clean PDF via Print → Save as PDF. Follow these rules:\n- Structure: each slide is a separate full-page element (e.g. a section with h-screen min-h-screen).\n- Print CSS: include a @media print block with @page { size: landscape; margin: 0; }, page-break-after: always (or break-after: page) on every slide except the last, and print-color-adjust: exact so backgrounds and colors are preserved.\n- Layout: keep all content within slide bounds; avoid scrollable slides, overflow clipping issues, and elements that span multiple pages.\n- Screen-only UI: hide navigation, progress indicators, and keyboard-hint overlays in print (e.g. print:hidden).\n- Images: use absolute URLs or embedded assets that render in print; avoid lazy-loading tricks that leave blanks in PDF output.\n- Testing mindset: optimize for Chrome print preview (landscape, no browser headers/footers).\n- Include a brief HTML comment at the top with print instructions for the user.",
       "initialState": {},
-      "participants": ["firecrawl", "claude-code"],
+      "participants": [
+        "firecrawl",
+        "claude-code"
+      ],
       "starterPrompts": [
-        { "label": "Pitch Deck", "prompt": "Create a 10-slide pitch deck from a product or company URL. @firecrawl can scrape the site for messaging, branding, and visuals. @claude-code can build a single HTML file with Tailwind CDN and print-to-PDF styles." },
-        { "label": "Technical Presentation", "prompt": "Create a technical presentation from a docs or blog post URL. @firecrawl can extract the key content and structure. @claude-code can build the HTML slide deck." },
-        { "label": "Product Overview", "prompt": "Create a product overview slide deck from a landing page URL. @firecrawl can scrape product details, features, and branding. @claude-code can assemble the full HTML deck with Tailwind CDN." }
+        {
+          "label": "Pitch Deck",
+          "prompt": "Create a 10-slide pitch deck from a product or company URL. @firecrawl can scrape the site for messaging, branding, and visuals. @claude-code can build a single HTML file with Tailwind CDN and print-to-PDF styles."
+        },
+        {
+          "label": "Technical Presentation",
+          "prompt": "Create a technical presentation from a docs or blog post URL. @firecrawl can extract the key content and structure. @claude-code can build the HTML slide deck."
+        },
+        {
+          "label": "Product Overview",
+          "prompt": "Create a product overview slide deck from a landing page URL. @firecrawl can scrape product details, features, and branding. @claude-code can assemble the full HTML deck with Tailwind CDN."
+        }
       ]
     },
     {
@@ -211,10 +328,19 @@
       "description": "Create videos",
       "spec": "Goal: Create a video based on the user's request.\n\n## Channel specific guidelines\n- Firecrawl can fetch and extract content from URLs when the user provides source material.\n- Remotion creates and renders the final video.\n- Follow the user's instructions for video type, duration, and style.",
       "initialState": {},
-      "participants": ["firecrawl", "remotion"],
+      "participants": [
+        "firecrawl",
+        "remotion"
+      ],
       "starterPrompts": [
-        { "label": "Product Demo", "prompt": "Create a product demo video that walks through the product's key flows and UI. @firecrawl can scrape a product URL for messaging, branding, and visuals. @remotion can create and render the video." },
-        { "label": "New Feature Introduction", "prompt": "Create a short video announcing a new feature. @firecrawl can scrape a blog post, changelog, or product page for feature details and copy. @remotion can create and render the video." }
+        {
+          "label": "Product Demo",
+          "prompt": "Create a product demo video that walks through the product's key flows and UI. @firecrawl can scrape a product URL for messaging, branding, and visuals. @remotion can create and render the video."
+        },
+        {
+          "label": "New Feature Introduction",
+          "prompt": "Create a short video announcing a new feature. @firecrawl can scrape a blog post, changelog, or product page for feature details and copy. @remotion can create and render the video."
+        }
       ]
     },
     {
@@ -223,13 +349,178 @@
       "description": "Build, manage, and optimize an Astro-based website or blog with Markdown or CMS content and SEO guidelines.",
       "spec": "Goal: Build, manage, and optimize a high-performance Astro website using Markdown or headless CMS (Notion) for content, and keep it optimized for search engines (SEO).\n\n## Channel specific guidelines\n- Claude Code scaffolds the Astro project, manages Markdown content, implements SEO-optimized React/Astro components, and configures sitemaps, robots.txt, and structured JSON-LD schema data.\n- Notion serves as the content repository and headless CMS, enabling non-technical users to edit content and sync updates seamlessly.\n- Firecrawl crawls live pages to perform SEO audits, identify crawl issues, analyze keyword performance, and research competitor structures.\n- GitHub hosts the code and content, and executes automated deployment or content-sync pipelines.\n- Vercel deploys and hosts the fast, static or SSR-rendered Astro site globally.",
       "initialState": {},
-      "participants": ["claude-code", "github", "notion", "vercel", "firecrawl"],
+      "participants": [
+        "claude-code",
+        "github",
+        "notion",
+        "vercel",
+        "firecrawl"
+      ],
       "starterPrompts": [
-        { "label": "Scaffold Astro Blog", "prompt": "Scaffold a modern, SEO-optimized Astro blog using Tailwind CSS. @claude-code can build the project structure with sitemaps and robots.txt configured, set up the repository on @github, and deploy it to @vercel." },
-        { "label": "Notion CMS Sync", "prompt": "Connect our Astro website to a Notion database to use it as a headless CMS. @claude-code can write a build script or GitHub Action to fetch database entries, convert them to markdown, and commit them to @github, syncing with @notion." },
-        { "label": "SEO Audit & Schema", "prompt": "Audit the live Astro blog for SEO performance and implement schema markup. @firecrawl can crawl the live site to check for SEO issues, and @claude-code can add metadata, structured schema markup, and deploy via @vercel." },
-        { "label": "Keyword-Driven Content", "prompt": "Create an SEO-optimized blog post on Astro best practices. @firecrawl can research high-intent SEO keywords, and @claude-code can write the article in Markdown with proper SEO headings and tags, then commit to @github for auto-deployment via @vercel." }
+        {
+          "label": "Scaffold Astro Blog",
+          "prompt": "Scaffold a modern, SEO-optimized Astro blog using Tailwind CSS. @claude-code can build the project structure with sitemaps and robots.txt configured, set up the repository on @github, and deploy it to @vercel."
+        },
+        {
+          "label": "Notion CMS Sync",
+          "prompt": "Connect our Astro website to a Notion database to use it as a headless CMS. @claude-code can write a build script or GitHub Action to fetch database entries, convert them to markdown, and commit them to @github, syncing with @notion."
+        },
+        {
+          "label": "SEO Audit & Schema",
+          "prompt": "Audit the live Astro blog for SEO performance and implement schema markup. @firecrawl can crawl the live site to check for SEO issues, and @claude-code can add metadata, structured schema markup, and deploy via @vercel."
+        },
+        {
+          "label": "Keyword-Driven Content",
+          "prompt": "Create an SEO-optimized blog post on Astro best practices. @firecrawl can research high-intent SEO keywords, and @claude-code can write the article in Markdown with proper SEO headings and tags, then commit to @github for auto-deployment via @vercel."
+        }
       ]
     }
-  ]
+  ],
+  "providers": {
+    "openai": {
+      "label": "OpenAI",
+      "models": [
+        {
+          "id": "gpt-5.5-pro",
+          "label": "GPT-5.5 Pro (2026)",
+          "description": "Maximum intelligence for complex reasoning and enterprise tasks"
+        },
+        {
+          "id": "gpt-5.5",
+          "label": "GPT-5.5 (2026)",
+          "description": "Flagship model with native agentic planning and 1.05M context"
+        },
+        {
+          "id": "gpt-5.5-thinking",
+          "label": "GPT-5.5 Thinking (2026)",
+          "description": "Optimized for deep step-by-step reasoning, math, and logic"
+        },
+        {
+          "id": "gpt-5.5-instant",
+          "label": "GPT-5.5 Instant (2026)",
+          "description": "Ultra-fast, lightweight version of the 5.5 architecture"
+        },
+        {
+          "id": "gpt-5.4",
+          "label": "GPT-5.4",
+          "description": "Stable previous-generation frontier model"
+        },
+        {
+          "id": "gpt-4o",
+          "label": "GPT-4o (Omni)",
+          "description": "Highly versatile, stable flagship with excellent multimodal capabilities"
+        },
+        {
+          "id": "gpt-4o-mini",
+          "label": "GPT-4o Mini",
+          "description": "Extremely fast, cost-effective, and ideal for high-frequency tasks"
+        },
+        {
+          "id": "gpt-4-turbo",
+          "label": "GPT-4 Turbo",
+          "description": "High-intelligence legacy model with 128k context"
+        },
+        {
+          "id": "gpt-4",
+          "label": "GPT-4 (Legacy)",
+          "description": "The classic high-intelligence standard model"
+        },
+        {
+          "id": "gpt-3.5-turbo",
+          "label": "GPT-3.5 Turbo (Legacy)",
+          "description": "Legacy cost-effective model for simple text completion"
+        }
+      ]
+    },
+    "anthropic": {
+      "label": "Anthropic",
+      "models": [
+        {
+          "id": "claude-fable-5",
+          "label": "Claude Fable 5 (2026)",
+          "description": "Mythos-class model built for long-horizon reasoning and complex coding"
+        },
+        {
+          "id": "claude-opus-4.8",
+          "label": "Claude Opus 4.8 (2026)",
+          "description": "Active flagship for high-throughput coding, reasoning, and multi-step agents"
+        },
+        {
+          "id": "claude-sonnet-4.6",
+          "label": "Claude Sonnet 4.6 (2026)",
+          "description": "Highly efficient and balanced model for general tasks"
+        },
+        {
+          "id": "claude-haiku-4.5",
+          "label": "Claude Haiku 4.5",
+          "description": "Fastest and most cost-effective model for simple routines"
+        },
+        {
+          "id": "claude-3-5-sonnet-20241022",
+          "label": "Claude 3.5 Sonnet (v2)",
+          "description": "Widely used stable workhorse, excellent for coding and tool-use"
+        },
+        {
+          "id": "claude-3-5-sonnet-20240620",
+          "label": "Claude 3.5 Sonnet (v1)",
+          "description": "The original 3.5 Sonnet, highly reliable for structured outputs"
+        },
+        {
+          "id": "claude-3-5-haiku-20241022",
+          "label": "Claude 3.5 Haiku",
+          "description": "High-speed 3.5 generation model with strong instruction following"
+        },
+        {
+          "id": "claude-3-opus-20240229",
+          "label": "Claude 3 Opus",
+          "description": "Classic deep-reasoning model with rich writing style"
+        },
+        {
+          "id": "claude-3-haiku-20240307",
+          "label": "Claude 3 Haiku",
+          "description": "Highly economical legacy model for fast, simple tasks"
+        }
+      ]
+    },
+    "google": {
+      "label": "Google Gemini",
+      "models": [
+        {
+          "id": "gemini-3.5-flash",
+          "label": "Gemini 3.5 Flash (2026)",
+          "description": "Frontier agentic and coding model with unmatched speed"
+        },
+        {
+          "id": "gemini-3.1-flash-lite",
+          "label": "Gemini 3.1 Flash-Lite (2026)",
+          "description": "Ultra-optimized for low-latency, high-volume, and cost-sensitive traffic"
+        },
+        {
+          "id": "gemini-2.5-pro",
+          "label": "Gemini 2.5 Pro",
+          "description": "Highly capable 2025 model with deep reasoning and large context"
+        },
+        {
+          "id": "gemini-2.5-flash",
+          "label": "Gemini 2.5 Flash",
+          "description": "Stable previous-generation speed flagship"
+        },
+        {
+          "id": "gemini-2.5-flash-lite",
+          "label": "Gemini 2.5 Flash-Lite",
+          "description": "Extremely fast, low-cost model from the 2.5 generation"
+        },
+        {
+          "id": "gemini-1.5-pro",
+          "label": "Gemini 1.5 Pro",
+          "description": "Classic deep-reasoning model with a massive 1M+ context window"
+        },
+        {
+          "id": "gemini-1.5-flash",
+          "label": "Gemini 1.5 Flash",
+          "description": "Highly popular, cost-efficient workhorse with 1M context"
+        }
+      ]
+    }
+  }
 }
