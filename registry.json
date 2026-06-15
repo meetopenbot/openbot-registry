@@ -219,7 +219,7 @@
     },
     {
       "id": "astro-seo-blog",
-      "name": "Astro CMS & SEO Website",
+      "name": "Astro Website",
       "description": "Build, manage, and optimize an Astro-based website or blog with Markdown or CMS content and SEO guidelines.",
       "spec": "Goal: Build, manage, and optimize a high-performance Astro website using Markdown or headless CMS (Notion) for content, and keep it optimized for search engines (SEO).\n\n## Channel specific guidelines\n- Claude Code scaffolds the Astro project, manages Markdown content, implements SEO-optimized React/Astro components, and configures sitemaps, robots.txt, and structured JSON-LD schema data.\n- Notion serves as the content repository and headless CMS, enabling non-technical users to edit content and sync updates seamlessly.\n- Firecrawl crawls live pages to perform SEO audits, identify crawl issues, analyze keyword performance, and research competitor structures.\n- GitHub hosts the code and content, and executes automated deployment or content-sync pipelines.\n- Vercel deploys and hosts the fast, static or SSR-rendered Astro site globally.",
       "initialState": {},
