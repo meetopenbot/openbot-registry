@@ -38,6 +38,18 @@
       ]
     },
     {
+      "id": "dropbox",
+      "name": "Dropbox",
+      "image": "https://cdn.brandfetch.io/domain/dropbox.com/w/400/h/400?c=1idNukycTj6JSH5N_EG",
+      "description": "Cloud file storage, sharing, and folder management.",
+      "instructions": "",
+      "plugins": [
+        {
+          "id": "@meetopenbot/dropbox"
+        }
+      ]
+    },
+    {
       "id": "firecrawl",
       "name": "Firecrawl",
       "image": "https://cdn.brandfetch.io/domain/firecrawl.dev/w/800/h/1152/symbol?c=1idNukycTj6JSH5N_EG",
