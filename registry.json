@@ -533,16 +533,6 @@
           "description": "Highly popular, cost-efficient workhorse with 1M context"
         }
       ]
-    },
-    "openbot": {
-      "label": "OpenBot",
-      "models": [
-        {
-          "id": "coordinator-1",
-          "label": "Coordinator 1",
-          "description": "OpenBot's coordinator agent"
-        }
-      ]
     }
   }
 }
