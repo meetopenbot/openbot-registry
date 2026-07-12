@@ -393,54 +393,79 @@
       "label": "OpenAI",
       "models": [
         {
+          "id": "gpt-5-6-sol",
+          "label": "GPT-5.6 Sol (2026)",
+          "description": "Frontier model for complex reasoning, coding, and agentic work"
+        },
+        {
+          "id": "gpt-5-6-terra",
+          "label": "GPT-5.6 Terra (2026)",
+          "description": "Balances intelligence and cost for everyday product workloads"
+        },
+        {
+          "id": "gpt-5-6-luna",
+          "label": "GPT-5.6 Luna (2026)",
+          "description": "Fast, cost-efficient tier for classification, extraction, and drafting"
+        },
+        {
           "id": "gpt-5-5-pro",
-          "label": "GPT-5.5 Pro (2026)",
-          "description": "Maximum intelligence for complex reasoning and enterprise tasks"
+          "label": "GPT-5.5 Pro",
+          "description": "Previous-generation pro model with smarter, more precise responses"
         },
         {
           "id": "gpt-5-5",
-          "label": "GPT-5.5 (2026)",
-          "description": "Flagship model with native agentic planning and 1.05M context"
-        },
-        {
-          "id": "gpt-5-5-thinking",
-          "label": "GPT-5.5 Thinking (2026)",
-          "description": "Optimized for deep step-by-step reasoning, math, and logic"
-        },
-        {
-          "id": "gpt-5-5-instant",
-          "label": "GPT-5.5 Instant (2026)",
-          "description": "Ultra-fast, lightweight version of the 5.5 architecture"
+          "label": "GPT-5.5",
+          "description": "Previous-generation flagship for coding and professional work"
         },
         {
           "id": "gpt-5-4",
           "label": "GPT-5.4",
-          "description": "Stable previous-generation frontier model"
+          "description": "Affordable previous-generation model for coding and professional work"
+        },
+        {
+          "id": "gpt-5-4-mini",
+          "label": "GPT-5.4 Mini",
+          "description": "Fast mini model for coding, computer use, and subagents"
+        },
+        {
+          "id": "gpt-5-4-nano",
+          "label": "GPT-5.4 Nano",
+          "description": "Cheapest GPT-5.4-class model for simple high-volume tasks"
+        },
+        {
+          "id": "gpt-5-3-codex",
+          "label": "GPT-5.3 Codex",
+          "description": "Specialized agentic coding model for long-horizon development tasks"
+        },
+        {
+          "id": "gpt-5-2",
+          "label": "GPT-5.2",
+          "description": "Previous frontier model with configurable reasoning effort"
+        },
+        {
+          "id": "gpt-5-mini",
+          "label": "GPT-5 Mini",
+          "description": "Near-frontier intelligence for cost-sensitive, high-volume workloads"
+        },
+        {
+          "id": "gpt-5-nano",
+          "label": "GPT-5 Nano",
+          "description": "Fastest, most cost-efficient GPT-5-class model"
         },
         {
           "id": "gpt-4o",
           "label": "GPT-4o (Omni)",
-          "description": "Highly versatile, stable flagship with excellent multimodal capabilities"
+          "description": "Versatile multimodal model, still widely used for stable workloads"
         },
         {
           "id": "gpt-4o-mini",
           "label": "GPT-4o Mini",
-          "description": "Extremely fast, cost-effective, and ideal for high-frequency tasks"
+          "description": "Fast, cost-effective model for high-frequency tasks"
         },
         {
-          "id": "gpt-4-turbo",
-          "label": "GPT-4 Turbo",
-          "description": "High-intelligence legacy model with 128k context"
-        },
-        {
-          "id": "gpt-4",
-          "label": "GPT-4 (Legacy)",
-          "description": "The classic high-intelligence standard model"
-        },
-        {
-          "id": "gpt-3-5-turbo",
-          "label": "GPT-3.5 Turbo (Legacy)",
-          "description": "Legacy cost-effective model for simple text completion"
+          "id": "gpt-4-1-mini",
+          "label": "GPT-4.1 Mini",
+          "description": "Smaller, faster non-reasoning model for focused workloads"
         }
       ]
     },
@@ -450,47 +475,47 @@
         {
           "id": "claude-fable-5",
           "label": "Claude Fable 5 (2026)",
-          "description": "Mythos-class model built for long-horizon reasoning and complex coding"
+          "description": "Most capable widely released model for long-horizon agentic work"
         },
         {
           "id": "claude-opus-4-8",
           "label": "Claude Opus 4.8 (2026)",
-          "description": "Active flagship for high-throughput coding, reasoning, and multi-step agents"
+          "description": "Flagship for complex agentic coding and enterprise workloads"
+        },
+        {
+          "id": "claude-sonnet-5",
+          "label": "Claude Sonnet 5 (2026)",
+          "description": "Best balance of speed and intelligence for general tasks"
         },
         {
           "id": "claude-sonnet-4-6",
-          "label": "Claude Sonnet 4.6 (2026)",
-          "description": "Highly efficient and balanced model for general tasks"
+          "label": "Claude Sonnet 4.6",
+          "description": "Fast, capable model for everyday coding and tool use"
         },
         {
           "id": "claude-haiku-4-5",
           "label": "Claude Haiku 4.5",
-          "description": "Fastest and most cost-effective model for simple routines"
+          "description": "Fastest model with near-frontier intelligence for simple routines"
         },
         {
-          "id": "claude-3-5-sonnet-20241022",
-          "label": "Claude 3.5 Sonnet (v2)",
-          "description": "Widely used stable workhorse, excellent for coding and tool-use"
+          "id": "claude-opus-4-7",
+          "label": "Claude Opus 4.7",
+          "description": "Previous-generation Opus model, still active"
         },
         {
-          "id": "claude-3-5-sonnet-20240620",
-          "label": "Claude 3.5 Sonnet (v1)",
-          "description": "The original 3.5 Sonnet, highly reliable for structured outputs"
+          "id": "claude-opus-4-6",
+          "label": "Claude Opus 4.6",
+          "description": "Previous-generation Opus model with adaptive thinking"
         },
         {
-          "id": "claude-3-5-haiku-20241022",
-          "label": "Claude 3.5 Haiku",
-          "description": "High-speed 3.5 generation model with strong instruction following"
+          "id": "claude-sonnet-4-5",
+          "label": "Claude Sonnet 4.5",
+          "description": "Previous-generation Sonnet model, still active"
         },
         {
-          "id": "claude-3-opus-20240229",
-          "label": "Claude 3 Opus",
-          "description": "Classic deep-reasoning model with rich writing style"
-        },
-        {
-          "id": "claude-3-haiku-20240307",
-          "label": "Claude 3 Haiku",
-          "description": "Highly economical legacy model for fast, simple tasks"
+          "id": "claude-opus-4-5",
+          "label": "Claude Opus 4.5",
+          "description": "Previous-generation Opus model for demanding reasoning tasks"
         }
       ]
     },
@@ -500,7 +525,17 @@
         {
           "id": "gemini-3-5-flash",
           "label": "Gemini 3.5 Flash (2026)",
-          "description": "Frontier agentic and coding model with unmatched speed"
+          "description": "Frontier agentic and coding model with sustained performance at Flash speed"
+        },
+        {
+          "id": "gemini-3-1-pro-preview",
+          "label": "Gemini 3.1 Pro Preview",
+          "description": "Flagship reasoning model with 1M context; best for complex agentic workflows"
+        },
+        {
+          "id": "gemini-3-flash-preview",
+          "label": "Gemini 3 Flash Preview",
+          "description": "Balanced latest-generation multimodal model optimized for speed"
         },
         {
           "id": "gemini-3-1-flash-lite",
@@ -510,27 +545,17 @@
         {
           "id": "gemini-2-5-pro",
           "label": "Gemini 2.5 Pro",
-          "description": "Highly capable 2025 model with deep reasoning and large context"
+          "description": "Highly capable model with deep reasoning and 1M context"
         },
         {
           "id": "gemini-2-5-flash",
           "label": "Gemini 2.5 Flash",
-          "description": "Stable previous-generation speed flagship"
+          "description": "Previous-generation speed flagship with controllable thinking budgets"
         },
         {
           "id": "gemini-2-5-flash-lite",
           "label": "Gemini 2.5 Flash-Lite",
           "description": "Extremely fast, low-cost model from the 2.5 generation"
-        },
-        {
-          "id": "gemini-1-5-pro",
-          "label": "Gemini 1.5 Pro",
-          "description": "Classic deep-reasoning model with a massive 1M+ context window"
-        },
-        {
-          "id": "gemini-1-5-flash",
-          "label": "Gemini 1.5 Flash",
-          "description": "Highly popular, cost-efficient workhorse with 1M context"
         }
       ]
     }
