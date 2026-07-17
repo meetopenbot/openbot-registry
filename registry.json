@@ -197,6 +197,18 @@
       ]
     },
     {
+      "id": "slack",
+      "name": "Slack",
+      "image": "https://cdn.brandfetch.io/domain/slack.com/w/400/h/400?c=1idNukycTj6JSH5N_EG",
+      "description": "Team messaging, channel management, and workspace communication.",
+      "instructions": "",
+      "plugins": [
+        {
+          "id": "@meetopenbot/slack"
+        }
+      ]
+    },
+    {
       "id": "spotify",
       "name": "Spotify",
       "image": "https://cdn.brandfetch.io/domain/spotify.com/w/800/h/800/symbol?c=1idNukycTj6JSH5N_EG",
