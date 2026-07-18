@@ -337,7 +337,7 @@
       "id": "slides",
       "name": "Build Slides",
       "description": "Create slides",
-      "spec": "Goal: Create engaging presentation slide decks as HTML from source URLs, exportable to PDF.\n\n## Channel specific guidelines\n- Firecrawl fetches and extracts content from URLs when the user provides source material (messaging, branding, copy, and visuals).\n- Claude Code builds a single self-contained HTML deck using Tailwind CSS via CDN (no build step or npm dependencies), styled to match the scraped brand where possible.\n- Claude Code structures narrative, slide copy, and speaker notes from the extracted content.\n- Deliverable: one HTML file (optionally with linked images from the source URLs).\n\n## PDF and print requirements (coding agent)\nThe deck must be designed so the user can open it in a browser and save a clean PDF via Print → Save as PDF. Follow these rules:\n- Structure: each slide is a separate full-page element (e.g. a section with h-screen min-h-screen).\n- Print CSS: include a @media print block with @page { size: landscape; margin: 0; }, page-break-after: always (or break-after: page) on every slide except the last, and print-color-adjust: exact so backgrounds and colors are preserved.\n- Layout: keep all content within slide bounds; avoid scrollable slides, overflow clipping issues, and elements that span multiple pages.\n- Screen-only UI: hide navigation, progress indicators, and keyboard-hint overlays in print (e.g. print:hidden).\n- Images: use absolute URLs or embedded assets that render in print; avoid lazy-loading tricks that leave blanks in PDF output.\n- Testing mindset: optimize for Chrome print preview (landscape, no browser headers/footers).\n- Include a brief HTML comment at the top with print instructions for the user.",
+      "spec": "Goal: Create engaging presentation slide decks as HTML from source URLs, exportable to PDF.\n\n## Channel specific guidelines\n- Firecrawl fetches and extracts content from URLs when the user provides source material (messaging, branding, copy, and visuals).\n- Claude Code builds a single self-contained HTML deck using Tailwind CSS via CDN (no build step or npm dependencies), styled to match the scraped brand where possible.\n- Claude Code structures narrative, slide copy, and speaker notes from the extracted content.\n- Deliverable: one HTML file (optionally with linked images from the source URLs).\n\n## PDF and print requirements (coding agent)\nThe deck must be designed so the user can open it in a browser and save a clean PDF via Print \u2192 Save as PDF. Follow these rules:\n- Structure: each slide is a separate full-page element (e.g. a section with h-screen min-h-screen).\n- Print CSS: include a @media print block with @page { size: landscape; margin: 0; }, page-break-after: always (or break-after: page) on every slide except the last, and print-color-adjust: exact so backgrounds and colors are preserved.\n- Layout: keep all content within slide bounds; avoid scrollable slides, overflow clipping issues, and elements that span multiple pages.\n- Screen-only UI: hide navigation, progress indicators, and keyboard-hint overlays in print (e.g. print:hidden).\n- Images: use absolute URLs or embedded assets that render in print; avoid lazy-loading tricks that leave blanks in PDF output.\n- Testing mindset: optimize for Chrome print preview (landscape, no browser headers/footers).\n- Include a brief HTML comment at the top with print instructions for the user.",
       "initialState": {},
       "participants": [
         "firecrawl",
@@ -417,79 +417,139 @@
       "label": "OpenAI",
       "models": [
         {
-          "id": "gpt-5-6-sol",
+          "id": "gpt-5.6-sol",
           "label": "GPT-5.6 Sol (2026)",
-          "description": "Frontier model for complex reasoning, coding, and agentic work"
+          "description": "Frontier model for complex reasoning, coding, and agentic work",
+          "pricing": {
+            "inputPerMTok": 5,
+            "outputPerMTok": 15
+          }
         },
         {
-          "id": "gpt-5-6-terra",
+          "id": "gpt-5.6-terra",
           "label": "GPT-5.6 Terra (2026)",
-          "description": "Balances intelligence and cost for everyday product workloads"
+          "description": "Balances intelligence and cost for everyday product workloads",
+          "pricing": {
+            "inputPerMTok": 2,
+            "outputPerMTok": 8
+          }
         },
         {
-          "id": "gpt-5-6-luna",
+          "id": "gpt-5.6-luna",
           "label": "GPT-5.6 Luna (2026)",
-          "description": "Fast, cost-efficient tier for classification, extraction, and drafting"
+          "description": "Fast, cost-efficient tier for classification, extraction, and drafting",
+          "pricing": {
+            "inputPerMTok": 0.1,
+            "outputPerMTok": 0.4
+          }
         },
         {
-          "id": "gpt-5-5-pro",
+          "id": "gpt-5.5-pro",
           "label": "GPT-5.5 Pro",
-          "description": "Previous-generation pro model with smarter, more precise responses"
+          "description": "Previous-generation pro model with smarter, more precise responses",
+          "pricing": {
+            "inputPerMTok": 5,
+            "outputPerMTok": 15
+          }
         },
         {
-          "id": "gpt-5-5",
+          "id": "gpt-5.5",
           "label": "GPT-5.5",
-          "description": "Previous-generation flagship for coding and professional work"
+          "description": "Previous-generation flagship for coding and professional work",
+          "pricing": {
+            "inputPerMTok": 5,
+            "outputPerMTok": 15
+          }
         },
         {
-          "id": "gpt-5-4",
+          "id": "gpt-5.4",
           "label": "GPT-5.4",
-          "description": "Affordable previous-generation model for coding and professional work"
+          "description": "Affordable previous-generation model for coding and professional work",
+          "pricing": {
+            "inputPerMTok": 2,
+            "outputPerMTok": 8
+          }
         },
         {
-          "id": "gpt-5-4-mini",
+          "id": "gpt-5.4-mini",
           "label": "GPT-5.4 Mini",
-          "description": "Fast mini model for coding, computer use, and subagents"
+          "description": "Fast mini model for coding, computer use, and subagents",
+          "pricing": {
+            "inputPerMTok": 0.4,
+            "outputPerMTok": 1.6
+          }
         },
         {
-          "id": "gpt-5-4-nano",
+          "id": "gpt-5.4-nano",
           "label": "GPT-5.4 Nano",
-          "description": "Cheapest GPT-5.4-class model for simple high-volume tasks"
+          "description": "Cheapest GPT-5.4-class model for simple high-volume tasks",
+          "pricing": {
+            "inputPerMTok": 0.1,
+            "outputPerMTok": 0.4
+          }
         },
         {
-          "id": "gpt-5-3-codex",
+          "id": "gpt-5.3-codex",
           "label": "GPT-5.3 Codex",
-          "description": "Specialized agentic coding model for long-horizon development tasks"
+          "description": "Specialized agentic coding model for long-horizon development tasks",
+          "pricing": {
+            "inputPerMTok": 5,
+            "outputPerMTok": 15
+          }
         },
         {
-          "id": "gpt-5-2",
+          "id": "gpt-5.2",
           "label": "GPT-5.2",
-          "description": "Previous frontier model with configurable reasoning effort"
+          "description": "Previous frontier model with configurable reasoning effort",
+          "pricing": {
+            "inputPerMTok": 5,
+            "outputPerMTok": 15
+          }
         },
         {
           "id": "gpt-5-mini",
           "label": "GPT-5 Mini",
-          "description": "Near-frontier intelligence for cost-sensitive, high-volume workloads"
+          "description": "Near-frontier intelligence for cost-sensitive, high-volume workloads",
+          "pricing": {
+            "inputPerMTok": 0.4,
+            "outputPerMTok": 1.6
+          }
         },
         {
           "id": "gpt-5-nano",
           "label": "GPT-5 Nano",
-          "description": "Fastest, most cost-efficient GPT-5-class model"
+          "description": "Fastest, most cost-efficient GPT-5-class model",
+          "pricing": {
+            "inputPerMTok": 0.1,
+            "outputPerMTok": 0.4
+          }
         },
         {
           "id": "gpt-4o",
           "label": "GPT-4o (Omni)",
-          "description": "Versatile multimodal model, still widely used for stable workloads"
+          "description": "Versatile multimodal model, still widely used for stable workloads",
+          "pricing": {
+            "inputPerMTok": 2.5,
+            "outputPerMTok": 10
+          }
         },
         {
           "id": "gpt-4o-mini",
           "label": "GPT-4o Mini",
-          "description": "Fast, cost-effective model for high-frequency tasks"
+          "description": "Fast, cost-effective model for high-frequency tasks",
+          "pricing": {
+            "inputPerMTok": 0.4,
+            "outputPerMTok": 1.6
+          }
         },
         {
-          "id": "gpt-4-1-mini",
+          "id": "gpt-4.1-mini",
           "label": "GPT-4.1 Mini",
-          "description": "Smaller, faster non-reasoning model for focused workloads"
+          "description": "Smaller, faster non-reasoning model for focused workloads",
+          "pricing": {
+            "inputPerMTok": 0.4,
+            "outputPerMTok": 1.6
+          }
         }
       ]
     },
@@ -499,47 +559,83 @@
         {
           "id": "claude-fable-5",
           "label": "Claude Fable 5 (2026)",
-          "description": "Most capable widely released model for long-horizon agentic work"
+          "description": "Most capable widely released model for long-horizon agentic work",
+          "pricing": {
+            "inputPerMTok": 5,
+            "outputPerMTok": 25
+          }
         },
         {
           "id": "claude-opus-4-8",
           "label": "Claude Opus 4.8 (2026)",
-          "description": "Flagship for complex agentic coding and enterprise workloads"
+          "description": "Flagship for complex agentic coding and enterprise workloads",
+          "pricing": {
+            "inputPerMTok": 5,
+            "outputPerMTok": 25
+          }
         },
         {
           "id": "claude-sonnet-5",
           "label": "Claude Sonnet 5 (2026)",
-          "description": "Best balance of speed and intelligence for general tasks"
+          "description": "Best balance of speed and intelligence for general tasks",
+          "pricing": {
+            "inputPerMTok": 3,
+            "outputPerMTok": 15
+          }
         },
         {
           "id": "claude-sonnet-4-6",
           "label": "Claude Sonnet 4.6",
-          "description": "Fast, capable model for everyday coding and tool use"
+          "description": "Fast, capable model for everyday coding and tool use",
+          "pricing": {
+            "inputPerMTok": 3,
+            "outputPerMTok": 15
+          }
         },
         {
           "id": "claude-haiku-4-5",
           "label": "Claude Haiku 4.5",
-          "description": "Fastest model with near-frontier intelligence for simple routines"
+          "description": "Fastest model with near-frontier intelligence for simple routines",
+          "pricing": {
+            "inputPerMTok": 1,
+            "outputPerMTok": 5
+          }
         },
         {
           "id": "claude-opus-4-7",
           "label": "Claude Opus 4.7",
-          "description": "Previous-generation Opus model, still active"
+          "description": "Previous-generation Opus model, still active",
+          "pricing": {
+            "inputPerMTok": 5,
+            "outputPerMTok": 25
+          }
         },
         {
           "id": "claude-opus-4-6",
           "label": "Claude Opus 4.6",
-          "description": "Previous-generation Opus model with adaptive thinking"
+          "description": "Previous-generation Opus model with adaptive thinking",
+          "pricing": {
+            "inputPerMTok": 5,
+            "outputPerMTok": 25
+          }
         },
         {
           "id": "claude-sonnet-4-5",
           "label": "Claude Sonnet 4.5",
-          "description": "Previous-generation Sonnet model, still active"
+          "description": "Previous-generation Sonnet model, still active",
+          "pricing": {
+            "inputPerMTok": 3,
+            "outputPerMTok": 15
+          }
         },
         {
           "id": "claude-opus-4-5",
           "label": "Claude Opus 4.5",
-          "description": "Previous-generation Opus model for demanding reasoning tasks"
+          "description": "Previous-generation Opus model for demanding reasoning tasks",
+          "pricing": {
+            "inputPerMTok": 5,
+            "outputPerMTok": 25
+          }
         }
       ]
     },
@@ -547,41 +643,73 @@
       "label": "Google Gemini",
       "models": [
         {
-          "id": "gemini-3-5-flash",
+          "id": "gemini-3.5-flash",
           "label": "Gemini 3.5 Flash (2026)",
-          "description": "Frontier agentic and coding model with sustained performance at Flash speed"
+          "description": "Frontier agentic and coding model with sustained performance at Flash speed",
+          "pricing": {
+            "inputPerMTok": 0.4,
+            "outputPerMTok": 1.6
+          }
         },
         {
-          "id": "gemini-3-1-pro-preview",
+          "id": "gemini-3.1-pro-preview",
           "label": "Gemini 3.1 Pro Preview",
-          "description": "Flagship reasoning model with 1M context; best for complex agentic workflows"
+          "description": "Flagship reasoning model with 1M context; best for complex agentic workflows",
+          "pricing": {
+            "inputPerMTok": 0.4,
+            "outputPerMTok": 1.6
+          }
         },
         {
           "id": "gemini-3-flash-preview",
           "label": "Gemini 3 Flash Preview",
-          "description": "Balanced latest-generation multimodal model optimized for speed"
+          "description": "Balanced latest-generation multimodal model optimized for speed",
+          "pricing": {
+            "inputPerMTok": 0.4,
+            "outputPerMTok": 1.6
+          }
         },
         {
-          "id": "gemini-3-1-flash-lite",
+          "id": "gemini-3.1-flash-lite",
           "label": "Gemini 3.1 Flash-Lite (2026)",
-          "description": "Ultra-optimized for low-latency, high-volume, and cost-sensitive traffic"
+          "description": "Ultra-optimized for low-latency, high-volume, and cost-sensitive traffic",
+          "pricing": {
+            "inputPerMTok": 0.4,
+            "outputPerMTok": 1.6
+          }
         },
         {
-          "id": "gemini-2-5-pro",
+          "id": "gemini-2.5-pro",
           "label": "Gemini 2.5 Pro",
-          "description": "Highly capable model with deep reasoning and 1M context"
+          "description": "Highly capable model with deep reasoning and 1M context",
+          "pricing": {
+            "inputPerMTok": 0.4,
+            "outputPerMTok": 1.6
+          }
         },
         {
-          "id": "gemini-2-5-flash",
+          "id": "gemini-2.5-flash",
           "label": "Gemini 2.5 Flash",
-          "description": "Previous-generation speed flagship with controllable thinking budgets"
+          "description": "Previous-generation speed flagship with controllable thinking budgets",
+          "pricing": {
+            "inputPerMTok": 0.4,
+            "outputPerMTok": 1.6
+          }
         },
         {
-          "id": "gemini-2-5-flash-lite",
+          "id": "gemini-2.5-flash-lite",
           "label": "Gemini 2.5 Flash-Lite",
-          "description": "Extremely fast, low-cost model from the 2.5 generation"
+          "description": "Extremely fast, low-cost model from the 2.5 generation",
+          "pricing": {
+            "inputPerMTok": 0.4,
+            "outputPerMTok": 1.6
+          }
         }
       ]
     }
+  },
+  "pricingDefaults": {
+    "inputPerMTok": 3,
+    "outputPerMTok": 15
   }
 }
