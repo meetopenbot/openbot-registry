@@ -418,65 +418,29 @@
       "models": [
         {
           "id": "gpt-5.6-sol",
-          "label": "GPT-5.6 Sol (2026)",
+          "label": "GPT-5.6 Sol",
           "description": "Frontier model for complex reasoning, coding, and agentic work",
           "pricing": {
             "inputPerMTok": 5,
-            "outputPerMTok": 15
+            "outputPerMTok": 30
           }
         },
         {
           "id": "gpt-5.6-terra",
-          "label": "GPT-5.6 Terra (2026)",
+          "label": "GPT-5.6 Terra",
           "description": "Balances intelligence and cost for everyday product workloads",
           "pricing": {
-            "inputPerMTok": 2,
-            "outputPerMTok": 8
+            "inputPerMTok": 2.5,
+            "outputPerMTok": 15
           }
         },
         {
           "id": "gpt-5.6-luna",
-          "label": "GPT-5.6 Luna (2026)",
+          "label": "GPT-5.6 Luna",
           "description": "Fast, cost-efficient tier for classification, extraction, and drafting",
           "pricing": {
-            "inputPerMTok": 0.1,
-            "outputPerMTok": 0.4
-          }
-        },
-        {
-          "id": "gpt-5.5-pro",
-          "label": "GPT-5.5 Pro",
-          "description": "Previous-generation pro model with smarter, more precise responses",
-          "pricing": {
-            "inputPerMTok": 5,
-            "outputPerMTok": 15
-          }
-        },
-        {
-          "id": "gpt-5.5",
-          "label": "GPT-5.5",
-          "description": "Previous-generation flagship for coding and professional work",
-          "pricing": {
-            "inputPerMTok": 5,
-            "outputPerMTok": 15
-          }
-        },
-        {
-          "id": "gpt-5.4",
-          "label": "GPT-5.4",
-          "description": "Affordable previous-generation model for coding and professional work",
-          "pricing": {
-            "inputPerMTok": 2,
-            "outputPerMTok": 8
-          }
-        },
-        {
-          "id": "gpt-5.4-mini",
-          "label": "GPT-5.4 Mini",
-          "description": "Fast mini model for coding, computer use, and subagents",
-          "pricing": {
-            "inputPerMTok": 0.4,
-            "outputPerMTok": 1.6
+            "inputPerMTok": 1,
+            "outputPerMTok": 6
           }
         },
         {
@@ -484,53 +448,8 @@
           "label": "GPT-5.4 Nano",
           "description": "Cheapest GPT-5.4-class model for simple high-volume tasks",
           "pricing": {
-            "inputPerMTok": 0.1,
-            "outputPerMTok": 0.4
-          }
-        },
-        {
-          "id": "gpt-5.3-codex",
-          "label": "GPT-5.3 Codex",
-          "description": "Specialized agentic coding model for long-horizon development tasks",
-          "pricing": {
-            "inputPerMTok": 5,
-            "outputPerMTok": 15
-          }
-        },
-        {
-          "id": "gpt-5.2",
-          "label": "GPT-5.2",
-          "description": "Previous frontier model with configurable reasoning effort",
-          "pricing": {
-            "inputPerMTok": 5,
-            "outputPerMTok": 15
-          }
-        },
-        {
-          "id": "gpt-5-mini",
-          "label": "GPT-5 Mini",
-          "description": "Near-frontier intelligence for cost-sensitive, high-volume workloads",
-          "pricing": {
-            "inputPerMTok": 0.4,
-            "outputPerMTok": 1.6
-          }
-        },
-        {
-          "id": "gpt-5-nano",
-          "label": "GPT-5 Nano",
-          "description": "Fastest, most cost-efficient GPT-5-class model",
-          "pricing": {
-            "inputPerMTok": 0.1,
-            "outputPerMTok": 0.4
-          }
-        },
-        {
-          "id": "gpt-4o",
-          "label": "GPT-4o (Omni)",
-          "description": "Versatile multimodal model, still widely used for stable workloads",
-          "pricing": {
-            "inputPerMTok": 2.5,
-            "outputPerMTok": 10
+            "inputPerMTok": 0.2,
+            "outputPerMTok": 1.25
           }
         },
         {
@@ -538,17 +457,8 @@
           "label": "GPT-4o Mini",
           "description": "Fast, cost-effective model for high-frequency tasks",
           "pricing": {
-            "inputPerMTok": 0.4,
-            "outputPerMTok": 1.6
-          }
-        },
-        {
-          "id": "gpt-4.1-mini",
-          "label": "GPT-4.1 Mini",
-          "description": "Smaller, faster non-reasoning model for focused workloads",
-          "pricing": {
-            "inputPerMTok": 0.4,
-            "outputPerMTok": 1.6
+            "inputPerMTok": 0.15,
+            "outputPerMTok": 0.6
           }
         }
       ]
@@ -558,16 +468,16 @@
       "models": [
         {
           "id": "claude-fable-5",
-          "label": "Claude Fable 5 (2026)",
+          "label": "Claude Fable 5",
           "description": "Most capable widely released model for long-horizon agentic work",
           "pricing": {
-            "inputPerMTok": 5,
-            "outputPerMTok": 25
+            "inputPerMTok": 10,
+            "outputPerMTok": 50
           }
         },
         {
           "id": "claude-opus-4-8",
-          "label": "Claude Opus 4.8 (2026)",
+          "label": "Claude Opus 4.8",
           "description": "Flagship for complex agentic coding and enterprise workloads",
           "pricing": {
             "inputPerMTok": 5,
@@ -576,20 +486,11 @@
         },
         {
           "id": "claude-sonnet-5",
-          "label": "Claude Sonnet 5 (2026)",
+          "label": "Claude Sonnet 5",
           "description": "Best balance of speed and intelligence for general tasks",
           "pricing": {
-            "inputPerMTok": 3,
-            "outputPerMTok": 15
-          }
-        },
-        {
-          "id": "claude-sonnet-4-6",
-          "label": "Claude Sonnet 4.6",
-          "description": "Fast, capable model for everyday coding and tool use",
-          "pricing": {
-            "inputPerMTok": 3,
-            "outputPerMTok": 15
+            "inputPerMTok": 2,
+            "outputPerMTok": 10
           }
         },
         {
@@ -600,42 +501,6 @@
             "inputPerMTok": 1,
             "outputPerMTok": 5
           }
-        },
-        {
-          "id": "claude-opus-4-7",
-          "label": "Claude Opus 4.7",
-          "description": "Previous-generation Opus model, still active",
-          "pricing": {
-            "inputPerMTok": 5,
-            "outputPerMTok": 25
-          }
-        },
-        {
-          "id": "claude-opus-4-6",
-          "label": "Claude Opus 4.6",
-          "description": "Previous-generation Opus model with adaptive thinking",
-          "pricing": {
-            "inputPerMTok": 5,
-            "outputPerMTok": 25
-          }
-        },
-        {
-          "id": "claude-sonnet-4-5",
-          "label": "Claude Sonnet 4.5",
-          "description": "Previous-generation Sonnet model, still active",
-          "pricing": {
-            "inputPerMTok": 3,
-            "outputPerMTok": 15
-          }
-        },
-        {
-          "id": "claude-opus-4-5",
-          "label": "Claude Opus 4.5",
-          "description": "Previous-generation Opus model for demanding reasoning tasks",
-          "pricing": {
-            "inputPerMTok": 5,
-            "outputPerMTok": 25
-          }
         }
       ]
     },
@@ -643,12 +508,21 @@
       "label": "Google Gemini",
       "models": [
         {
+          "id": "gemini-3.6-flash",
+          "label": "Gemini 3.6 Flash",
+          "description": "Frontier agentic and coding model with sustained performance at 3.6 Flash speed",
+          "pricing": {
+            "inputPerMTok": 1.5,
+            "outputPerMTok": 7.5
+          }
+        },
+        {
           "id": "gemini-3.5-flash",
-          "label": "Gemini 3.5 Flash (2026)",
+          "label": "Gemini 3.5 Flash",
           "description": "Frontier agentic and coding model with sustained performance at Flash speed",
           "pricing": {
-            "inputPerMTok": 0.4,
-            "outputPerMTok": 1.6
+            "inputPerMTok": 1.5,
+            "outputPerMTok": 9
           }
         },
         {
@@ -656,53 +530,22 @@
           "label": "Gemini 3.1 Pro Preview",
           "description": "Flagship reasoning model with 1M context; best for complex agentic workflows",
           "pricing": {
-            "inputPerMTok": 0.4,
-            "outputPerMTok": 1.6
+            "inputPerMTok": 2,
+            "outputPerMTok": 12
           }
-        },
+        }
+      ]
+    },
+    "deepseek": {
+      "label": "DeepSeek",
+      "models": [
         {
-          "id": "gemini-3-flash-preview",
-          "label": "Gemini 3 Flash Preview",
-          "description": "Balanced latest-generation multimodal model optimized for speed",
+          "id": "deepseek/deepseek-v4-flash",
+          "label": "DeepSeek V4 Flash",
+          "description": "Efficiency-optimized Mixture-of-Experts model from DeepSeek",
           "pricing": {
-            "inputPerMTok": 0.4,
-            "outputPerMTok": 1.6
-          }
-        },
-        {
-          "id": "gemini-3.1-flash-lite",
-          "label": "Gemini 3.1 Flash-Lite (2026)",
-          "description": "Ultra-optimized for low-latency, high-volume, and cost-sensitive traffic",
-          "pricing": {
-            "inputPerMTok": 0.4,
-            "outputPerMTok": 1.6
-          }
-        },
-        {
-          "id": "gemini-2.5-pro",
-          "label": "Gemini 2.5 Pro",
-          "description": "Highly capable model with deep reasoning and 1M context",
-          "pricing": {
-            "inputPerMTok": 0.4,
-            "outputPerMTok": 1.6
-          }
-        },
-        {
-          "id": "gemini-2.5-flash",
-          "label": "Gemini 2.5 Flash",
-          "description": "Previous-generation speed flagship with controllable thinking budgets",
-          "pricing": {
-            "inputPerMTok": 0.4,
-            "outputPerMTok": 1.6
-          }
-        },
-        {
-          "id": "gemini-2.5-flash-lite",
-          "label": "Gemini 2.5 Flash-Lite",
-          "description": "Extremely fast, low-cost model from the 2.5 generation",
-          "pricing": {
-            "inputPerMTok": 0.4,
-            "outputPerMTok": 1.6
+            "inputPerMTok": 0.14,
+            "outputPerMTok": 0.2
           }
         }
       ]
