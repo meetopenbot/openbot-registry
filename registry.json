@@ -340,7 +340,7 @@
       "id": "slides",
       "name": "Build Slides",
       "description": "Create slides",
-      "spec": "Goal: Create engaging presentation slide decks as HTML from source URLs, exportable to PDF.\n\n## Channel specific guidelines\n- Firecrawl fetches and extracts content from URLs when the user provides source material (messaging, branding, copy, and visuals).\n- Claude Code builds a single self-contained HTML deck using Tailwind CSS via CDN (no build step or npm dependencies), styled to match the scraped brand where possible.\n- Claude Code structures narrative, slide copy, and speaker notes from the extracted content.\n- Deliverable: one HTML file (optionally with linked images from the source URLs).\n\n## PDF and print requirements (coding agent)\nThe deck must be designed so the user can open it in a browser and save a clean PDF via Print \u2192 Save as PDF. Follow these rules:\n- Structure: each slide is a separate full-page element (e.g. a section with h-screen min-h-screen).\n- Print CSS: include a @media print block with @page { size: landscape; margin: 0; }, page-break-after: always (or break-after: page) on every slide except the last, and print-color-adjust: exact so backgrounds and colors are preserved.\n- Layout: keep all content within slide bounds; avoid scrollable slides, overflow clipping issues, and elements that span multiple pages.\n- Screen-only UI: hide navigation, progress indicators, and keyboard-hint overlays in print (e.g. print:hidden).\n- Images: use absolute URLs or embedded assets that render in print; avoid lazy-loading tricks that leave blanks in PDF output.\n- Testing mindset: optimize for Chrome print preview (landscape, no browser headers/footers).\n- Include a brief HTML comment at the top with print instructions for the user.",
+      "spec": "Goal: Create engaging presentation slide decks as HTML from source URLs, exportable to PDF.\n\n## Channel specific guidelines\n- Firecrawl fetches and extracts content from URLs when the user provides source material (messaging, branding, copy, and visuals).\n- Claude Code builds a single self-contained HTML deck using Tailwind CSS via CDN (no build step or npm dependencies), styled to match the scraped brand where possible.\n- Claude Code structures narrative, slide copy, and speaker notes from the extracted content.\n- Deliverable: one HTML file (optionally with linked images from the source URLs).\n\n## PDF and print requirements (coding agent)\nThe deck must be designed so the user can open it in a browser and save a clean PDF via Print → Save as PDF. Follow these rules:\n- Structure: each slide is a separate full-page element (e.g. a section with h-screen min-h-screen).\n- Print CSS: include a @media print block with @page { size: landscape; margin: 0; }, page-break-after: always (or break-after: page) on every slide except the last, and print-color-adjust: exact so backgrounds and colors are preserved.\n- Layout: keep all content within slide bounds; avoid scrollable slides, overflow clipping issues, and elements that span multiple pages.\n- Screen-only UI: hide navigation, progress indicators, and keyboard-hint overlays in print (e.g. print:hidden).\n- Images: use absolute URLs or embedded assets that render in print; avoid lazy-loading tricks that leave blanks in PDF output.\n- Testing mindset: optimize for Chrome print preview (landscape, no browser headers/footers).\n- Include a brief HTML comment at the top with print instructions for the user.",
       "initialState": {},
       "participants": [
         "firecrawl",
@@ -422,47 +422,27 @@
         {
           "id": "gpt-5.6-sol",
           "label": "GPT-5.6 Sol",
-          "description": "Frontier model for complex reasoning, coding, and agentic work",
-          "pricing": {
-            "inputPerMTok": 5,
-            "outputPerMTok": 30
-          }
+          "description": "Frontier model for complex reasoning, coding, and agentic work"
         },
         {
           "id": "gpt-5.6-terra",
           "label": "GPT-5.6 Terra",
-          "description": "Balances intelligence and cost for everyday product workloads",
-          "pricing": {
-            "inputPerMTok": 2.5,
-            "outputPerMTok": 15
-          }
+          "description": "Balances intelligence and cost for everyday product workloads"
         },
         {
           "id": "gpt-5.6-luna",
           "label": "GPT-5.6 Luna",
-          "description": "Fast, cost-efficient tier for classification, extraction, and drafting",
-          "pricing": {
-            "inputPerMTok": 1,
-            "outputPerMTok": 6
-          }
+          "description": "Fast, cost-efficient tier for classification, extraction, and drafting"
         },
         {
           "id": "gpt-5.4-nano",
           "label": "GPT-5.4 Nano",
-          "description": "Cheapest GPT-5.4-class model for simple high-volume tasks",
-          "pricing": {
-            "inputPerMTok": 0.2,
-            "outputPerMTok": 1.25
-          }
+          "description": "Cheapest GPT-5.4-class model for simple high-volume tasks"
         },
         {
           "id": "gpt-4o-mini",
           "label": "GPT-4o Mini",
-          "description": "Fast, cost-effective model for high-frequency tasks",
-          "pricing": {
-            "inputPerMTok": 0.15,
-            "outputPerMTok": 0.6
-          }
+          "description": "Fast, cost-effective model for high-frequency tasks"
         }
       ]
     },
@@ -472,38 +452,22 @@
         {
           "id": "claude-fable-5",
           "label": "Claude Fable 5",
-          "description": "Most capable widely released model for long-horizon agentic work",
-          "pricing": {
-            "inputPerMTok": 10,
-            "outputPerMTok": 50
-          }
+          "description": "Most capable widely released model for long-horizon agentic work"
         },
         {
           "id": "claude-opus-4-8",
           "label": "Claude Opus 4.8",
-          "description": "Flagship for complex agentic coding and enterprise workloads",
-          "pricing": {
-            "inputPerMTok": 5,
-            "outputPerMTok": 25
-          }
+          "description": "Flagship for complex agentic coding and enterprise workloads"
         },
         {
           "id": "claude-sonnet-5",
           "label": "Claude Sonnet 5",
-          "description": "Best balance of speed and intelligence for general tasks",
-          "pricing": {
-            "inputPerMTok": 2,
-            "outputPerMTok": 10
-          }
+          "description": "Best balance of speed and intelligence for general tasks"
         },
         {
           "id": "claude-haiku-4-5",
           "label": "Claude Haiku 4.5",
-          "description": "Fastest model with near-frontier intelligence for simple routines",
-          "pricing": {
-            "inputPerMTok": 1,
-            "outputPerMTok": 5
-          }
+          "description": "Fastest model with near-frontier intelligence for simple routines"
         }
       ]
     },
@@ -513,29 +477,17 @@
         {
           "id": "gemini-3.6-flash",
           "label": "Gemini 3.6 Flash",
-          "description": "Frontier agentic and coding model with sustained performance at 3.6 Flash speed",
-          "pricing": {
-            "inputPerMTok": 1.5,
-            "outputPerMTok": 7.5
-          }
+          "description": "Frontier agentic and coding model with sustained performance at 3.6 Flash speed"
         },
         {
           "id": "gemini-3.5-flash",
           "label": "Gemini 3.5 Flash",
-          "description": "Frontier agentic and coding model with sustained performance at Flash speed",
-          "pricing": {
-            "inputPerMTok": 1.5,
-            "outputPerMTok": 9
-          }
+          "description": "Frontier agentic and coding model with sustained performance at Flash speed"
         },
         {
           "id": "gemini-3.1-pro-preview",
           "label": "Gemini 3.1 Pro Preview",
-          "description": "Flagship reasoning model with 1M context; best for complex agentic workflows",
-          "pricing": {
-            "inputPerMTok": 2,
-            "outputPerMTok": 12
-          }
+          "description": "Flagship reasoning model with 1M context; best for complex agentic workflows"
         }
       ]
     },
@@ -545,17 +497,9 @@
         {
           "id": "deepseek/deepseek-v4-flash",
           "label": "DeepSeek V4 Flash",
-          "description": "Efficiency-optimized Mixture-of-Experts model from DeepSeek",
-          "pricing": {
-            "inputPerMTok": 0.14,
-            "outputPerMTok": 0.2
-          }
+          "description": "Efficiency-optimized Mixture-of-Experts model from DeepSeek"
         }
       ]
     }
-  },
-  "pricingDefaults": {
-    "inputPerMTok": 3,
-    "outputPerMTok": 15
   }
 }
