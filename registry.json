@@ -132,9 +132,6 @@
       "instructions": "",
       "plugins": [
         {
-          "id": "@meetopenbot/ai-sdk"
-        },
-        {
           "id": "@meetopenbot/shopify"
         }
       ]

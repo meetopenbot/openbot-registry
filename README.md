@@ -1,6 +1,6 @@
-# openbot-registry
+# OpenBot registry
 
-The official agent and channel registry for [OpenBot](https://github.com/meetopenbot). It defines which agents are available in the app and how they are composed into multi-agent workflows.
+The canonical registry lives at `packages/openbot-registry` in the private `meetopenbot/openbot-monorepo`. This README and `registry.json` are automatically mirrored to the public `meetopenbot/openbot-registry` compatibility repository after successful `main` CI.
 
 ## Contents
 
@@ -12,8 +12,8 @@ The official agent and channel registry for [OpenBot](https://github.com/meetope
 
 ## Usage
 
-OpenBot fetches this registry at runtime. Changes merged here are reflected in the app once the updated `registry.json` is published.
+OpenBot continues to fetch the public raw URL at runtime. Do not edit the public mirror directly; changes merged in the monorepo are reflected there by the registry sync workflow.
 
 ## Contributing
 
-To add or update an agent or channel, edit `registry.json` and open a pull request. Keep descriptions concise and ensure plugin IDs match published `@meetopenbot/*` packages.
+To add or update an agent or channel, edit this `registry.json` in the monorepo. Run `pnpm registry:validate`, keep descriptions concise, and ensure first-party plugin IDs match workspace packages.
