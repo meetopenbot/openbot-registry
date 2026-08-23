@@ -1,7 +1,7 @@
 {
   "version": 1,
   "runtime": {
-    "latestVersion": "0.7.4"
+    "latestVersion": "0.7.5"
   },
   "agents": [
     {
