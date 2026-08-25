@@ -41,18 +41,6 @@
       ]
     },
     {
-      "id": "dropbox",
-      "name": "Dropbox",
-      "image": "https://cdn.brandfetch.io/domain/dropbox.com/w/400/h/400?c=1idNukycTj6JSH5N_EG",
-      "description": "Cloud file storage, sharing, and folder management.",
-      "instructions": "",
-      "plugins": [
-        {
-          "id": "@meetopenbot/dropbox"
-        }
-      ]
-    },
-    {
       "id": "firecrawl",
       "name": "Firecrawl",
       "image": "https://cdn.brandfetch.io/domain/firecrawl.dev/w/800/h/1152/symbol?c=1idNukycTj6JSH5N_EG",
@@ -65,18 +53,6 @@
       ]
     },
     {
-      "id": "figma",
-      "name": "Figma",
-      "image": "https://unpkg.com/@lobehub/icons-static-svg@1.90.0/icons/figma-color.svg",
-      "description": "Inspect Figma files, extract design data, render assets, and manage comments.",
-      "instructions": "",
-      "plugins": [
-        {
-          "id": "@meetopenbot/figma"
-        }
-      ]
-    },
-    {
       "id": "stagehand",
       "name": "Stagehand",
       "image": "https://cdn.brandfetch.io/domain/stagehand.dev/w/400/h/400?c=1idNukycTj6JSH5N_EG",
@@ -85,78 +61,6 @@
       "plugins": [
         {
           "id": "@meetopenbot/stagehand"
-        }
-      ]
-    },
-    {
-      "id": "higgsfield",
-      "name": "Higgsfield",
-      "image": "https://cdn.brandfetch.io/domain/higgsfield.ai/w/200/h/200?c=1idNukycTj6JSH5N_EG",
-      "description": "Cinematic AI video generation from text, images, and prompts.",
-      "instructions": "",
-      "plugins": [
-        {
-          "id": "@meetopenbot/higgsfield"
-        }
-      ]
-    },
-    {
-      "id": "kling",
-      "name": "Kling",
-      "image": "https://unpkg.com/@lobehub/icons-static-svg@1.90.0/icons/kling-color.svg",
-      "description": "Next-generation AI creative studio for high-quality images and videos.",
-      "instructions": "",
-      "plugins": [
-        {
-          "id": "@meetopenbot/kling"
-        }
-      ]
-    },
-    {
-      "id": "stripe",
-      "name": "Stripe",
-      "image": "https://cdn.brandfetch.io/domain/stripe.com/w/480/h/480?c=1idNukycTj6JSH5N_EG",
-      "description": "Payment processing and financial infrastructure management.",
-      "instructions": "",
-      "plugins": [
-        {
-          "id": "@meetopenbot/stripe"
-        }
-      ]
-    },
-    {
-      "id": "shopify",
-      "name": "Shopify",
-      "image": "https://cdn.brandfetch.io/domain/shopify.com/w/800/h/899/symbol?c=1idNukycTj6JSH5N_EG",
-      "description": "E-commerce platform management and store automation.",
-      "instructions": "",
-      "plugins": [
-        {
-          "id": "@meetopenbot/shopify"
-        }
-      ]
-    },
-    {
-      "id": "stitch",
-      "name": "Stitch",
-      "image": "https://media2.dev.to/dynamic/image/width=1080,height=1080,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fzhshikvds4e6nn22fngm.png",
-      "description": "UI/UX design and screen generation for web applications.",
-      "instructions": "",
-      "plugins": [
-        {
-          "id": "@meetopenbot/stitch"
-        }
-      ]
-    },
-    {
-      "id": "jules",
-      "name": "Jules",
-      "image": "https://cdn.brandfetch.io/domain/jules.google/fallback/lettermark/w/820/h/820/logo?c=1idNukycTj6JSH5N_EG",
-      "description": "Google's AI-powered coding assistant for enterprise development.",
-      "instructions": "",
-      "plugins": [
-        {
-          "id": "@meetopenbot/jules"
         }
       ]
     },
@@ -197,18 +101,6 @@
       ]
     },
     {
-      "id": "resend",
-      "name": "Resend",
-      "image": "https://cdn.brandfetch.io/domain/resend.com/w/200/h/200?c=1idNukycTj6JSH5N_EG",
-      "description": "Transactional email delivery and management.",
-      "instructions": "",
-      "plugins": [
-        {
-          "id": "@meetopenbot/resend"
-        }
-      ]
-    },
-    {
       "id": "slack",
       "name": "Slack",
       "image": "https://cdn.brandfetch.io/domain/slack.com/w/400/h/400?c=1idNukycTj6JSH5N_EG",
@@ -217,30 +109,6 @@
       "plugins": [
         {
           "id": "@meetopenbot/slack"
-        }
-      ]
-    },
-    {
-      "id": "spotify",
-      "name": "Spotify",
-      "image": "https://cdn.brandfetch.io/domain/spotify.com/w/800/h/800/symbol?c=1idNukycTj6JSH5N_EG",
-      "description": "Music discovery, playlist management, and playback control.",
-      "instructions": "",
-      "plugins": [
-        {
-          "id": "@meetopenbot/spotify"
-        }
-      ]
-    },
-    {
-      "id": "vercel",
-      "name": "Vercel",
-      "image": "https://cdn.brandfetch.io/idDpCfN4VD/w/400/h/400/theme/dark/icon.png?c=1bxid64Mup7aczewSAYMX&t=1759982772575",
-      "description": "Cloud platform for frontend deployment and hosting.",
-      "instructions": "",
-      "plugins": [
-        {
-          "id": "@meetopenbot/vercel"
         }
       ]
     },
@@ -255,54 +123,6 @@
           "id": "@meetopenbot/github"
         }
       ]
-    },
-    {
-      "id": "remotion",
-      "name": "Remotion",
-      "image": "https://images.seeklogo.com/logo-png/59/1/remotion-video-logo-png_seeklogo-598106.png",
-      "description": "Programmatic video creation and rendering using React.",
-      "instructions": "",
-      "plugins": [
-        {
-          "id": "@meetopenbot/remotion"
-        }
-      ]
-    },
-    {
-      "id": "gamma-slides",
-      "name": "Gamma Slides",
-      "image": "https://cdn.brandfetch.io/idAmHoFYTU/theme/dark/logo.svg?c=1bxid64Mup7aczewSAYMX&t=1749614424533",
-      "description": "AI-powered presentation and slide deck generation.",
-      "instructions": "",
-      "plugins": [
-        {
-          "id": "@meetopenbot/gamma-slides"
-        }
-      ]
-    },
-    {
-      "id": "origami",
-      "name": "Origami",
-      "image": "https://cdn.brandfetch.io/domain/origami.chat/w/400/h/400?c=1idNukycTj6JSH5N_EG",
-      "description": "Real-time lead prospecting and verified contact discovery across the web.",
-      "instructions": "",
-      "plugins": [
-        {
-          "id": "@meetopenbot/origami"
-        }
-      ]
-    },
-    {
-      "id": "motion",
-      "name": "Motion",
-      "image": "https://motion.so/favicon.svg",
-      "description": "Frontier AI for motion design, launch videos, and animated content.",
-      "instructions": "",
-      "plugins": [
-        {
-          "id": "@meetopenbot/motion"
-        }
-      ]
     }
   ],
   "channels": [
@@ -310,26 +130,24 @@
       "id": "website",
       "name": "Build Website",
       "description": "Create website",
-      "spec": "Goal: Design, build, and deploy professional websites.\n\n## Channel specific guidelines\n- Stitch designs UI screens and provides HTML templates.\n- Claude Code implements the website logic and integrates designs.\n- GitHub manages the source code repository.\n- Vercel handles the deployment and hosting of the final website.",
+      "spec": "Goal: Design, build, and deploy professional websites.\n\n## Channel specific guidelines\n- Claude Code implements the website logic, UI, and integrations.\n- GitHub manages the source code repository.",
       "initialState": {},
       "participants": [
-        "stitch",
-        "vercel",
         "claude-code",
         "github"
       ],
       "starterPrompts": [
         {
           "label": "SaaS Landing Page",
-          "prompt": "Create a modern SaaS landing page for a new AI productivity tool. @stitch can design the UI, @claude-code can implement the React code, and @vercel can deploy the site."
+          "prompt": "Create a modern SaaS landing page for a new AI productivity tool. @claude-code can implement the React code, and @github can host the repository."
         },
         {
           "label": "Personal Portfolio",
-          "prompt": "Build a professional personal portfolio website. @stitch can create a minimalist design, @claude-code can build the site with a blog section, and @github can host the repository."
+          "prompt": "Build a professional personal portfolio website. @claude-code can build the site with a blog section, and @github can host the repository."
         },
         {
           "label": "Corporate Website",
-          "prompt": "Design and deploy a multi-page corporate website. @stitch can handle the branding and layouts, @claude-code can build the components, and @vercel can manage the production deployment."
+          "prompt": "Design and deploy a multi-page corporate website. @claude-code can build the components, and @github can manage the repository."
         }
       ]
     },
@@ -359,43 +177,21 @@
       ]
     },
     {
-      "id": "video",
-      "name": "Generate Video",
-      "description": "Create videos",
-      "spec": "Goal: Create a video based on the user's request.\n\n## Channel specific guidelines\n- Firecrawl can fetch and extract content from URLs when the user provides source material.\n- Remotion creates and renders the final video.\n- Follow the user's instructions for video type, duration, and style.",
-      "initialState": {},
-      "participants": [
-        "firecrawl",
-        "remotion"
-      ],
-      "starterPrompts": [
-        {
-          "label": "Product Demo",
-          "prompt": "Create a product demo video that walks through the product's key flows and UI. @firecrawl can scrape a product URL for messaging, branding, and visuals. @remotion can create and render the video."
-        },
-        {
-          "label": "New Feature Introduction",
-          "prompt": "Create a short video announcing a new feature. @firecrawl can scrape a blog post, changelog, or product page for feature details and copy. @remotion can create and render the video."
-        }
-      ]
-    },
-    {
       "id": "astro-seo-blog",
       "name": "Create Astro",
       "description": "Build, manage, and optimize an Astro-based website or blog with Markdown or CMS content and SEO guidelines.",
-      "spec": "Goal: Build, manage, and optimize a high-performance Astro website using Markdown or headless CMS (Notion) for content, and keep it optimized for search engines (SEO).\n\n## Channel specific guidelines\n- Claude Code scaffolds the Astro project, manages Markdown content, implements SEO-optimized React/Astro components, and configures sitemaps, robots.txt, and structured JSON-LD schema data.\n- Notion serves as the content repository and headless CMS, enabling non-technical users to edit content and sync updates seamlessly.\n- Firecrawl crawls live pages to perform SEO audits, identify crawl issues, analyze keyword performance, and research competitor structures.\n- GitHub hosts the code and content, and executes automated deployment or content-sync pipelines.\n- Vercel deploys and hosts the fast, static or SSR-rendered Astro site globally.",
+      "spec": "Goal: Build, manage, and optimize a high-performance Astro website using Markdown or headless CMS (Notion) for content, and keep it optimized for search engines (SEO).\n\n## Channel specific guidelines\n- Claude Code scaffolds the Astro project, manages Markdown content, implements SEO-optimized React/Astro components, and configures sitemaps, robots.txt, and structured JSON-LD schema data.\n- Notion serves as the content repository and headless CMS, enabling non-technical users to edit content and sync updates seamlessly.\n- Firecrawl crawls live pages to perform SEO audits, identify crawl issues, analyze keyword performance, and research competitor structures.\n- GitHub hosts the code and content, and executes automated deployment or content-sync pipelines.",
       "initialState": {},
       "participants": [
         "claude-code",
         "github",
         "notion",
-        "vercel",
         "firecrawl"
       ],
       "starterPrompts": [
         {
           "label": "Scaffold Astro Blog",
-          "prompt": "Scaffold a modern, SEO-optimized Astro blog using Tailwind CSS. @claude-code can build the project structure with sitemaps and robots.txt configured, set up the repository on @github, and deploy it to @vercel."
+          "prompt": "Scaffold a modern, SEO-optimized Astro blog using Tailwind CSS. @claude-code can build the project structure with sitemaps and robots.txt configured, and set up the repository on @github."
         },
         {
           "label": "Notion CMS Sync",
@@ -403,11 +199,11 @@
         },
         {
           "label": "SEO Audit & Schema",
-          "prompt": "Audit the live Astro blog for SEO performance and implement schema markup. @firecrawl can crawl the live site to check for SEO issues, and @claude-code can add metadata, structured schema markup, and deploy via @vercel."
+          "prompt": "Audit the live Astro blog for SEO performance and implement schema markup. @firecrawl can crawl the live site to check for SEO issues, and @claude-code can add metadata and structured schema markup."
         },
         {
           "label": "Keyword-Driven Content",
-          "prompt": "Create an SEO-optimized blog post on Astro best practices. @firecrawl can research high-intent SEO keywords, and @claude-code can write the article in Markdown with proper SEO headings and tags, then commit to @github for auto-deployment via @vercel."
+          "prompt": "Create an SEO-optimized blog post on Astro best practices. @firecrawl can research high-intent SEO keywords, and @claude-code can write the article in Markdown with proper SEO headings and tags, then commit to @github."
         }
       ]
     }
