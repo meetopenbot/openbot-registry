@@ -10,6 +10,7 @@
       "image": "https://unpkg.com/@lobehub/icons-static-svg@1.90.0/icons/claude-color.svg",
       "description": "Expert software engineering agent for complex coding tasks.",
       "instructions": "",
+      "models": { "providers": ["anthropic"], "default": "anthropic/claude-sonnet-5" },
       "plugins": [
         {
           "id": "@meetopenbot/claude-code"
@@ -22,6 +23,7 @@
       "image": "https://unpkg.com/@lobehub/icons-static-svg@1.90.0/icons/codex-color.svg",
       "description": "AI-powered coding assistant for rapid development and debugging.",
       "instructions": "",
+      "models": { "providers": ["openai"], "default": "openai/gpt-5.6-luna" },
       "plugins": [
         {
           "id": "@meetopenbot/codex"
@@ -58,6 +60,7 @@
       "image": "https://cdn.brandfetch.io/domain/stagehand.dev/w/400/h/400?c=1idNukycTj6JSH5N_EG",
       "description": "Powerful browser automation for web-based workflows.",
       "instructions": "",
+      "models": { "providers": ["openai"], "default": "openai/gpt-4o-mini" },
       "plugins": [
         {
           "id": "@meetopenbot/stagehand"
@@ -70,6 +73,7 @@
       "image": "https://pi.dev/favicon.svg",
       "description": "Minimal, extensible coding agent harness for terminal workflows.",
       "instructions": "",
+      "models": { "providers": ["openai", "anthropic", "deepseek"], "default": "openai/gpt-5.6-luna" },
       "plugins": [
         {
           "id": "@meetopenbot/pi"
@@ -82,6 +86,7 @@
       "image": "https://cdn.brandfetch.io/domain/makenotion.com/w/400/h/400?c=1idNukycTj6JSH5N_EG",
       "description": "Workspace management, page creation, and database automation.",
       "instructions": "",
+      "models": { "providers": ["openai"], "default": "openai/gpt-4o-mini" },
       "plugins": [
         {
           "id": "@meetopenbot/notion"
@@ -94,6 +99,7 @@
       "image": "https://linear.app/static/favicon.svg",
       "description": "Issue tracking, project management, cycles, and team workflow automation.",
       "instructions": "",
+      "models": { "providers": ["openai"], "default": "openai/gpt-4o-mini" },
       "plugins": [
         {
           "id": "@meetopenbot/linear"
@@ -106,6 +112,7 @@
       "image": "https://cdn.brandfetch.io/domain/slack.com/w/400/h/400?c=1idNukycTj6JSH5N_EG",
       "description": "Team messaging, channel management, and workspace communication.",
       "instructions": "",
+      "models": { "providers": ["openai"], "default": "openai/gpt-4o-mini" },
       "plugins": [
         {
           "id": "@meetopenbot/slack"
@@ -118,6 +125,7 @@
       "image": "https://unpkg.com/@lobehub/icons-static-svg@1.90.0/icons/github.svg",
       "description": "Manage repositories, branches, commits, pull requests, and issues on GitHub.",
       "instructions": "",
+      "models": { "providers": ["openai"], "default": "openai/gpt-4o-mini" },
       "plugins": [
         {
           "id": "@meetopenbot/github"
@@ -215,27 +223,32 @@
         {
           "id": "gpt-5.6-sol",
           "label": "GPT-5.6 Sol",
-          "description": "Frontier model for complex reasoning, coding, and agentic work"
+          "description": "Frontier model for complex reasoning, coding, and agentic work",
+          "pricing": { "inputPerMTok": 5, "outputPerMTok": 15 }
         },
         {
           "id": "gpt-5.6-terra",
           "label": "GPT-5.6 Terra",
-          "description": "Balances intelligence and cost for everyday product workloads"
+          "description": "Balances intelligence and cost for everyday product workloads",
+          "pricing": { "inputPerMTok": 2, "outputPerMTok": 8 }
         },
         {
           "id": "gpt-5.6-luna",
           "label": "GPT-5.6 Luna",
-          "description": "Fast, cost-efficient tier for classification, extraction, and drafting"
+          "description": "Fast, cost-efficient tier for classification, extraction, and drafting",
+          "pricing": { "inputPerMTok": 0.1, "outputPerMTok": 0.4 }
         },
         {
           "id": "gpt-5.4-nano",
           "label": "GPT-5.4 Nano",
-          "description": "Cheapest GPT-5.4-class model for simple high-volume tasks"
+          "description": "Cheapest GPT-5.4-class model for simple high-volume tasks",
+          "pricing": { "inputPerMTok": 0.1, "outputPerMTok": 0.4 }
         },
         {
           "id": "gpt-4o-mini",
           "label": "GPT-4o Mini",
-          "description": "Fast, cost-effective model for high-frequency tasks"
+          "description": "Fast, cost-effective model for high-frequency tasks",
+          "pricing": { "inputPerMTok": 0.15, "outputPerMTok": 0.6 }
         }
       ]
     },
@@ -245,22 +258,26 @@
         {
           "id": "claude-fable-5",
           "label": "Claude Fable 5",
-          "description": "Most capable widely released model for long-horizon agentic work"
+          "description": "Most capable widely released model for long-horizon agentic work",
+          "pricing": { "inputPerMTok": 5, "outputPerMTok": 25 }
         },
         {
           "id": "claude-opus-4-8",
           "label": "Claude Opus 4.8",
-          "description": "Flagship for complex agentic coding and enterprise workloads"
+          "description": "Flagship for complex agentic coding and enterprise workloads",
+          "pricing": { "inputPerMTok": 5, "outputPerMTok": 25 }
         },
         {
           "id": "claude-sonnet-5",
           "label": "Claude Sonnet 5",
-          "description": "Best balance of speed and intelligence for general tasks"
+          "description": "Best balance of speed and intelligence for general tasks",
+          "pricing": { "inputPerMTok": 3, "outputPerMTok": 15 }
         },
         {
           "id": "claude-haiku-4-5",
           "label": "Claude Haiku 4.5",
-          "description": "Fastest model with near-frontier intelligence for simple routines"
+          "description": "Fastest model with near-frontier intelligence for simple routines",
+          "pricing": { "inputPerMTok": 1, "outputPerMTok": 5 }
         }
       ]
     },
@@ -270,17 +287,20 @@
         {
           "id": "gemini-3.6-flash",
           "label": "Gemini 3.6 Flash",
-          "description": "Frontier agentic and coding model with sustained performance at 3.6 Flash speed"
+          "description": "Frontier agentic and coding model with sustained performance at 3.6 Flash speed",
+          "pricing": { "inputPerMTok": 0.15, "outputPerMTok": 0.6 }
         },
         {
           "id": "gemini-3.5-flash",
           "label": "Gemini 3.5 Flash",
-          "description": "Frontier agentic and coding model with sustained performance at Flash speed"
+          "description": "Frontier agentic and coding model with sustained performance at Flash speed",
+          "pricing": { "inputPerMTok": 0.15, "outputPerMTok": 0.6 }
         },
         {
           "id": "gemini-3.1-pro-preview",
           "label": "Gemini 3.1 Pro Preview",
-          "description": "Flagship reasoning model with 1M context; best for complex agentic workflows"
+          "description": "Flagship reasoning model with 1M context; best for complex agentic workflows",
+          "pricing": { "inputPerMTok": 1.25, "outputPerMTok": 5 }
         }
       ]
     },
@@ -290,12 +310,14 @@
         {
           "id": "deepseek/deepseek-v4-flash",
           "label": "DeepSeek V4 Flash",
-          "description": "Efficiency-optimized Mixture-of-Experts model from DeepSeek"
+          "description": "Efficiency-optimized Mixture-of-Experts model from DeepSeek",
+          "pricing": { "inputPerMTok": 0.14, "outputPerMTok": 0.28 }
         },
         {
           "id": "deepseek/deepseek-v4-pro",
           "label": "DeepSeek V4 Pro",
-          "description": "Pro model from DeepSeek"
+          "description": "Pro model from DeepSeek",
+          "pricing": { "inputPerMTok": 0.55, "outputPerMTok": 1.1 }
         }
       ]
     }
