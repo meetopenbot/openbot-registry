@@ -308,13 +308,13 @@
       "label": "DeepSeek",
       "models": [
         {
-          "id": "deepseek/deepseek-v4-flash",
+          "id": "deepseek-v4-flash",
           "label": "DeepSeek V4 Flash",
           "description": "Efficiency-optimized Mixture-of-Experts model from DeepSeek",
           "pricing": { "inputPerMTok": 0.14, "outputPerMTok": 0.28 }
         },
         {
-          "id": "deepseek/deepseek-v4-pro",
+          "id": "deepseek-v4-pro",
           "label": "DeepSeek V4 Pro",
           "description": "Pro model from DeepSeek",
           "pricing": { "inputPerMTok": 0.55, "outputPerMTok": 1.1 }
