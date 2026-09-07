@@ -1,7 +1,7 @@
 {
   "version": 1,
   "runtime": {
-    "latestVersion": "0.8.2"
+    "latestVersion": "0.8.3"
   },
   "agents": [
     {
@@ -131,87 +131,99 @@
           "id": "@meetopenbot/github"
         }
       ]
+    },
+    {
+      "id": "resend",
+      "name": "Resend",
+      "image": "https://cdn.brandfetch.io/domain/resend.com/w/400/h/400?c=1idNukycTj6JSH5N_EG",
+      "description": "Transactional email, contacts, templates, broadcasts, and inbound mail.",
+      "instructions": "",
+      "models": { "providers": ["openai"], "default": "openai/gpt-4o-mini" },
+      "plugins": [
+        {
+          "id": "@meetopenbot/resend"
+        }
+      ]
+    },
+    {
+      "id": "supabase",
+      "name": "Supabase",
+      "image": "https://cdn.brandfetch.io/domain/supabase.com/w/400/h/400?c=1idNukycTj6JSH5N_EG",
+      "description": "Postgres, Auth, Storage, Edge Functions, and project operations on Supabase.",
+      "instructions": "",
+      "models": { "providers": ["openai"], "default": "openai/gpt-4o-mini" },
+      "plugins": [
+        {
+          "id": "@meetopenbot/supabase"
+        }
+      ]
+    },
+    {
+      "id": "stripe",
+      "name": "Stripe",
+      "image": "https://cdn.brandfetch.io/domain/stripe.com/w/400/h/400?c=1idNukycTj6JSH5N_EG",
+      "description": "Customers, payments, invoices, subscriptions, and Stripe billing operations.",
+      "instructions": "",
+      "models": { "providers": ["openai"], "default": "openai/gpt-4o-mini" },
+      "plugins": [
+        {
+          "id": "@meetopenbot/stripe"
+        }
+      ]
     }
   ],
   "channels": [
     {
-      "id": "website",
-      "name": "Build Website",
-      "description": "Create website",
-      "spec": "Goal: Design, build, and deploy professional websites.\n\n## Channel specific guidelines\n- Claude Code implements the website logic, UI, and integrations.\n- GitHub manages the source code repository.",
-      "initialState": {},
-      "participants": [
-        "claude-code",
-        "github"
-      ],
-      "starterPrompts": [
-        {
-          "label": "SaaS Landing Page",
-          "prompt": "Create a modern SaaS landing page for a new AI productivity tool. @claude-code can implement the React code, and @github can host the repository."
-        },
-        {
-          "label": "Personal Portfolio",
-          "prompt": "Build a professional personal portfolio website. @claude-code can build the site with a blog section, and @github can host the repository."
-        },
-        {
-          "label": "Corporate Website",
-          "prompt": "Design and deploy a multi-page corporate website. @claude-code can build the components, and @github can manage the repository."
-        }
-      ]
-    },
-    {
-      "id": "slides",
-      "name": "Build Slides",
-      "description": "Create slides",
-      "spec": "Goal: Create engaging presentation slide decks as HTML from source URLs, exportable to PDF.\n\n## Channel specific guidelines\n- Firecrawl fetches and extracts content from URLs when the user provides source material (messaging, branding, copy, and visuals).\n- Claude Code builds a single self-contained HTML deck using Tailwind CSS via CDN (no build step or npm dependencies), styled to match the scraped brand where possible.\n- Claude Code structures narrative, slide copy, and speaker notes from the extracted content.\n- Deliverable: one HTML file (optionally with linked images from the source URLs).\n\n## PDF and print requirements (coding agent)\nThe deck must be designed so the user can open it in a browser and save a clean PDF via Print → Save as PDF. Follow these rules:\n- Structure: each slide is a separate full-page element (e.g. a section with h-screen min-h-screen).\n- Print CSS: include a @media print block with @page { size: landscape; margin: 0; }, page-break-after: always (or break-after: page) on every slide except the last, and print-color-adjust: exact so backgrounds and colors are preserved.\n- Layout: keep all content within slide bounds; avoid scrollable slides, overflow clipping issues, and elements that span multiple pages.\n- Screen-only UI: hide navigation, progress indicators, and keyboard-hint overlays in print (e.g. print:hidden).\n- Images: use absolute URLs or embedded assets that render in print; avoid lazy-loading tricks that leave blanks in PDF output.\n- Testing mindset: optimize for Chrome print preview (landscape, no browser headers/footers).\n- Include a brief HTML comment at the top with print instructions for the user.",
-      "initialState": {},
-      "participants": [
-        "firecrawl",
-        "claude-code"
-      ],
-      "starterPrompts": [
-        {
-          "label": "Pitch Deck",
-          "prompt": "Create a 10-slide pitch deck from a product or company URL. @firecrawl can scrape the site for messaging, branding, and visuals. @claude-code can build a single HTML file with Tailwind CDN and print-to-PDF styles."
-        },
-        {
-          "label": "Technical Presentation",
-          "prompt": "Create a technical presentation from a docs or blog post URL. @firecrawl can extract the key content and structure. @claude-code can build the HTML slide deck."
-        },
-        {
-          "label": "Product Overview",
-          "prompt": "Create a product overview slide deck from a landing page URL. @firecrawl can scrape product details, features, and branding. @claude-code can assemble the full HTML deck with Tailwind CDN."
-        }
-      ]
-    },
-    {
-      "id": "astro-seo-blog",
-      "name": "Create Astro",
-      "description": "Build, manage, and optimize an Astro-based website or blog with Markdown or CMS content and SEO guidelines.",
-      "spec": "Goal: Build, manage, and optimize a high-performance Astro website using Markdown or headless CMS (Notion) for content, and keep it optimized for search engines (SEO).\n\n## Channel specific guidelines\n- Claude Code scaffolds the Astro project, manages Markdown content, implements SEO-optimized React/Astro components, and configures sitemaps, robots.txt, and structured JSON-LD schema data.\n- Notion serves as the content repository and headless CMS, enabling non-technical users to edit content and sync updates seamlessly.\n- Firecrawl crawls live pages to perform SEO audits, identify crawl issues, analyze keyword performance, and research competitor structures.\n- GitHub hosts the code and content, and executes automated deployment or content-sync pipelines.",
+      "id": "ship-landing-page",
+      "name": "Ship landing page",
+      "description": "Design, build, and ship a high-converting landing page.",
+      "spec": "Goal: Ship a focused landing page — hero, proof, features, FAQ, and a single CTA. Not a full app.\n\n## Channel specific guidelines\n- Claude Code implements the page, copy sections, analytics hooks, and deploy config.\n- GitHub hosts the repository.\n- Firecrawl scrapes a reference URL when the user provides one (messaging, branding, visuals). Rebuild a distinct page; do not copy verbatim.\n- Keep scope to a marketing page. Auth, billing, and dashboards belong in Ship paid MVP.",
       "initialState": {},
       "participants": [
         "claude-code",
         "github",
-        "notion",
         "firecrawl"
       ],
       "starterPrompts": [
         {
-          "label": "Scaffold Astro Blog",
-          "prompt": "Scaffold a modern, SEO-optimized Astro blog using Tailwind CSS. @claude-code can build the project structure with sitemaps and robots.txt configured, and set up the repository on @github."
+          "label": "SaaS waitlist",
+          "prompt": "Ship a landing page for a new SaaS with a waitlist CTA. @claude-code can implement a fast marketing site (hero, proof, features, FAQ, email capture). @github can host the repository."
         },
         {
-          "label": "Notion CMS Sync",
-          "prompt": "Connect our Astro website to a Notion database to use it as a headless CMS. @claude-code can write a build script or GitHub Action to fetch database entries, convert them to markdown, and commit them to @github, syncing with @notion."
+          "label": "From a URL",
+          "prompt": "I will paste a competitor or inspiration URL. @firecrawl can scrape messaging, branding, and visuals. @claude-code can rebuild a distinct landing page from that research. @github can host the repository."
         },
         {
-          "label": "SEO Audit & Schema",
-          "prompt": "Audit the live Astro blog for SEO performance and implement schema markup. @firecrawl can crawl the live site to check for SEO issues, and @claude-code can add metadata and structured schema markup."
+          "label": "Product launch",
+          "prompt": "Ship a product-launch landing page with hero, social proof, feature grid, FAQ, and a strong CTA. @claude-code can implement it. @github can host the repository."
+        }
+      ]
+    },
+    {
+      "id": "ship-paid-mvp",
+      "name": "Ship paid MVP",
+      "description": "Ship an MVP people can pay for: auth, database, payments, and email.",
+      "spec": "Goal: Ship a paid MVP — something a user can sign up for, pay for, and get a confirmation email.\n\n## Channel specific guidelines\n- Claude Code implements the product.\n- GitHub hosts the repository.\n- Supabase provides auth, Postgres, and storage.\n- Stripe handles checkout, customers, and subscriptions or one-time payments.\n- Resend sends transactional email (welcome, receipts, magic links).\n- Prefer a narrow first slice: one persona, one paid action, one success email. Do not boil the ocean.",
+      "initialState": {},
+      "participants": [
+        "claude-code",
+        "github",
+        "supabase",
+        "stripe",
+        "resend"
+      ],
+      "starterPrompts": [
+        {
+          "label": "Subscription SaaS",
+          "prompt": "Ship a subscription SaaS MVP. @supabase can handle auth and Postgres. @stripe can take Checkout for the plan. @resend can send the welcome email. @claude-code can implement the app. @github can host the repository."
         },
         {
-          "label": "Keyword-Driven Content",
-          "prompt": "Create an SEO-optimized blog post on Astro best practices. @firecrawl can research high-intent SEO keywords, and @claude-code can write the article in Markdown with proper SEO headings and tags, then commit to @github."
+          "label": "One-time purchase",
+          "prompt": "Ship a one-time purchase MVP that unlocks access after payment. @stripe can charge once. @supabase can store accounts. @resend can send the receipt. @claude-code can implement the app. @github can host the repository."
+        },
+        {
+          "label": "Usage-billed API",
+          "prompt": "Ship a usage-billed API MVP. @supabase can store users and usage. @stripe can meter billing. @resend can send receipts. @claude-code can implement the API and a thin dashboard. @github can host the repository."
         }
       ]
     }
