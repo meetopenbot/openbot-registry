@@ -68,6 +68,19 @@
       ]
     },
     {
+      "id": "opencode",
+      "name": "OpenCode",
+      "image": "https://opencode.ai/favicon.svg",
+      "description": "Open-source coding agent for reading, editing, and running code in the workspace.",
+      "instructions": "",
+      "models": { "providers": ["openai", "anthropic", "google", "deepseek"], "default": "openai/gpt-5.6-luna" },
+      "plugins": [
+        {
+          "id": "@meetopenbot/opencode"
+        }
+      ]
+    },
+    {
       "id": "pi",
       "name": "Pi",
       "image": "https://pi.dev/favicon.svg",
