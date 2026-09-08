@@ -189,8 +189,8 @@
     {
       "id": "ship-landing-page",
       "name": "Ship landing page",
-      "description": "Design, build, and ship a high-converting landing page.",
-      "spec": "Goal: Ship a focused landing page — hero, proof, features, FAQ, and a single CTA. Not a full app.\n\n## Channel specific guidelines\n- Claude Code implements the page, copy sections, analytics hooks, and deploy config.\n- GitHub hosts the repository.\n- Firecrawl scrapes a reference URL when the user provides one (messaging, branding, visuals). Rebuild a distinct page; do not copy verbatim.\n- Keep scope to a marketing page. Auth, billing, and dashboards belong in Ship paid MVP.",
+      "description": "Design, build, and ship a high-converting Astro landing page.",
+      "spec": "Goal: Ship a focused marketing landing page — hero, proof, features, FAQ, and a single CTA. Not a product app.\n\nThis Space runs on OpenBot cloud (Linux, Node 24). The human is in the browser at openbot.one. They cannot open localhost on this machine.\n\n## Stack (do not substitute)\n- Astro with static output (`output: 'static'`). TypeScript. Tailwind CSS.\n- pnpm. ESM (`\"type\": \"module\"`).\n- Do not use Next.js, Remix, Nuxt, or a React SPA for a marketing page. Do not add auth, billing, dashboards, or an app shell — those belong in Ship paid MVP.\n- Production: push to GitHub and deploy as static hosting (prefer Cloudflare Pages). Do not self-host, Dockerize, or provision a VPS.\n\n## Cloud preview (required)\n- Add `cloudflared` as a **devDependency** (do not assume a global install; this image does not ship it). Add `concurrently` or a small `scripts/dev.mjs` so one command starts the site and the tunnel.\n- `pnpm dev` MUST start Astro on `127.0.0.1:4321` and run `cloudflared tunnel --url http://127.0.0.1:4321` (Cloudflare quick tunnel — no Cloudflare account).\n- Parse the `https://*.trycloudflare.com` URL from cloudflared logs and print `Public preview: <url>`. Share that HTTPS URL with the human. Never tell them to visit localhost, 127.0.0.1, or a LAN IP.\n- A new tunnel URL is issued on every restart — share the new one. Do not use ngrok, named Cloudflare tunnels, or a self-hosted reverse proxy.\n\n## Page\n- One page, one primary CTA above the fold (waitlist, signup interest, or buy — whatever the human asked).\n- Sections: hero, social proof, feature grid, FAQ. Real copy from the brief — no lorem ipsum, no placeholder company names once the product is known.\n- Semantic HTML, mobile-first, accessible (labels, contrast, keyboard). Meta title/description, Open Graph, favicon.\n- Keep JS minimal (Astro islands only if a form or accordion needs it). Add a stub analytics hook (Plausible or similar) behind an env flag.\n- Waitlist/email capture can be a client form with a success state. No database, no auth.\n\n## Agents\n- Claude Code implements the site, copy sections, analytics hooks, `pnpm dev` + tunnel, and deploy config.\n- GitHub hosts the repository.\n- Firecrawl scrapes a reference URL when the human provides one (messaging, branding, visuals). Rebuild a distinct page; do not copy verbatim.\n\n## Done when\n- `pnpm dev` is running, a public HTTPS preview URL is in the thread, and the page matches the brief on mobile and desktop.",
       "initialState": {},
       "participants": [
         "claude-code",
@@ -200,23 +200,23 @@
       "starterPrompts": [
         {
           "label": "SaaS waitlist",
-          "prompt": "Ship a landing page for a new SaaS with a waitlist CTA. @claude-code can implement a fast marketing site (hero, proof, features, FAQ, email capture). @github can host the repository."
+          "prompt": "Ship an Astro landing page for a new SaaS with a waitlist CTA (hero, proof, features, FAQ, email capture). @claude-code can implement it and expose a public preview via the cloudflared tunnel on pnpm dev. @github can host the repository."
         },
         {
           "label": "From a URL",
-          "prompt": "I will paste a competitor or inspiration URL. @firecrawl can scrape messaging, branding, and visuals. @claude-code can rebuild a distinct landing page from that research. @github can host the repository."
+          "prompt": "I will paste a competitor or inspiration URL. @firecrawl can scrape messaging, branding, and visuals. @claude-code can rebuild a distinct Astro landing page from that research and share the public tunnel preview. @github can host the repository."
         },
         {
           "label": "Product launch",
-          "prompt": "Ship a product-launch landing page with hero, social proof, feature grid, FAQ, and a strong CTA. @claude-code can implement it. @github can host the repository."
+          "prompt": "Ship a product-launch Astro landing page with hero, social proof, feature grid, FAQ, and a strong CTA. @claude-code can implement it and expose it on the cloudflared preview URL from pnpm dev. @github can host the repository."
         }
       ]
     },
     {
       "id": "ship-paid-mvp",
       "name": "Ship paid MVP",
-      "description": "Ship an MVP people can pay for: auth, database, payments, and email.",
-      "spec": "Goal: Ship a paid MVP — something a user can sign up for, pay for, and get a confirmation email.\n\n## Channel specific guidelines\n- Claude Code implements the product.\n- GitHub hosts the repository.\n- Supabase provides auth, Postgres, and storage.\n- Stripe handles checkout, customers, and subscriptions or one-time payments.\n- Resend sends transactional email (welcome, receipts, magic links).\n- Prefer a narrow first slice: one persona, one paid action, one success email. Do not boil the ocean.",
+      "description": "Ship a paid MVP: Vite + React frontend, Express API, auth, payments, and email.",
+      "spec": "Goal: Ship a paid MVP — something a person can sign up for, pay for, and get a confirmation email.\n\nThis Space runs on OpenBot cloud (Linux, Node 24). The human is in the browser at openbot.one. They cannot open localhost on this machine. Keep the first slice narrow: one persona, one paid action, one success email.\n\n## Stack (do not substitute)\nTwo processes. Not a fullstack monolith.\n\n- **Frontend:** Vite + React + TypeScript. React Router. Tailwind is fine. Call the API with relative `/api` URLs.\n- **Backend:** a thin Express (or Hono) TypeScript server. JSON REST. Stripe webhooks, Resend, and any secret-bearing work live only here.\n- **Do not** use Next.js, Remix, Nest, Redwood, or other fullstack frameworks. No React Server Components, no server actions.\n- pnpm. ESM. Layout:\n\n      frontend/    Vite React app (port 5173)\n      backend/     Express/Hono API (port 3001)\n      package.json root scripts + .env.example\n\n- Vite `server.proxy`: `/api` → `http://127.0.0.1:3001` so the browser uses one origin.\n\n## Cloud preview (required)\n- Add `cloudflared` as a **devDependency** (do not assume a global install; this image does not ship it). Add `concurrently` or a small `scripts/dev.mjs` so one command starts frontend, backend, and the tunnel.\n- `pnpm dev` MUST start both processes and run `cloudflared tunnel --url http://127.0.0.1:5173` (Cloudflare quick tunnel — no Cloudflare account). Tunnel the Vite port only; `/api` is proxied.\n- Parse the `https://*.trycloudflare.com` URL from cloudflared logs and print `Public preview: <url>`. Share that HTTPS URL with the human. Never tell them to visit localhost, 127.0.0.1, or a LAN IP.\n- Use that public origin for Supabase Auth redirect URLs and the Stripe webhook endpoint (`https://<tunnel>/api/stripe/webhook`). Quick tunnels change URL on restart — update those callbacks and share the new preview URL. Do not use ngrok, named Cloudflare tunnels, or a self-hosted reverse proxy.\n\n## Product slice\n- **Auth + data:** Supabase Auth and Postgres (and Storage only if the slice needs it). Verify JWTs on the server; service role key stays on the backend.\n- **Payments:** Stripe Checkout (subscription, one-time, or metered — matching the brief). Create sessions on the server. Fulfill in the webhook (`checkout.session.completed` / invoice events). Never put the Stripe secret in the frontend.\n- **Email:** Resend sends the success email (welcome, receipt, or magic link). Trigger from the webhook or auth flow, not from the browser.\n- Ship the happy path first: sign up → pay → land on a confirmation screen → receive email. Settings, teams, admin, and extra CRUD wait.\n\n## Secrets\n- Document every variable in `.env.example`. Load them on the backend. Never commit `.env`.\n- Never ask the human to paste API keys into chat. Tell them to add variables in OpenBot Settings (Stripe, Supabase, Resend). Publishable/anon keys may ship to the frontend; secret and service-role keys must not.\n\n## Agents\n- Claude Code implements the app, `pnpm dev` + tunnel, and wiring.\n- GitHub hosts the repository.\n- Supabase provides auth, Postgres, and storage.\n- Stripe handles checkout, customers, and subscriptions or one-time payments.\n- Resend sends transactional email.\n\n## Done when\n- `pnpm dev` is running, a public HTTPS preview URL is in the thread, and a reviewer can sign up, pay (Stripe test mode), and receive the confirmation email.",
       "initialState": {},
       "participants": [
         "claude-code",
@@ -228,15 +228,15 @@
       "starterPrompts": [
         {
           "label": "Subscription SaaS",
-          "prompt": "Ship a subscription SaaS MVP. @supabase can handle auth and Postgres. @stripe can take Checkout for the plan. @resend can send the welcome email. @claude-code can implement the app. @github can host the repository."
+          "prompt": "Ship a subscription SaaS MVP as a Vite React frontend plus a thin Express API. @supabase can handle auth and Postgres. @stripe can take Checkout for the plan. @resend can send the welcome email. @claude-code can implement it and share the public cloudflared preview from pnpm dev. @github can host the repository."
         },
         {
           "label": "One-time purchase",
-          "prompt": "Ship a one-time purchase MVP that unlocks access after payment. @stripe can charge once. @supabase can store accounts. @resend can send the receipt. @claude-code can implement the app. @github can host the repository."
+          "prompt": "Ship a one-time purchase MVP that unlocks access after payment. Vite React frontend, Express API. @stripe can charge once. @supabase can store accounts. @resend can send the receipt. @claude-code can implement it and share the public tunnel preview. @github can host the repository."
         },
         {
           "label": "Usage-billed API",
-          "prompt": "Ship a usage-billed API MVP. @supabase can store users and usage. @stripe can meter billing. @resend can send receipts. @claude-code can implement the API and a thin dashboard. @github can host the repository."
+          "prompt": "Ship a usage-billed API MVP: Express API plus a thin Vite React dashboard. @supabase can store users and usage. @stripe can meter billing. @resend can send receipts. @claude-code can implement it and share the public cloudflared preview from pnpm dev. @github can host the repository."
         }
       ]
     }
