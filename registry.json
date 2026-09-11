@@ -183,6 +183,19 @@
           "id": "@meetopenbot/stripe"
         }
       ]
+    },
+    {
+      "id": "cloudflare",
+      "name": "Cloudflare",
+      "image": "https://cdn.brandfetch.io/domain/cloudflare.com/w/400/h/400?c=1idNukycTj6JSH5N_EG",
+      "description": "Workers, DNS, KV, R2, Pages, and Cloudflare account operations.",
+      "instructions": "",
+      "models": { "providers": ["openai"], "default": "openai/gpt-4o-mini" },
+      "plugins": [
+        {
+          "id": "@meetopenbot/cloudflare"
+        }
+      ]
     }
   ],
   "channels": [
