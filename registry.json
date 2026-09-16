@@ -36,6 +36,7 @@
       "image": "https://unpkg.com/@lobehub/icons-static-svg@1.90.0/icons/cursor.svg",
       "description": "AI-first code editor agent optimized for fast, context-aware development.",
       "instructions": "",
+      "models": { "providers": ["cursor"], "default": "cursor/composer-2.5" },
       "plugins": [
         {
           "id": "@meetopenbot/cursor"
@@ -396,6 +397,71 @@
           "label": "GLM-5.3 Flash",
           "description": "Cheap multimodal coding model with 1M context",
           "pricing": { "inputPerMTok": 0.15, "outputPerMTok": 0.5 }
+        }
+      ]
+    },
+    "cursor": {
+      "label": "Cursor",
+      "models": [
+        {
+          "id": "composer-2.5",
+          "label": "Composer 2.5",
+          "description": "Cursor's default coding model (standard speed tier)",
+          "pricing": { "inputPerMTok": 0.5, "outputPerMTok": 2.5 }
+        },
+        {
+          "id": "composer-2.5-fast",
+          "label": "Composer 2.5 Fast",
+          "description": "Lower-latency Composer for interactive coding",
+          "pricing": { "inputPerMTok": 3, "outputPerMTok": 15 }
+        },
+        {
+          "id": "grok-4.6",
+          "label": "Grok 4.6",
+          "description": "Cursor × SpaceXAI frontier model for hard agentic work",
+          "pricing": { "inputPerMTok": 2, "outputPerMTok": 6 }
+        },
+        {
+          "id": "grok-4.6-fast",
+          "label": "Grok 4.6 Fast",
+          "description": "Faster Grok 4.6 tier for long-running agent tasks",
+          "pricing": { "inputPerMTok": 4, "outputPerMTok": 12 }
+        },
+        {
+          "id": "cursor-grok-4.6-high",
+          "label": "Grok 4.6 High",
+          "description": "Grok 4.6 with high reasoning effort (Cursor catalog id)",
+          "pricing": { "inputPerMTok": 2, "outputPerMTok": 6 }
+        },
+        {
+          "id": "grok-4.5",
+          "label": "Grok 4.5",
+          "description": "Previous-generation Cursor flagship model",
+          "pricing": { "inputPerMTok": 2, "outputPerMTok": 6 }
+        },
+        {
+          "id": "auto-smart",
+          "label": "Auto",
+          "description": "Cursor Router — picks a model per request (Cost / Balance / Intelligence)",
+          "pricing": { "inputPerMTok": 2, "outputPerMTok": 10 }
+        },
+        {
+          "id": "claude-opus-5-thinking-high",
+          "label": "Claude Opus 5 Thinking",
+          "description": "Anthropic Opus 5 with high reasoning via Cursor billing",
+          "pricing": { "inputPerMTok": 5, "outputPerMTok": 25 }
+        },
+        {
+          "id": "gpt-5.6-sol-medium",
+          "label": "GPT-5.6 Sol",
+          "description": "OpenAI frontier model via Cursor billing",
+          "pricing": { "inputPerMTok": 4, "outputPerMTok": 20 }
+        },
+        {
+          "id": "gemini-3.7-flash-high",
+          "label": "Gemini 3.7 Flash",
+          "description": "Google Gemini flash with high reasoning via Cursor billing",
+          "pricing": { "inputPerMTok": 0.75, "outputPerMTok": 3.5 }
         }
       ]
     }
