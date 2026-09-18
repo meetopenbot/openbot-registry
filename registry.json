@@ -197,6 +197,19 @@
           "id": "@meetopenbot/cloudflare"
         }
       ]
+    },
+    {
+      "id": "hostinger",
+      "name": "Hostinger",
+      "image": "https://cdn.brandfetch.io/domain/hostinger.com/w/400/h/400?c=1idNukycTj6JSH5N_EG",
+      "description": "Websites, WordPress, VPS, domains, DNS, and Hostinger account operations.",
+      "instructions": "",
+      "models": { "providers": ["openai"], "default": "openai/gpt-4o-mini" },
+      "plugins": [
+        {
+          "id": "@meetopenbot/hostinger"
+        }
+      ]
     }
   ],
   "channels": [
