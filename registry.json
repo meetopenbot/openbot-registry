@@ -13,7 +13,7 @@
     "@meetopenbot/hostinger": "1.1.0",
     "@meetopenbot/linear": "1.0.2",
     "@meetopenbot/notion": "1.0.1",
-    "@meetopenbot/openbot": "1.2.2",
+    "@meetopenbot/openbot": "1.2.3",
     "@meetopenbot/opencode": "1.0.7",
     "@meetopenbot/pi": "1.0.3",
     "@meetopenbot/resend": "1.1.2",
