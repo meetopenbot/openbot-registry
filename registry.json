@@ -4,9 +4,9 @@
     "latestVersion": "0.8.7"
   },
   "plugins": {
-    "@meetopenbot/claude-code": "1.0.1",
+    "@meetopenbot/claude-code": "1.0.2",
     "@meetopenbot/cloudflare": "1.1.1",
-    "@meetopenbot/codex": "2.0.2",
+    "@meetopenbot/codex": "2.0.3",
     "@meetopenbot/cursor": "1.1.1",
     "@meetopenbot/firecrawl": "2.0.1",
     "@meetopenbot/github": "1.0.1",
