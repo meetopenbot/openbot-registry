@@ -16,4 +16,4 @@ OpenBot continues to fetch the public raw URL at runtime. Do not edit the public
 
 ## Contributing
 
-To add or update an agent or channel, edit this `registry.json` in the monorepo. Run `pnpm registry:validate`, keep descriptions concise, and ensure first-party plugin IDs match workspace packages.
+To add or update an agent or channel, edit this `registry.json` in the monorepo. Run `pnpm registry:validate`, keep descriptions concise, and ensure first-party plugin IDs match workspace packages. `runtime.latestVersion` must match `apps/openbot-runtime/package.json` (use `pnpm registry:sync` to update plugin and runtime versions together).
