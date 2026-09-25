@@ -80,7 +80,7 @@
       "image": "https://cdn.brandfetch.io/domain/stagehand.dev/w/400/h/400?c=1idNukycTj6JSH5N_EG",
       "description": "Powerful browser automation for web-based workflows.",
       "instructions": "",
-      "models": { "providers": ["openai"], "default": "openai/gpt-4o-mini" },
+      "models": { "providers": ["openai"], "default": "openai/gpt-6-luna" },
       "plugins": [
         {
           "id": "@meetopenbot/stagehand"
@@ -119,7 +119,7 @@
       "image": "https://cdn.brandfetch.io/domain/makenotion.com/w/400/h/400?c=1idNukycTj6JSH5N_EG",
       "description": "Workspace management, page creation, and database automation.",
       "instructions": "",
-      "models": { "providers": ["openai"], "default": "openai/gpt-4o-mini" },
+      "models": { "providers": ["openai"], "default": "openai/gpt-6-luna" },
       "plugins": [
         {
           "id": "@meetopenbot/notion"
@@ -132,7 +132,7 @@
       "image": "https://linear.app/static/favicon.svg",
       "description": "Issue tracking, project management, cycles, and team workflow automation.",
       "instructions": "",
-      "models": { "providers": ["openai"], "default": "openai/gpt-4o-mini" },
+      "models": { "providers": ["openai"], "default": "openai/gpt-6-luna" },
       "plugins": [
         {
           "id": "@meetopenbot/linear"
@@ -145,7 +145,7 @@
       "image": "https://cdn.brandfetch.io/domain/slack.com/w/400/h/400?c=1idNukycTj6JSH5N_EG",
       "description": "Team messaging, channel management, and workspace communication.",
       "instructions": "",
-      "models": { "providers": ["openai"], "default": "openai/gpt-4o-mini" },
+      "models": { "providers": ["openai"], "default": "openai/gpt-6-luna" },
       "plugins": [
         {
           "id": "@meetopenbot/slack"
@@ -158,7 +158,7 @@
       "image": "https://unpkg.com/@lobehub/icons-static-svg@1.90.0/icons/github.svg",
       "description": "Manage repositories, branches, commits, pull requests, and issues on GitHub.",
       "instructions": "",
-      "models": { "providers": ["openai"], "default": "openai/gpt-4o-mini" },
+      "models": { "providers": ["openai"], "default": "openai/gpt-6-luna" },
       "plugins": [
         {
           "id": "@meetopenbot/github"
@@ -171,7 +171,7 @@
       "image": "https://cdn.brandfetch.io/domain/resend.com/w/400/h/400?c=1idNukycTj6JSH5N_EG",
       "description": "Transactional email, contacts, templates, broadcasts, and inbound mail.",
       "instructions": "",
-      "models": { "providers": ["openai"], "default": "openai/gpt-4o-mini" },
+      "models": { "providers": ["openai"], "default": "openai/gpt-6-luna" },
       "plugins": [
         {
           "id": "@meetopenbot/resend"
@@ -184,7 +184,7 @@
       "image": "https://cdn.brandfetch.io/domain/supabase.com/w/400/h/400?c=1idNukycTj6JSH5N_EG",
       "description": "Postgres, Auth, Storage, Edge Functions, and project operations on Supabase.",
       "instructions": "",
-      "models": { "providers": ["openai"], "default": "openai/gpt-4o-mini" },
+      "models": { "providers": ["openai"], "default": "openai/gpt-6-luna" },
       "plugins": [
         {
           "id": "@meetopenbot/supabase"
@@ -197,7 +197,7 @@
       "image": "https://cdn.brandfetch.io/domain/stripe.com/w/400/h/400?c=1idNukycTj6JSH5N_EG",
       "description": "Customers, payments, invoices, subscriptions, and Stripe billing operations.",
       "instructions": "",
-      "models": { "providers": ["openai"], "default": "openai/gpt-4o-mini" },
+      "models": { "providers": ["openai"], "default": "openai/gpt-6-luna" },
       "plugins": [
         {
           "id": "@meetopenbot/stripe"
@@ -210,7 +210,7 @@
       "image": "https://cdn.brandfetch.io/domain/cloudflare.com/w/400/h/400?c=1idNukycTj6JSH5N_EG",
       "description": "Workers, DNS, KV, R2, Pages, and Cloudflare account operations.",
       "instructions": "",
-      "models": { "providers": ["openai"], "default": "openai/gpt-4o-mini" },
+      "models": { "providers": ["openai"], "default": "openai/gpt-6-luna" },
       "plugins": [
         {
           "id": "@meetopenbot/cloudflare"
@@ -223,7 +223,7 @@
       "image": "https://cdn.brandfetch.io/domain/hostinger.com/w/400/h/400?c=1idNukycTj6JSH5N_EG",
       "description": "Websites, WordPress, VPS, domains, DNS, and Hostinger account operations.",
       "instructions": "",
-      "models": { "providers": ["openai"], "default": "openai/gpt-4o-mini" },
+      "models": { "providers": ["openai"], "default": "openai/gpt-6-luna" },
       "plugins": [
         {
           "id": "@meetopenbot/hostinger"
@@ -321,34 +321,22 @@
       "label": "OpenAI",
       "models": [
         {
-          "id": "gpt-6-sol",
-          "label": "GPT-6 Sol",
-          "description": "Frontier model for complex reasoning, coding, and agentic work",
-          "pricing": { "inputPerMTok": 2, "outputPerMTok": 10 }
+          "id": "gpt-6-astra",
+          "label": "GPT-6 Astra",
+          "description": "Most capable model for the hardest reasoning, coding, and agentic work",
+          "pricing": { "inputPerMTok": 10, "outputPerMTok": 50 }
         },
         {
-          "id": "gpt-5.6-terra",
-          "label": "GPT-5.6 Terra",
-          "description": "Balances intelligence and cost for everyday product workloads",
-          "pricing": { "inputPerMTok": 2, "outputPerMTok": 8 }
+          "id": "gpt-6-sol",
+          "label": "GPT-6 Sol",
+          "description": "Balances intelligence and cost for complex coding and agentic workflows",
+          "pricing": { "inputPerMTok": 2, "outputPerMTok": 10 }
         },
         {
           "id": "gpt-6-luna",
           "label": "GPT-6 Luna",
           "description": "Fast, cost-efficient tier for classification, extraction, and drafting",
           "pricing": { "inputPerMTok": 0.1, "outputPerMTok": 0.5 }
-        },
-        {
-          "id": "gpt-5.4-nano",
-          "label": "GPT-5.4 Nano",
-          "description": "Cheapest GPT-5.4-class model for simple high-volume tasks",
-          "pricing": { "inputPerMTok": 0.1, "outputPerMTok": 0.4 }
-        },
-        {
-          "id": "gpt-4o-mini",
-          "label": "GPT-4o Mini",
-          "description": "Fast, cost-effective model for high-frequency tasks",
-          "pricing": { "inputPerMTok": 0.15, "outputPerMTok": 0.6 }
         }
       ]
     },
@@ -371,7 +359,7 @@
           "id": "claude-sonnet-5",
           "label": "Claude Sonnet 5",
           "description": "Best balance of speed and intelligence for general tasks",
-          "pricing": { "inputPerMTok": 3, "outputPerMTok": 15 }
+          "pricing": { "inputPerMTok": 2, "outputPerMTok": 10 }
         },
         {
           "id": "claude-haiku-4-5",
@@ -385,22 +373,16 @@
       "label": "Google Gemini",
       "models": [
         {
-          "id": "gemini-3.6-flash",
-          "label": "Gemini 3.6 Flash",
-          "description": "Frontier agentic and coding model with sustained performance at 3.6 Flash speed",
-          "pricing": { "inputPerMTok": 0.15, "outputPerMTok": 0.6 }
-        },
-        {
-          "id": "gemini-3.5-flash",
-          "label": "Gemini 3.5 Flash",
-          "description": "Frontier agentic and coding model with sustained performance at Flash speed",
-          "pricing": { "inputPerMTok": 0.15, "outputPerMTok": 0.6 }
-        },
-        {
           "id": "gemini-3.1-pro-preview",
           "label": "Gemini 3.1 Pro Preview",
           "description": "Flagship reasoning model with 1M context; best for complex agentic workflows",
-          "pricing": { "inputPerMTok": 1.25, "outputPerMTok": 5 }
+          "pricing": { "inputPerMTok": 2, "outputPerMTok": 12 }
+        },
+        {
+          "id": "gemini-3.8-flash",
+          "label": "Gemini 3.8 Flash",
+          "description": "Most intelligent Flash model for long-horizon software engineering and agents",
+          "pricing": { "inputPerMTok": 0.75, "outputPerMTok": 3.75 }
         }
       ]
     },
