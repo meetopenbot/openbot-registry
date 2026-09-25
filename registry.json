@@ -5,22 +5,22 @@
   },
   "plugins": {
     "@meetopenbot/claude-code": "1.0.3",
-    "@meetopenbot/cloudflare": "1.1.1",
+    "@meetopenbot/cloudflare": "1.1.2",
     "@meetopenbot/codex": "2.0.4",
     "@meetopenbot/cursor": "1.1.2",
     "@meetopenbot/firecrawl": "2.0.1",
-    "@meetopenbot/github": "1.0.1",
-    "@meetopenbot/hostinger": "1.1.0",
-    "@meetopenbot/linear": "1.0.2",
-    "@meetopenbot/notion": "1.0.1",
-    "@meetopenbot/openbot": "1.2.8",
+    "@meetopenbot/github": "1.0.2",
+    "@meetopenbot/hostinger": "1.1.1",
+    "@meetopenbot/linear": "1.0.3",
+    "@meetopenbot/notion": "1.0.2",
+    "@meetopenbot/openbot": "1.2.9",
     "@meetopenbot/opencode": "1.0.10",
     "@meetopenbot/pi": "1.0.7",
-    "@meetopenbot/resend": "1.1.2",
-    "@meetopenbot/slack": "1.0.1",
-    "@meetopenbot/stagehand": "2.0.1",
-    "@meetopenbot/stripe": "1.1.2",
-    "@meetopenbot/supabase": "1.1.2"
+    "@meetopenbot/resend": "1.1.3",
+    "@meetopenbot/slack": "1.0.2",
+    "@meetopenbot/stagehand": "2.0.2",
+    "@meetopenbot/stripe": "1.1.3",
+    "@meetopenbot/supabase": "1.1.3"
   },
   "agents": [
     {
