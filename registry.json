@@ -15,7 +15,7 @@
     "@meetopenbot/notion": "1.0.1",
     "@meetopenbot/openbot": "1.2.7",
     "@meetopenbot/opencode": "1.0.9",
-    "@meetopenbot/pi": "1.0.5",
+    "@meetopenbot/pi": "1.0.6",
     "@meetopenbot/resend": "1.1.2",
     "@meetopenbot/slack": "1.0.1",
     "@meetopenbot/stagehand": "2.0.1",
