@@ -6,7 +6,7 @@
   "plugins": {
     "@meetopenbot/claude-code": "1.0.3",
     "@meetopenbot/cloudflare": "1.1.2",
-    "@meetopenbot/codex": "2.0.4",
+    "@meetopenbot/codex": "2.0.5",
     "@meetopenbot/cursor": "1.1.2",
     "@meetopenbot/firecrawl": "2.0.1",
     "@meetopenbot/github": "1.0.2",
