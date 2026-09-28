@@ -1,7 +1,7 @@
 {
   "version": 1,
   "runtime": {
-    "latestVersion": "0.8.9"
+    "latestVersion": "0.8.10"
   },
   "plugins": {
     "@meetopenbot/claude-code": "1.0.4",
