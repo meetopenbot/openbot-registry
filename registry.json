@@ -9,6 +9,7 @@
     "@meetopenbot/codex": "2.0.6",
     "@meetopenbot/cursor": "1.1.3",
     "@meetopenbot/firecrawl": "2.0.1",
+    "@meetopenbot/fish-audio": "1.0.0",
     "@meetopenbot/github": "1.0.2",
     "@meetopenbot/hostinger": "1.1.1",
     "@meetopenbot/linear": "1.0.3",
@@ -71,6 +72,19 @@
       "plugins": [
         {
           "id": "@meetopenbot/firecrawl"
+        }
+      ]
+    },
+    {
+      "id": "fish-audio",
+      "name": "Fish Audio",
+      "image": "https://cdn.brandfetch.io/domain/fish.audio/w/400/h/400?c=1idNukycTj6JSH5N_EG",
+      "description": "Voices, expressive speech, transcription, and Fish Audio media generation.",
+      "instructions": "",
+      "models": { "providers": ["openai"], "default": "openai/gpt-6-luna" },
+      "plugins": [
+        {
+          "id": "@meetopenbot/fish-audio"
         }
       ]
     },
