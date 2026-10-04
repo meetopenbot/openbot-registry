@@ -1,7 +1,7 @@
 {
   "version": 1,
   "runtime": {
-    "latestVersion": "0.8.13"
+    "latestVersion": "0.8.14"
   },
   "plugins": {
     "@meetopenbot/claude-code": "1.0.4",
@@ -247,85 +247,103 @@
   ],
   "channels": [
     {
-      "id": "ship-landing-page",
-      "name": "Ship landing page",
-      "description": "Design, build, and ship a high-converting Astro landing page.",
-      "spec": "Goal: Ship one marketing page — hero, proof, features, FAQ, and a single CTA above the fold. Not an app, a dashboard, or a store.\n\n## Stack\nAstro with static output (`output: 'static'`), TypeScript, Tailwind, pnpm, ESM (`\"type\": \"module\"`). No Next.js, Remix, Nuxt, or a React SPA. No auth, billing, dashboard, catalog, or cart — those belong in Ship paid MVP or Ship ecommerce.\n\n## Page\nOne primary CTA above the fold (waitlist, signup interest, or buy — whatever the brief says). Sections: hero, social proof, feature grid, FAQ. Real copy from the brief — no lorem ipsum, no placeholder company names once the product is known. Semantic HTML, mobile-first, accessible (labels, contrast, keyboard). Meta title, description, Open Graph, favicon. Keep JS minimal (Astro islands only if a form or accordion needs it). Waitlist or email capture is a client form with a success state. No database, no auth.\n\n## Production\nPush to GitHub and deploy as static hosting (prefer Cloudflare Pages). No VPS, Docker, or self-hosting.\n\n## Agents\nClaude Code builds the page and deploy config. GitHub hosts the repository. Firecrawl scrapes a reference URL when the human provides one (messaging, branding, visuals); rebuild a distinct page, do not copy it.\n\n## Done when\nThe public preview matches the brief on mobile and desktop.",
+      "id": "build",
+      "name": "Build",
+      "description": "Websites, apps, and games",
+      "spec": "Goal: Build, test, and ship functional websites, web applications, or interactive games.\n\n## Verticals\n- **Websites & Landing Pages:** Modern static/SSR sites (Astro, Vite + React, or Next.js), TypeScript, Tailwind CSS, responsive mobile-first layouts, accessible markup, SEO meta tags, and high-performance assets.\n- **Web Applications:** Vite + React + TypeScript or Next.js. Clean component architecture, state management, authentication and PostgreSQL via Supabase, API integration, and robust error handling.\n- **Games:** HTML5 Canvas, Phaser, or WebGL with TypeScript. Smooth 60fps game loops, keyboard/touch/gamepad controls, sprite animations, sound effects, particle systems, collision physics, and score persistence.\n\n## Execution Principles\n- Two-process architecture where applicable (Vite frontend on 5173, thin Express/Hono backend on 3001). Never expose secrets in client bundles.\n- Keep dependencies lean, typed, and modern. Deliver working runnable code, not partial snippets.\n- Provide clear preview URLs, setup instructions, and deployment configurations.\n\n## Agents\nClaude Code and Cursor implement the code, assets, and project architecture. GitHub manages repositories and releases. Supabase provides database and auth services. Cloudflare handles edge hosting and routing.\n\n## Done when\nThe website, app, or game runs locally or in preview, meets all requirements in the brief, passes typechecks, and provides an engaging, polished user experience.",
       "initialState": {},
       "participants": [
         "claude-code",
-        "github",
-        "firecrawl"
-      ],
-      "starterPrompts": [
-        {
-          "label": "SaaS waitlist",
-          "prompt": "Ship an Astro landing page for a new SaaS with a waitlist CTA (hero, proof, features, FAQ, email capture). @claude-code can implement it. @github can host the repository."
-        },
-        {
-          "label": "From a URL",
-          "prompt": "I will paste a competitor or inspiration URL. @firecrawl can scrape messaging, branding, and visuals. @claude-code can rebuild a distinct Astro landing page from that research. @github can host the repository."
-        },
-        {
-          "label": "Product launch",
-          "prompt": "Ship a product-launch Astro landing page with hero, social proof, feature grid, FAQ, and a strong CTA. @claude-code can implement it. @github can host the repository."
-        }
-      ]
-    },
-    {
-      "id": "ship-paid-mvp",
-      "name": "Ship paid MVP",
-      "description": "Ship a paid MVP: Vite + React frontend, Express API, auth, payments, and email.",
-      "spec": "Goal: Ship a paid MVP — one persona signs up, pays, and gets one confirmation email. Paywalled software, not a store or a marketing page.\n\n## Stack\nTwo processes, not a fullstack monolith. pnpm, ESM.\n\n- **Frontend:** Vite + React + TypeScript. React Router. Tailwind is fine. Call the API with relative `/api` URLs. Port 5173.\n- **Backend:** a thin Express (or Hono) TypeScript server. JSON REST. Port 3001. Stripe webhooks, Resend, and any secret-bearing work live only here.\n- **Do not** use Next.js, Remix, Nest, Redwood, or other fullstack frameworks. No React Server Components, no server actions.\n- Layout: `frontend/`, `backend/`, root `package.json` scripts, and `.env.example`.\n- Vite `server.proxy`: `/api` → `http://127.0.0.1:3001` so the browser uses one origin.\n\n## Product slice\nMatch the brief's billing shape: subscription, one-time unlock, or usage-billed. A catalog, cart, or storefront belongs in Ship ecommerce. A marketing-only page belongs in Ship landing page.\n\n- **Auth + data:** Supabase Auth and Postgres (Storage only if the slice needs it). Verify JWTs on the server. The service role key stays on the backend.\n- **Payments:** Stripe Checkout. Create sessions on the server. Fulfill in the webhook (`checkout.session.completed` or invoice events) and make that handler idempotent. Never put the Stripe secret in the frontend.\n- **Email:** Resend sends the success email (welcome, receipt, or magic link) from the webhook or auth flow, not from the browser.\n- Happy path: sign up → pay in Stripe test mode → confirmation screen → email. Include a failed-payment state that does not grant access. Settings, teams, admin, and extra CRUD wait.\n- Point Supabase Auth redirects and the Stripe webhook (`/api/stripe/webhook`) at the public preview origin, and update them when that URL changes.\n\n## Secrets\nPublishable and anon keys may ship to the frontend. The Stripe secret and the Supabase service role stay on the backend. Name every variable in `.env.example`. Never commit `.env`.\n\n## Agents\nClaude Code implements the app and wiring. GitHub hosts the repository. Supabase provides auth, Postgres, and storage. Stripe handles checkout. Resend sends the email.\n\n## Done when\nA reviewer can sign up, pay in Stripe test mode, land on a confirmation screen, and receive the email. A failed payment does not grant access.",
-      "initialState": {},
-      "participants": [
-        "claude-code",
+        "cursor",
         "github",
         "supabase",
-        "stripe",
-        "resend"
+        "cloudflare"
       ],
       "starterPrompts": [
         {
-          "label": "Subscription SaaS",
-          "prompt": "Ship a subscription SaaS MVP as a Vite React frontend plus a thin Express API. @supabase can handle auth and Postgres. @stripe can take Checkout for the plan. @resend can send the welcome email. @claude-code can implement it. @github can host the repository."
+          "label": "Modern website",
+          "description": "Responsive landing page with animations, dark mode, and SEO",
+          "icon": "globe",
+          "prompt": "Build a modern, responsive website with polished animations, mobile-first design, dark mode, and SEO meta tags. @claude-code can implement it. @github can host the repository."
         },
         {
-          "label": "One-time purchase",
-          "prompt": "Ship a one-time purchase MVP that unlocks access after payment. Vite React frontend, Express API. @stripe can charge once. @supabase can store accounts. @resend can send the receipt. @claude-code can implement it. @github can host the repository."
+          "label": "Fullstack web app",
+          "description": "React SaaS app with auth, database, and dashboard",
+          "icon": "desktop",
+          "prompt": "Build a full-stack SaaS web application with React and TypeScript. @supabase can handle authentication and database storage. @claude-code can implement the frontend and API. @github can host the repository."
         },
         {
-          "label": "Usage-billed API",
-          "prompt": "Ship a usage-billed API MVP: Express API plus a thin Vite React dashboard. @supabase can store users and usage. @stripe can meter billing. @resend can send receipts. @claude-code can implement it. @github can host the repository."
+          "label": "Interactive game",
+          "description": "2D browser game with physics, sound effects, and score tracking",
+          "icon": "gamepad",
+          "prompt": "Build an interactive 2D browser game using HTML5 Canvas and TypeScript, featuring smooth gameplay controls, animations, sound effects, and high score tracking. @claude-code can implement it. @github can host the repository."
         }
       ]
     },
     {
-      "id": "ship-ecommerce",
-      "name": "Ship ecommerce",
-      "description": "Ship a small store: catalog, cart, Stripe checkout, and an order email.",
-      "spec": "Goal: Ship a small store — 3–8 products, a cart, checkout, and one order email. Not a SaaS app and not a marketing page.\n\n## Stack\nTwo processes, not a fullstack monolith. pnpm, ESM.\n\n- **Frontend:** Vite + React + TypeScript. React Router. Tailwind is fine. Catalog, product page, cart, checkout success. Call the API with relative `/api` URLs. Port 5173.\n- **Backend:** a thin Express (or Hono) TypeScript server. JSON REST. Port 3001. Stripe Checkout sessions, webhooks, Resend, and secret-bearing work live only here.\n- **Do not** use Next.js, Remix, Nest, Shopify, Medusa, Saleor, or WooCommerce. No React Server Components, no server actions.\n- Layout: `frontend/`, `backend/`, root `package.json` scripts, and `.env.example`.\n- Vite `server.proxy`: `/api` → `http://127.0.0.1:3001` so the browser uses one origin.\n\n## Store slice\nSelling software access (SaaS, unlock, metered API) belongs in Ship paid MVP. A marketing-only page belongs in Ship landing page.\n\n- **Catalog:** 3–8 products. Hardcoded JSON or a small Supabase `products` table. Variants optional. No inventory math, no discounts, no CMS or admin.\n- **Cart:** client cart (localStorage is fine) plus a server checkout session built from those line items. Validate prices on the server — never trust the client amount. An empty cart has a clear state.\n- **Checkout:** Stripe Checkout with line items, not subscriptions. Guest checkout is enough. Accounts are optional.\n- **Fulfillment:** persist the order in Supabase on `checkout.session.completed`. Make that webhook idempotent. Resend sends the order confirmation. Digital goods: a download link in that email. Merch: collect a shipping address in Checkout and use a flat shipping rate. No live carrier rates, no tax APIs.\n- Point the Stripe webhook (`/api/stripe/webhook`) at the public preview origin, and update it when that URL changes.\n\n## Secrets\nPublishable and anon keys may ship to the frontend. The Stripe secret and the Supabase service role stay on the backend. Name every variable in `.env.example`. Never commit `.env`.\n\n## Agents\nClaude Code implements the store and wiring. GitHub hosts the repository. Firecrawl scrapes a reference shop URL when the human provides one (messaging, branding, visuals); rebuild a distinct store, do not copy it. Supabase stores products (if not hardcoded) and orders. Stripe handles Checkout with line items. Resend sends the order email.\n\n## Done when\nA reviewer can add a product to the cart, pay in Stripe test mode, and receive the order email. A replayed webhook does not create a second order.",
+      "id": "create",
+      "name": "Create",
+      "description": "Images, videos, and slides",
+      "spec": "Goal: Produce compelling visual media, video productions, and presentation slide decks.\n\n## Verticals\n- **Visuals & Graphics:** High-resolution product mockups, brand assets, social media graphics, SVG diagrams, UI illustration kits, and marketing visual banners with cohesive style guides and color palettes.\n- **Videos & Storyboards:** Comprehensive video production packages including scene-by-scene storyboards, visual direction cues, shot angles, timing markers, voiceover audio scripts, and motion graphics briefs.\n- **Pitch Decks & Presentations:** Polished, persuasive slide decks (10–15 slides) structured for investors, keynotes, or client pitches. Clean narrative arc (Problem, Solution, Market, Product, Traction, Business Model, Team, Ask).\n\n## Creative Standards\n- Cohesive visual identity: consistent typography, color harmonies, and brand motifs across all deliverables.\n- High attention to clarity: reduce cognitive load, lead with strong headlines, and support with concrete proof points or visual evidence.\n- Include structured source files (SVG/HTML/React/Markdown) so assets can be rendered, customized, or exported to PDF/Keynote.\n\n## Agents\nClaude Code generates visual assets, code diagrams, and slide layouts. Fish Audio creates professional voiceover narration and audio guides. Notion organizes campaign materials and copy drafts. GitHub version-controls digital assets and presentation code.\n\n## Done when\nVisual assets are ready for publishing, video storyboards have timing and audio scripts, and slide decks have complete narrative flow and professional design.",
       "initialState": {},
       "participants": [
         "claude-code",
-        "github",
+        "fish-audio",
+        "notion",
+        "github"
+      ],
+      "starterPrompts": [
+        {
+          "label": "Visuals & graphics",
+          "description": "Product mockups, brand assets, and social banners",
+          "icon": "image",
+          "prompt": "Design and generate high-impact visual assets: create product mockup scenes, SVG icons, brand style guide elements, and social graphics. @claude-code can generate the design assets and code."
+        },
+        {
+          "label": "Video & storyboard",
+          "description": "Scene-by-scene script, voiceover direction, and visual cues",
+          "icon": "video",
+          "prompt": "Create a compelling 60-second video script and scene-by-scene storyboard with visual direction, pacing, and voiceover copy. @fish-audio can generate voiceovers. @claude-code can structure the script and assets."
+        },
+        {
+          "label": "Pitch deck & slides",
+          "description": "10-slide investor or keynote deck with structured narrative",
+          "icon": "slides",
+          "prompt": "Create a professional 10-slide presentation deck with compelling narrative structure, problem/solution breakdown, market size analysis, and slide copy ready to present."
+        }
+      ]
+    },
+    {
+      "id": "grow",
+      "name": "Grow",
+      "description": "Ads, social media, and cold outreach",
+      "spec": "Goal: Scale user acquisition, pipeline generation, and brand visibility through growth channels.\n\n## Verticals\n- **Paid Ads:** High-converting multi-platform ad copy and creative briefs (Google Search & Display, Meta Facebook/Instagram, LinkedIn, X/Twitter). Multiple angle variations (pain-point, feature-driven, social proof, FOMO), compelling CTAs, and A/B testing frameworks.\n- **Social Media:** Organic distribution engine with a 30-day content calendar, viral thread hooks, carousel outlines, thought leadership posts, engagement questions, and platform-specific formatting.\n- **Cold Outreach:** High-reply B2B outbound campaigns. 4-step sequence (initial hook, case study proof, soft bump, breakup), personalized opening lines, objection pre-empting, clear calls-to-action, and follow-up cadence.\n\n## Conversion Principles\n- Audience-first messaging: speak directly to customer pains, avoid jargon, and emphasize quantifiable ROI.\n- Data-driven experimentation: test headlines, value propositions, and delivery timing with measurable KPIs.\n- Deliverability & compliance: ensure email sequences follow CAN-SPAM/GDPR practices with clean domain warmup guidance via Resend.\n\n## Agents\nClaude Code drafts copy, campaign strategies, and audience targeting matrices. Firecrawl gathers competitor messaging and market intelligence. Resend guides email delivery and outreach infrastructure. Notion maintains content calendars and lead lists. Slack coordinates campaign alerts.\n\n## Done when\nCampaign copy, social calendars, and outreach sequences are complete with variants, target personas, and clear action steps for launch.",
+      "initialState": {},
+      "participants": [
+        "claude-code",
+        "resend",
         "firecrawl",
-        "supabase",
-        "stripe",
-        "resend"
+        "notion",
+        "slack"
       ],
       "starterPrompts": [
         {
-          "label": "Digital goods",
-          "prompt": "Ship a small digital-goods store: catalog, cart, Stripe Checkout, and an email with the download after payment. Vite React frontend plus a thin Express API. @stripe can take Checkout with line items. @supabase can store orders. @resend can send the receipt and download. @claude-code can implement it. @github can host the repository."
+          "label": "Paid ad campaigns",
+          "description": "High-converting copy and creative briefs for Google, Meta, and X",
+          "icon": "megaphone",
+          "prompt": "Develop high-converting ad copy and creative variants for Google Search, Meta, and LinkedIn ads targeting our ideal customer profile with A/B test hooks and calls to action."
         },
         {
-          "label": "Merch catalog",
-          "prompt": "Ship a small merch store (3–8 SKUs) with cart, guest checkout, and flat shipping. Vite React frontend plus a thin Express API. @stripe can take Checkout with line items. @supabase can store orders. @resend can send the order email. @claude-code can implement it. @github can host the repository."
+          "label": "Social media calendar",
+          "description": "30-day multi-channel content plan with viral hooks and threads",
+          "icon": "share",
+          "prompt": "Create a 30-day social media content strategy and post calendar for X/Twitter and LinkedIn, including viral hooks, educational threads, and engagement CTAs."
         },
         {
-          "label": "From a URL",
-          "prompt": "I will paste a shop or inspiration URL. @firecrawl can scrape messaging, branding, and product vibe. @claude-code can rebuild a distinct small store (catalog, cart, Stripe Checkout) from that research. @stripe can take Checkout. @supabase can store orders. @resend can send the order email. @github can host the repository."
+          "label": "Cold outreach sequence",
+          "description": "Personalized 4-step B2B email sequence with follow-ups",
+          "icon": "mail",
+          "prompt": "Write a personalized 4-step B2B cold email outreach sequence with compelling subject lines, value propositions, objection handling, and follow-up templates. @resend can assist with email deliverability."
         }
       ]
     }
