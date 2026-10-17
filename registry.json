@@ -30,7 +30,7 @@
       "image": "https://unpkg.com/@lobehub/icons-static-svg@1.90.0/icons/claude-color.svg",
       "description": "Expert software engineering agent for complex coding tasks.",
       "instructions": "",
-      "models": { "providers": ["anthropic"], "default": "anthropic/claude-sonnet-5" },
+      "models": { "providers": ["anthropic"], "default": "anthropic/claude-sonnet-5-5" },
       "plugins": [
         {
           "id": "@meetopenbot/claude-code"
@@ -359,6 +359,12 @@
           "pricing": { "inputPerMTok": 10, "outputPerMTok": 50 }
         },
         {
+          "id": "gpt-6.1-sol",
+          "label": "GPT-6.1 Sol",
+          "description": "Near-Astra intelligence at lower cost for coding and agentic workflows",
+          "pricing": { "inputPerMTok": 2, "outputPerMTok": 10 }
+        },
+        {
           "id": "gpt-6-sol",
           "label": "GPT-6 Sol",
           "description": "Balances intelligence and cost for complex coding and agentic workflows",
@@ -388,10 +394,22 @@
           "pricing": { "inputPerMTok": 4, "outputPerMTok": 20 }
         },
         {
+          "id": "claude-sonnet-5-5",
+          "label": "Claude Sonnet 5.5",
+          "description": "Best combination of speed and intelligence for everyday work",
+          "pricing": { "inputPerMTok": 2, "outputPerMTok": 10 }
+        },
+        {
           "id": "claude-sonnet-5",
           "label": "Claude Sonnet 5",
           "description": "Best balance of speed and intelligence for general tasks",
           "pricing": { "inputPerMTok": 2, "outputPerMTok": 10 }
+        },
+        {
+          "id": "claude-haiku-5-5",
+          "label": "Claude Haiku 5.5",
+          "description": "Fastest model for high-volume classification, extraction, and routing",
+          "pricing": { "inputPerMTok": 0.5, "outputPerMTok": 2.5 }
         },
         {
           "id": "claude-haiku-4-5",
@@ -404,6 +422,12 @@
     "google": {
       "label": "Google Gemini",
       "models": [
+        {
+          "id": "gemini-4-argon",
+          "label": "Gemini 4 Argon",
+          "description": "Gemini 4 flagship with 1M context for complex reasoning and agentic work",
+          "pricing": { "inputPerMTok": 4, "outputPerMTok": 20 }
+        },
         {
           "id": "gemini-3.1-pro-preview",
           "label": "Gemini 3.1 Pro Preview",
@@ -431,7 +455,7 @@
           "id": "deepseek-v4-pro",
           "label": "DeepSeek V4 Pro",
           "description": "Pro model from DeepSeek",
-          "pricing": { "inputPerMTok": 0.55, "outputPerMTok": 1.1 }
+          "pricing": { "inputPerMTok": 1.32, "outputPerMTok": 3.96 }
         }
       ]
     },
