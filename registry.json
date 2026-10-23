@@ -22,7 +22,7 @@
     "@meetopenbot/stagehand": "2.0.3",
     "@meetopenbot/stripe": "1.1.4",
     "@meetopenbot/supabase": "1.1.4",
-    "@meetopenbot/apollo": "0.0.0"
+    "@meetopenbot/apollo": "0.1.0"
   },
   "agents": [
     {
