@@ -12,7 +12,7 @@
     "@meetopenbot/fish-audio": "1.2.0",
     "@meetopenbot/github": "1.1.0",
     "@meetopenbot/hostinger": "1.2.0",
-    "@meetopenbot/linear": "1.1.0",
+    "@meetopenbot/linear": "2.0.0",
     "@meetopenbot/notion": "1.1.0",
     "@meetopenbot/openbot": "1.6.3",
     "@meetopenbot/opencode": "1.0.12",
