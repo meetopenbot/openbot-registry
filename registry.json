@@ -8,7 +8,7 @@
     "@meetopenbot/cloudflare": "1.2.0",
     "@meetopenbot/codex": "2.0.7",
     "@meetopenbot/cursor": "1.2.0",
-    "@meetopenbot/firecrawl": "2.1.0",
+    "@meetopenbot/firecrawl": "3.0.0",
     "@meetopenbot/fish-audio": "1.2.0",
     "@meetopenbot/github": "1.1.0",
     "@meetopenbot/hostinger": "1.2.0",
