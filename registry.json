@@ -23,7 +23,8 @@
     "@meetopenbot/stripe": "1.2.0",
     "@meetopenbot/supabase": "1.2.0",
     "@meetopenbot/apollo": "0.2.0",
-    "@meetopenbot/stitch": "0.1.0"
+    "@meetopenbot/stitch": "0.1.0",
+    "@meetopenbot/motion": "0.0.0"
   },
   "agents": [
     {
@@ -100,6 +101,19 @@
       "plugins": [
         {
           "id": "@meetopenbot/stitch"
+        }
+      ]
+    },
+    {
+      "id": "motion",
+      "name": "Motion",
+      "image": "https://cdn.brandfetch.io/domain/motion.so/w/400/h/400?c=1idNukycTj6JSH5N_EG",
+      "description": "AI video with Motion: make, revise, and track videos and their renders.",
+      "instructions": "",
+      "models": { "providers": ["openai"], "default": "openai/gpt-6-luna" },
+      "plugins": [
+        {
+          "id": "@meetopenbot/motion"
         }
       ]
     },
