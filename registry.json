@@ -72,6 +72,7 @@
       "image": "https://cdn.brandfetch.io/domain/firecrawl.dev/w/800/h/1152/symbol?c=1idNukycTj6JSH5N_EG",
       "description": "Advanced web search, scraping, and interaction capabilities.",
       "instructions": "",
+      "models": { "providers": ["anthropic", "openai"], "default": "anthropic/claude-haiku-5-5" },
       "plugins": [
         {
           "id": "@meetopenbot/firecrawl"
@@ -84,7 +85,7 @@
       "image": "https://cdn.brandfetch.io/domain/fish.audio/w/400/h/400?c=1idNukycTj6JSH5N_EG",
       "description": "Voices, expressive speech, transcription, and Fish Audio media generation.",
       "instructions": "",
-      "models": { "providers": ["openai"], "default": "openai/gpt-6-luna" },
+      "models": { "providers": ["anthropic", "openai"], "default": "anthropic/claude-haiku-5-5" },
       "plugins": [
         {
           "id": "@meetopenbot/fish-audio"
@@ -97,7 +98,7 @@
       "image": "https://cdn.brandfetch.io/domain/stitch.withgoogle.com/w/400/h/400?c=1idNukycTj6JSH5N_EG",
       "description": "UI design with Google Stitch: generate, revise, and export app screens.",
       "instructions": "",
-      "models": { "providers": ["openai"], "default": "openai/gpt-6-luna" },
+      "models": { "providers": ["anthropic", "openai"], "default": "anthropic/claude-haiku-5-5" },
       "plugins": [
         {
           "id": "@meetopenbot/stitch"
@@ -110,7 +111,7 @@
       "image": "https://cdn.brandfetch.io/domain/motion.so/w/400/h/400?c=1idNukycTj6JSH5N_EG",
       "description": "AI video with Motion: make, revise, and track videos and their renders.",
       "instructions": "",
-      "models": { "providers": ["openai"], "default": "openai/gpt-6-luna" },
+      "models": { "providers": ["anthropic", "openai"], "default": "anthropic/claude-haiku-5-5" },
       "plugins": [
         {
           "id": "@meetopenbot/motion"
@@ -162,7 +163,7 @@
       "image": "https://cdn.brandfetch.io/domain/makenotion.com/w/400/h/400?c=1idNukycTj6JSH5N_EG",
       "description": "Workspace management, page creation, and database automation.",
       "instructions": "",
-      "models": { "providers": ["openai"], "default": "openai/gpt-6-luna" },
+      "models": { "providers": ["anthropic", "openai"], "default": "anthropic/claude-haiku-5-5" },
       "plugins": [
         {
           "id": "@meetopenbot/notion"
@@ -175,7 +176,7 @@
       "image": "https://cdn.brandfetch.io/domain/apollo.io/w/400/h/400?c=1idNukycTj6JSH5N_EG",
       "description": "Prospecting, contact and company enrichment, and CRM upkeep in Apollo.io.",
       "instructions": "",
-      "models": { "providers": ["openai"], "default": "openai/gpt-6-luna" },
+      "models": { "providers": ["anthropic", "openai"], "default": "anthropic/claude-haiku-5-5" },
       "plugins": [
         {
           "id": "@meetopenbot/apollo"
@@ -188,7 +189,7 @@
       "image": "https://linear.app/static/favicon.svg",
       "description": "Issue tracking, project management, cycles, and team workflow automation.",
       "instructions": "",
-      "models": { "providers": ["openai"], "default": "openai/gpt-6-luna" },
+      "models": { "providers": ["anthropic", "openai"], "default": "anthropic/claude-haiku-5-5" },
       "plugins": [
         {
           "id": "@meetopenbot/linear"
@@ -201,7 +202,7 @@
       "image": "https://cdn.brandfetch.io/domain/slack.com/w/400/h/400?c=1idNukycTj6JSH5N_EG",
       "description": "Team messaging, channel management, and workspace communication.",
       "instructions": "",
-      "models": { "providers": ["openai"], "default": "openai/gpt-6-luna" },
+      "models": { "providers": ["anthropic", "openai"], "default": "anthropic/claude-haiku-5-5" },
       "plugins": [
         {
           "id": "@meetopenbot/slack"
@@ -214,7 +215,7 @@
       "image": "https://unpkg.com/@lobehub/icons-static-svg@1.90.0/icons/github.svg",
       "description": "Manage repositories, branches, commits, pull requests, and issues on GitHub.",
       "instructions": "",
-      "models": { "providers": ["openai"], "default": "openai/gpt-6-luna" },
+      "models": { "providers": ["anthropic", "openai"], "default": "anthropic/claude-haiku-5-5" },
       "plugins": [
         {
           "id": "@meetopenbot/github"
@@ -227,7 +228,7 @@
       "image": "https://cdn.brandfetch.io/domain/resend.com/w/400/h/400?c=1idNukycTj6JSH5N_EG",
       "description": "Transactional email, contacts, templates, broadcasts, and inbound mail.",
       "instructions": "",
-      "models": { "providers": ["openai"], "default": "openai/gpt-6-luna" },
+      "models": { "providers": ["anthropic", "openai"], "default": "anthropic/claude-haiku-5-5" },
       "plugins": [
         {
           "id": "@meetopenbot/resend"
@@ -240,7 +241,7 @@
       "image": "https://cdn.brandfetch.io/domain/supabase.com/w/400/h/400?c=1idNukycTj6JSH5N_EG",
       "description": "Postgres, Auth, Storage, Edge Functions, and project operations on Supabase.",
       "instructions": "",
-      "models": { "providers": ["openai"], "default": "openai/gpt-6-luna" },
+      "models": { "providers": ["anthropic", "openai"], "default": "anthropic/claude-haiku-5-5" },
       "plugins": [
         {
           "id": "@meetopenbot/supabase"
@@ -253,7 +254,7 @@
       "image": "https://cdn.brandfetch.io/domain/stripe.com/w/400/h/400?c=1idNukycTj6JSH5N_EG",
       "description": "Customers, payments, invoices, subscriptions, and Stripe billing operations.",
       "instructions": "",
-      "models": { "providers": ["openai"], "default": "openai/gpt-6-luna" },
+      "models": { "providers": ["anthropic", "openai"], "default": "anthropic/claude-haiku-5-5" },
       "plugins": [
         {
           "id": "@meetopenbot/stripe"
@@ -279,7 +280,7 @@
       "image": "https://cdn.brandfetch.io/domain/hostinger.com/w/400/h/400?c=1idNukycTj6JSH5N_EG",
       "description": "Websites, WordPress, VPS, domains, DNS, and Hostinger account operations.",
       "instructions": "",
-      "models": { "providers": ["openai"], "default": "openai/gpt-6-luna" },
+      "models": { "providers": ["anthropic", "openai"], "default": "anthropic/claude-haiku-5-5" },
       "plugins": [
         {
           "id": "@meetopenbot/hostinger"
