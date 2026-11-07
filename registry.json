@@ -23,6 +23,7 @@
     "@meetopenbot/stripe": "1.3.0",
     "@meetopenbot/supabase": "1.3.0",
     "@meetopenbot/apollo": "0.3.0",
+    "@meetopenbot/hunter": "0.0.0",
     "@meetopenbot/stitch": "0.2.0",
     "@meetopenbot/motion": "0.2.0"
   },
@@ -180,6 +181,19 @@
       "plugins": [
         {
           "id": "@meetopenbot/apollo"
+        }
+      ]
+    },
+    {
+      "id": "hunter",
+      "name": "Hunter",
+      "image": "https://cdn.brandfetch.io/domain/hunter.io/w/400/h/400?c=1idNukycTj6JSH5N_EG",
+      "description": "Find and verify professional emails, prospect for companies and people, and keep leads in Hunter.io.",
+      "instructions": "",
+      "models": { "providers": ["anthropic", "openai"], "default": "anthropic/claude-haiku-5-5" },
+      "plugins": [
+        {
+          "id": "@meetopenbot/hunter"
         }
       ]
     },
