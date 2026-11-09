@@ -24,7 +24,7 @@
     "@meetopenbot/supabase": "1.3.0",
     "@meetopenbot/apollo": "0.3.0",
     "@meetopenbot/hunter": "0.1.0",
-    "@meetopenbot/clay": "0.0.0",
+    "@meetopenbot/clay": "0.1.0",
     "@meetopenbot/stitch": "0.2.0",
     "@meetopenbot/motion": "0.2.0"
   },
